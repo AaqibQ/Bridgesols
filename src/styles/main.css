@@ -261,6 +261,12 @@ section.tight { padding: 56px 0; }
   border: none;
   padding: 8px;
 }
+
+/* Hidden by default at all widths; the mobile breakpoint (responsive.css)
+   repositions it as a fixed slide-down panel and toggles it via .open.
+   Without this, the div renders in normal flow above 860px and inflates
+   the sticky header's height. */
+.mobile-nav { display: none; }
 .nav-toggle span { width: 22px; height: 2px; background: var(--text); border-radius: 2px; transition: transform 0.3s ease, opacity 0.3s ease; }
 
 /* ---------- Hero ---------- */
