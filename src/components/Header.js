@@ -4,6 +4,7 @@ const NAV_ITEMS = [
   { label: "Online Business", href: "/articles/#online-business", match: "articles" },
   { label: "SEO", href: "/articles/#seo", match: "articles" },
   { label: "Guides", href: "/articles/", match: "articles" },
+  { label: "Services", href: "/services.html", match: "services" },
   { label: "About", href: "/about.html", match: "about" }
 ];
 
