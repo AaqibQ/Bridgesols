@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b0d12"/>
+      <stop offset="100%" stop-color="#08090c"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6c8dff"/>
+      <stop offset="100%" stop-color="#9a7bff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g opacity="0.5" stroke="#232830">
+    <circle cx="900" cy="180" r="140" fill="none"/>
+    <circle cx="980" cy="420" r="90" fill="none"/>
+  </g>
+  <g opacity="0.7">
+    <circle cx="860" cy="150" r="4" fill="#6c8dff"/>
+    <circle cx="990" cy="260" r="5" fill="#9a7bff"/>
+    <circle cx="900" cy="360" r="3" fill="#6c8dff"/>
+    <line x1="860" y1="150" x2="990" y2="260" stroke="#6c8dff" stroke-width="1"/>
+    <line x1="990" y1="260" x2="900" y2="360" stroke="#9a7bff" stroke-width="1"/>
+  </g>
+  <circle cx="120" cy="120" r="6" fill="url(#accent)"/>
+  <text x="150" y="132" font-family="Georgia, serif" font-size="34" fill="#edf0f4" font-weight="600">BridgeSols</text>
+  <text x="120" y="330" font-family="Georgia, serif" font-size="58" fill="#edf0f4" font-weight="600">Practical strategy for</text>
+  <text x="120" y="400" font-family="Georgia, serif" font-size="58" fill="#edf0f4" font-weight="600">online businesses built to last</text>
+  <text x="120" y="460" font-family="Arial, sans-serif" font-size="24" fill="#99a2b0">Digital Marketing &#183; SEO &#183; Online Business</text>
+</svg>

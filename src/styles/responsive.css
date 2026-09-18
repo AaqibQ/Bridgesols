@@ -1,0 +1,61 @@
+/* ==========================================================================
+   BridgeSols — Responsive rules
+   Breakpoints: 1440+, 1024, 768, 430, 390, 375
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  .card-grid { grid-template-columns: repeat(2, 1fr); }
+  .topic-grid { grid-template-columns: repeat(2, 1fr); }
+  .why-grid { grid-template-columns: 1fr; gap: 40px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .hero h1 { font-size: clamp(2.2rem, 6vw, 3.4rem); }
+}
+
+@media (max-width: 860px) {
+  .main-nav ul, .header-cta .btn-ghost { display: none; }
+  .nav-toggle { display: flex; }
+
+  .mobile-nav {
+    position: fixed;
+    inset: 0;
+    top: 64px;
+    z-index: 190;
+    background: rgba(8, 9, 12, 0.98);
+    backdrop-filter: blur(12px);
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    transform: translateY(-12px);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s var(--ease), transform 0.3s var(--ease), visibility 0.3s;
+  }
+  .mobile-nav.open { opacity: 1; transform: translateY(0); visibility: visible; }
+  .mobile-nav a { font-size: 1.4rem; font-family: var(--font-display); }
+  .mobile-nav .btn { align-self: flex-start; margin-top: 12px; }
+
+  .site-header.nav-open .nav-toggle span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .site-header.nav-open .nav-toggle span:nth-child(2) { opacity: 0; }
+  .site-header.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+}
+
+@media (max-width: 768px) {
+  section { padding: 64px 0; }
+  .hero { min-height: 92vh; }
+  .card-grid { grid-template-columns: 1fr; }
+  .topic-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 28px; }
+  .form-grid { grid-template-columns: 1fr; }
+  .page-hero { padding: 120px 0 44px; }
+}
+
+@media (max-width: 430px) {
+  .wrap, .wrap-narrow { padding: 0 18px; }
+  .hero h1 { font-size: clamp(2rem, 9vw, 2.6rem); }
+  .hero p.lede { font-size: 1.02rem; }
+  .hero-actions .btn { width: 100%; }
+  .newsletter-form input[type="email"] { min-width: 0; width: 100%; }
+  .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+  .section-heading { flex-direction: column; align-items: flex-start; }
+}
