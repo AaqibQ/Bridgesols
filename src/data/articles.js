@@ -55,6 +55,39 @@ export const articles = [
     readingTime: "13 min read",
     author: "BridgeSols Editorial",
     tags: ["growth", "traffic", "seo"]
+  },
+  {
+    slug: "digital-marketing-small-business-pakistan",
+    title: "Digital Marketing for Small Businesses in Pakistan: A Practical 2026 Guide",
+    excerpt:
+      "The channels, payment realities, and budget expectations that actually apply to a small business marketing itself in Pakistan — Facebook, WhatsApp, JazzCash/Easypaisa, and realistic PKR budgets.",
+    category: "Digital Marketing",
+    date: "2026-09-05",
+    readingTime: "11 min read",
+    author: "BridgeSols Editorial",
+    tags: ["pakistan", "digital marketing", "local"]
+  },
+  {
+    slug: "starting-online-business-uae-dubai",
+    title: "Starting and Marketing an Online Business in the UAE: What Actually Works in 2026",
+    excerpt:
+      "Licensing basics, the multicultural audience, WhatsApp Business, and realistic ad costs in one of the world's most competitive digital markets.",
+    category: "Online Business",
+    date: "2026-09-12",
+    readingTime: "11 min read",
+    author: "BridgeSols Editorial",
+    tags: ["uae", "dubai", "online business"]
+  },
+  {
+    slug: "us-small-business-digital-marketing-benchmarks-2026",
+    title: "Digital Marketing Benchmarks for US Small Businesses in 2026",
+    excerpt:
+      "Realistic ad costs, conversion rates, and channel performance benchmarks for US small businesses — a sanity check, not a guarantee.",
+    category: "Digital Marketing",
+    date: "2026-09-19",
+    readingTime: "12 min read",
+    author: "BridgeSols Editorial",
+    tags: ["usa", "benchmarks", "digital marketing"]
   }
 ];
 

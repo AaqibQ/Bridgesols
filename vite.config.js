@@ -16,7 +16,10 @@ export default defineConfig({
         article2: resolve(root, "articles/seo-for-beginners.html"),
         article3: resolve(root, "articles/how-to-start-online-business.html"),
         article4: resolve(root, "articles/content-marketing-guide.html"),
-        article5: resolve(root, "articles/how-to-grow-a-website.html")
+        article5: resolve(root, "articles/how-to-grow-a-website.html"),
+        article6: resolve(root, "articles/digital-marketing-small-business-pakistan.html"),
+        article7: resolve(root, "articles/starting-online-business-uae-dubai.html"),
+        article8: resolve(root, "articles/us-small-business-digital-marketing-benchmarks-2026.html")
       }
     }
   }
