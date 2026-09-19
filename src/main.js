@@ -137,10 +137,11 @@ function initContactForm() {
     });
   });
 
-  form.addEventListener("submit", (e) => {
+  form.addEventListener("submit", async (e) => {
     e.preventDefault();
     const allValid = fields.map(validateField).every(Boolean);
     const status = document.getElementById("contact-status");
+    const button = form.querySelector('button[type="submit"]');
 
     if (!allValid) {
       status.textContent = "Please fix the highlighted fields.";
@@ -148,10 +149,48 @@ function initContactForm() {
       return;
     }
 
-    // No backend/email service is connected yet — see README → "Contact Form".
-    // This intentionally does NOT claim the message was delivered anywhere.
-    status.textContent =
-      "This form isn't connected to an email service yet, so this message wasn't sent anywhere. See README.md to wire up a backend.";
+    // Messages are delivered by Web3Forms, which forwards them to the site
+    // owner's inbox. The access key is public by design; the destination
+    // address is bound to the key on Web3Forms' side, so it never appears
+    // in this code or on the page. See README → "Contact Form Integration".
+    const accessKey = form.dataset.accessKey;
+    if (!accessKey) {
+      status.textContent =
+        "The contact form isn't available right now. Please reach us on WhatsApp via the Services page instead.";
+      status.dataset.state = "error";
+      return;
+    }
+
+    button.disabled = true;
+    status.textContent = "Sending…";
     status.dataset.state = "pending";
+
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          access_key: accessKey,
+          from_name: "BridgeSols Contact Form",
+          subject: `BridgeSols contact: ${form.elements.subject.value.trim()}`,
+          name: form.elements.name.value.trim(),
+          email: form.elements.email.value.trim(),
+          message: form.elements.message.value.trim(),
+          botcheck: form.elements.botcheck.checked
+        })
+      });
+      const data = await res.json();
+      if (!res.ok || !data.success) throw new Error(data.message || "Request failed");
+
+      form.reset();
+      status.textContent = "Thanks — your message has been sent. We'll reply by email.";
+      status.dataset.state = "success";
+    } catch (err) {
+      status.textContent =
+        "Sorry, something went wrong sending your message. Please try again in a moment.";
+      status.dataset.state = "error";
+    } finally {
+      button.disabled = false;
+    }
   });
 }

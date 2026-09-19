@@ -136,9 +136,12 @@ To connect a provider:
 
 ## Contact form integration
 
-Same situation as the newsletter: `contact.html`'s form validates properly but has no backend, and clearly tells the visitor so in the status message rather than falsely claiming delivery. To connect it:
-- Easiest: use a form backend service like [Formspree](https://formspree.io) — point the form's submission at their endpoint and remove the "not connected yet" branch in `src/main.js`'s `initContactForm()`.
-- Or: build a small serverless function (Vercel/Netlify Functions, Cloudflare Workers) that emails you the submission, and `fetch()` it from the same place.
+`contact.html`'s form validates client-side and submits to [Web3Forms](https://web3forms.com), which emails each message to the owner's inbox. The destination address is bound to the access key on Web3Forms' side, so it never appears in the code or on the page.
+
+- The key lives in the form's `data-access-key` attribute in `contact.html`. Web3Forms access keys are designed to be public.
+- With an empty key the form tells visitors it's unavailable instead of pretending to send.
+- To change the inbox, create a new key at web3forms.com for the new address and replace the attribute value.
+- A hidden `botcheck` checkbox acts as a honeypot for spam bots.
 
 ---
 

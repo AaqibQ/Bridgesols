@@ -44,13 +44,14 @@
     <div class="wrap">
       <span class="eyebrow">Contact</span>
       <h1>Questions, feedback, or a topic idea?</h1>
-      <p class="lede">Send a message below. See the note under the form for how this is currently wired up.</p>
+      <p class="lede">Send a message below and we'll get back to you by email.</p>
     </div>
   </section>
 
   <section class="content-page">
     <div class="wrap-narrow">
-      <form id="contact-form" novalidate>
+      <form id="contact-form" data-access-key="" novalidate>
+        <input type="checkbox" name="botcheck" class="visually-hidden" tabindex="-1" autocomplete="off" aria-hidden="true" />
         <div class="form-grid">
           <div class="form-field">
             <label for="name">Name <span class="req">*</span></label>
@@ -78,7 +79,7 @@
       </form>
 
       <div class="callout mt-48">
-        <p><strong>How this form works:</strong> this contact form performs real client-side validation, but it is not yet connected to a backend or email service — no message is delivered anywhere until one is configured. See <code>README.md</code> → "Contact Form Integration" for how to connect a form backend (e.g. Formspree, a serverless function, or your own API endpoint).</p>
+        <p><strong>How this works:</strong> messages sent through this form go straight to our team's inbox, and we reply by email. Looking to hire us for a project? See our <a href="services.html">Services page</a>.</p>
       </div>
     </div>
   </section>

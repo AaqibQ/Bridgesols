@@ -502,6 +502,7 @@ section.tight { padding: 56px 0; }
   color: var(--accent-strong);
 }
 .form-status[data-state="error"] { color: #f08a86; }
+.form-status[data-state="success"] { color: #7fd6a0; }
 
 /* ---------- Ad slots ---------- */
 .ad-slot {
