@@ -2,8 +2,7 @@
   "hosting": {
     "public": "dist",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
-    "cleanUrls": true,
-    "trailingSlash": false,
+    "cleanUrls": false,
     "headers": [
       {
         "source": "**/*.@(js|css|svg)",
