@@ -88,6 +88,17 @@ export const articles = [
     readingTime: "12 min read",
     author: "BridgeSols Editorial",
     tags: ["usa", "benchmarks", "digital marketing"]
+  },
+  {
+    slug: "local-seo-guide-google-business-profile",
+    title: "Local SEO: How to Rank in Google's Map Pack and Get Found by Nearby Customers",
+    excerpt:
+      "A practical guide to local SEO for service businesses and storefronts — Google Business Profile optimization, NAP consistency, citations, reviews, and what actually drives map pack rankings.",
+    category: "SEO",
+    date: "2026-09-19",
+    readingTime: "12 min read",
+    author: "BridgeSols Editorial",
+    tags: ["local seo", "google business profile", "seo"]
   }
 ];
 
