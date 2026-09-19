@@ -7,6 +7,7 @@ import { renderFooter } from "./components/Footer.js";
 import { initNewsletterForms } from "./components/Newsletter.js";
 import { articleCard } from "./components/ArticleCard.js";
 import { articles, getArticle, getRelated } from "./data/articles.js";
+import { WEB3FORMS_ACCESS_KEY, WEB3FORMS_URL } from "./config.js";
 
 import { playHeroEntrance } from "./animations/hero.js";
 import {
@@ -150,27 +151,19 @@ function initContactForm() {
     }
 
     // Messages are delivered by Web3Forms, which forwards them to the site
-    // owner's inbox. The access key is public by design; the destination
-    // address is bound to the key on Web3Forms' side, so it never appears
-    // in this code or on the page. See README → "Contact Form Integration".
-    const accessKey = form.dataset.accessKey;
-    if (!accessKey) {
-      status.textContent =
-        "The contact form isn't available right now. Please reach us on WhatsApp via the Services page instead.";
-      status.dataset.state = "error";
-      return;
-    }
-
+    // owner's inbox. The access key (src/config.js) is public by design; the
+    // destination address is bound to it on Web3Forms' side, so it never
+    // appears in this code or on the page. See README → "Contact Form".
     button.disabled = true;
     status.textContent = "Sending…";
     status.dataset.state = "pending";
 
     try {
-      const res = await fetch("https://api.web3forms.com/submit", {
+      const res = await fetch(WEB3FORMS_URL, {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({
-          access_key: accessKey,
+          access_key: WEB3FORMS_ACCESS_KEY,
           from_name: "BridgeSols Contact Form",
           subject: `BridgeSols contact: ${form.elements.subject.value.trim()}`,
           name: form.elements.name.value.trim(),

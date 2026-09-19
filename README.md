@@ -125,23 +125,13 @@ No GA4 Measurement ID is included in this project — adding a fake one would si
 
 ---
 
-## Newsletter integration
+## Newsletter and contact forms
 
-The newsletter forms (`src/components/Newsletter.js`) are fully validated on the frontend but **not connected to an email provider yet** — by design, they do not claim a successful subscription until a real backend exists, so nobody is misled about being subscribed.
+Both the newsletter sign-ups (`src/components/Newsletter.js`) and the contact form (`src/main.js`) submit to [Web3Forms](https://web3forms.com), which emails each submission to the owner's inbox. The public access key lives in `src/config.js`; Web3Forms binds it to the destination address on their side, so the address never appears in the code or on the page.
 
-To connect a provider:
-1. Choose a provider — Mailchimp, Brevo, ConvertKit, and Buttondown all have simple subscribe APIs.
-2. Add `data-endpoint="https://your-provider-endpoint"` to each `<form class="newsletter-form">` in the HTML.
-3. `Newsletter.js` already has the `fetch()` call ready — it activates automatically once `data-endpoint` is present. Adjust the request body/headers to match your provider's API if needed.
-
-## Contact form integration
-
-`contact.html`'s form validates client-side and submits to [Web3Forms](https://web3forms.com), which emails each message to the owner's inbox. The destination address is bound to the access key on Web3Forms' side, so it never appears in the code or on the page.
-
-- The key lives in the form's `data-access-key` attribute in `contact.html`. Web3Forms access keys are designed to be public.
-- With an empty key the form tells visitors it's unavailable instead of pretending to send.
-- To change the inbox, create a new key at web3forms.com for the new address and replace the attribute value.
-- A hidden `botcheck` checkbox acts as a honeypot for spam bots.
+- **Newsletter:** sign-ups arrive as emails ("New BridgeSols newsletter subscriber"). There is no automated mailing-list platform yet — subscribers have to be collected from the inbox until one (Buttondown, Brevo, Kit, Mailchimp...) is added. When it is, replace the `fetch()` in `Newsletter.js` with that provider's API.
+- **Contact form:** validated client-side, with a hidden `botcheck` honeypot against spam bots.
+- **Changing the inbox:** create a new key at web3forms.com for the new address and replace the value in `src/config.js`.
 
 ---
 

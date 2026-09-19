@@ -1,11 +1,11 @@
-// Newsletter form handling.
+// Newsletter sign-up handling.
 //
-// IMPORTANT: No email provider is connected yet. This module performs real
-// client-side validation but does NOT claim a successful subscription, because
-// there is nothing on the backend to subscribe anyone to. Once a provider
-// (Mailchimp, Brevo, ConvertKit, Buttondown, etc.) is wired up, replace the
-// body of `handleSubmit` with a real fetch() call to that provider's API and
-// update the success branch below. See README.md → "Newsletter Integration".
+// Sign-ups are delivered to the site owner's inbox through Web3Forms (see
+// src/config.js), which is how subscribers are collected for now. There is no
+// automated mailing-list platform behind this yet; when one is added, swap the
+// fetch() below for that provider's API.
+
+import { WEB3FORMS_ACCESS_KEY, WEB3FORMS_URL } from "../config.js";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -24,6 +24,7 @@ function handleSubmit(event) {
   event.preventDefault();
   const form = event.currentTarget;
   const input = form.querySelector('input[type="email"]');
+  const button = form.querySelector("button");
   const email = (input.value || "").trim();
 
   if (!email || !EMAIL_RE.test(email)) {
@@ -32,34 +33,32 @@ function handleSubmit(event) {
     return;
   }
 
-  const endpoint = form.dataset.endpoint;
-  if (!endpoint) {
-    // Honest placeholder state — no provider connected yet.
-    setStatus(
-      form,
-      "Thanks for the interest — sign-ups aren't connected to an email provider yet. Check back soon.",
-      "pending"
-    );
-    return;
-  }
+  button.disabled = true;
+  setStatus(form, "Subscribing…", "pending");
 
-  // Real integration path once an endpoint is configured (see README).
-  form.querySelector("button").disabled = true;
-  fetch(endpoint, {
+  fetch(WEB3FORMS_URL, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ email })
+    headers: { "Content-Type": "application/json", Accept: "application/json" },
+    body: JSON.stringify({
+      access_key: WEB3FORMS_ACCESS_KEY,
+      from_name: "BridgeSols Newsletter",
+      subject: "New BridgeSols newsletter subscriber",
+      email,
+      message: `New newsletter sign-up: ${email} (from ${location.pathname})`,
+      botcheck: false
+    })
   })
-    .then((res) => {
-      if (!res.ok) throw new Error("Request failed");
-      setStatus(form, "You're subscribed — thanks for joining.", "success");
+    .then((res) => res.json().then((data) => ({ ok: res.ok && data.success })))
+    .then(({ ok }) => {
+      if (!ok) throw new Error("Request failed");
+      setStatus(form, "Thanks — you're on the list.", "success");
       form.reset();
     })
     .catch(() => {
       setStatus(form, "Something went wrong. Please try again in a moment.", "error");
     })
     .finally(() => {
-      form.querySelector("button").disabled = false;
+      button.disabled = false;
     });
 }
 
