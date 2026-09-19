@@ -99,6 +99,61 @@ export const articles = [
     readingTime: "12 min read",
     author: "BridgeSols Editorial",
     tags: ["local seo", "google business profile", "seo"]
+  },
+  {
+    slug: "keyword-research-for-beginners",
+    title: "Keyword Research for Beginners: How to Find Topics Worth Writing About",
+    excerpt:
+      "Search intent, long-tail topics, judging competition, and turning a keyword list into a content plan — with free tools only.",
+    category: "SEO",
+    date: "2026-09-20",
+    readingTime: "5 min read",
+    author: "BridgeSols Editorial",
+    tags: ["keyword research","seo","content planning"]
+  },
+  {
+    slug: "google-analytics-4-for-beginners",
+    title: "Google Analytics 4 for Beginners: The Numbers That Actually Matter",
+    excerpt:
+      "How GA4 works, the few reports worth checking, tracking key events, and a simple 15-minute weekly review routine.",
+    category: "Website Growth",
+    date: "2026-09-20",
+    readingTime: "4 min read",
+    author: "BridgeSols Editorial",
+    tags: ["analytics","ga4","measurement"]
+  },
+  {
+    slug: "email-marketing-for-small-businesses",
+    title: "Email Marketing for Small Businesses: Building a List That Actually Converts",
+    excerpt:
+      "Building a list ethically, choosing a tool, a simple welcome sequence, deliverability basics, and metrics that hold up.",
+    category: "Digital Marketing",
+    date: "2026-09-20",
+    readingTime: "4 min read",
+    author: "BridgeSols Editorial",
+    tags: ["email marketing","newsletter","lead generation"]
+  },
+  {
+    slug: "whatsapp-business-sales-guide",
+    title: "WhatsApp Business for Sales: A Practical Guide for Pakistan and the UAE",
+    excerpt:
+      "Setting up WhatsApp Business, catalogs and quick replies, click-to-chat links, tracking leads, and staying within the rules.",
+    category: "Digital Marketing",
+    date: "2026-09-20",
+    readingTime: "3 min read",
+    author: "BridgeSols Editorial",
+    tags: ["whatsapp","pakistan","uae","sales"]
+  },
+  {
+    slug: "freelancing-from-pakistan-international-clients",
+    title: "Freelancing from Pakistan: Finding International Clients and Getting Paid",
+    excerpt:
+      "Choosing a service, finding overseas clients, pricing, contracts, and the practical questions around getting paid from Pakistan.",
+    category: "Online Business",
+    date: "2026-09-20",
+    readingTime: "4 min read",
+    author: "BridgeSols Editorial",
+    tags: ["freelancing","pakistan","online business"]
   }
 ];
 
@@ -107,7 +162,17 @@ export function getArticle(slug) {
 }
 
 export function getRelated(slug, count = 2) {
-  return articles.filter((a) => a.slug !== slug).slice(0, count);
+  const current = articles.find((a) => a.slug === slug);
+  const others = articles.filter((a) => a.slug !== slug);
+  if (!current) return others.slice(0, count);
+  // Same category weighs most, shared tags add to it; newest first on ties.
+  const score = (a) =>
+    (a.category === current.category ? 2 : 0) + a.tags.filter((t) => current.tags.includes(t)).length;
+  return others
+    .map((a) => ({ a, s: score(a) }))
+    .sort((x, y) => y.s - x.s || new Date(y.a.date) - new Date(x.a.date))
+    .slice(0, count)
+    .map((x) => x.a);
 }
 
 export function formatDate(iso) {

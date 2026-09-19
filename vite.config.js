@@ -21,7 +21,12 @@ export default defineConfig({
         article6: resolve(root, "articles/digital-marketing-small-business-pakistan.html"),
         article7: resolve(root, "articles/starting-online-business-uae-dubai.html"),
         article8: resolve(root, "articles/us-small-business-digital-marketing-benchmarks-2026.html"),
-        article9: resolve(root, "articles/local-seo-guide-google-business-profile.html")
+        article9: resolve(root, "articles/local-seo-guide-google-business-profile.html"),
+        article10: resolve(root, "articles/keyword-research-for-beginners.html"),
+        article11: resolve(root, "articles/google-analytics-4-for-beginners.html"),
+        article12: resolve(root, "articles/email-marketing-for-small-businesses.html"),
+        article13: resolve(root, "articles/whatsapp-business-sales-guide.html"),
+        article14: resolve(root, "articles/freelancing-from-pakistan-international-clients.html")
       }
     }
   }
