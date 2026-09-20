@@ -154,6 +154,17 @@ export const articles = [
     readingTime: "4 min read",
     author: "BridgeSols Editorial",
     tags: ["freelancing","pakistan","online business"]
+  },
+  {
+    slug: "video-marketing-for-small-businesses",
+    title: "Video Marketing for Small Businesses: A Practical Guide to Getting Started",
+    excerpt:
+      "Choosing formats, filming on a real budget, editing workflow, where to publish, repurposing one video into a week of content, and the metrics that actually matter.",
+    category: "Content Marketing",
+    date: "2026-09-20",
+    readingTime: "10 min read",
+    author: "BridgeSols Editorial",
+    tags: ["video marketing","content marketing","social media"]
   }
 ];
 

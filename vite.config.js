@@ -26,7 +26,8 @@ export default defineConfig({
         article11: resolve(root, "articles/google-analytics-4-for-beginners.html"),
         article12: resolve(root, "articles/email-marketing-for-small-businesses.html"),
         article13: resolve(root, "articles/whatsapp-business-sales-guide.html"),
-        article14: resolve(root, "articles/freelancing-from-pakistan-international-clients.html")
+        article14: resolve(root, "articles/freelancing-from-pakistan-international-clients.html"),
+        article15: resolve(root, "articles/video-marketing-for-small-businesses.html")
       }
     }
   }
