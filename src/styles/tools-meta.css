@@ -1,0 +1,164 @@
+/* ==========================================================================
+   Meta Length Checker (extends tools.css)
+   ========================================================================== */
+
+.tool-col { display: flex; flex-direction: column; gap: 24px; min-width: 0; }
+.meta-layout .tool-panel + .tool-panel { margin-top: 0; }
+/* The desktop preview card is 640px wide, so the right column needs 640px plus the
+   panel's padding and border (42px). Below the width where both columns fit, stack. */
+.meta-layout { grid-template-columns: minmax(0, 1fr) 690px; }
+
+.field { display: flex; flex-direction: column; gap: 8px; margin-bottom: 22px; }
+.field > label { font-size: 0.9rem; font-weight: 600; color: var(--text); }
+.field .optional { font-weight: 400; color: var(--text-dim); }
+.field-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.field-grid .field { margin-bottom: 8px; }
+
+.tool-input {
+  width: 100%;
+  padding: 12px 14px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  color: var(--text);
+  font: inherit;
+  line-height: 1.5;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+textarea.tool-input { resize: vertical; min-height: 96px; }
+.tool-input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+.tool-input::placeholder { color: var(--text-dim); opacity: 1; }
+.tool-input.snippet { font-family: var(--font-mono); font-size: 0.82rem; min-height: 96px; }
+
+.meter {
+  position: relative;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+}
+.meter-fill {
+  height: 100%;
+  width: 0;
+  border-radius: 999px;
+  background: var(--border-strong);
+  transition: width 0.15s ease, background-color 0.15s ease;
+}
+.meter[data-state="good"] .meter-fill { background: #7fd6a0; }
+.meter[data-state="warn"] .meter-fill { background: #e8b75f; }
+.meter[data-state="bad"] .meter-fill { background: #f08a86; }
+.meter-mark {
+  position: absolute;
+  top: -4px;
+  bottom: -4px;
+  width: 2px;
+  margin-inline-start: -1px;
+  background: var(--text-dim);
+  border-radius: 1px;
+}
+.meter-row { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px; }
+.meter-text, .meter-status { margin: 0; font-size: 0.8rem; color: var(--text-dim); }
+.meter-status { font-weight: 700; }
+.meter-status[data-state="good"] { color: #7fd6a0; }
+.meter-status[data-state="warn"] { color: #e8b75f; }
+.meter-status[data-state="bad"] { color: #f08a86; }
+
+.checks { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.checks li {
+  display: grid;
+  grid-template-columns: 22px minmax(0, 1fr);
+  gap: 10px;
+  align-items: start;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--text-dim);
+}
+.checks li[data-state="info"] { display: block; }
+.check-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  margin-top: 1px;
+  border-radius: 50%;
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+.checks li[data-state="pass"] .check-icon { background: rgba(127, 214, 160, 0.16); color: #7fd6a0; }
+.checks li[data-state="pass"] .check-icon::before { content: "\2713"; }
+.checks li[data-state="warn"] .check-icon { background: rgba(232, 183, 95, 0.16); color: #e8b75f; }
+.checks li[data-state="warn"] .check-icon::before { content: "!"; }
+.checks li[data-state="fail"] .check-icon { background: rgba(240, 138, 134, 0.16); color: #f08a86; }
+.checks li[data-state="fail"] .check-icon::before { content: "\2715"; }
+
+.preview-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 16px; margin-bottom: 14px; }
+.preview-head h2 { margin: 0; }
+
+.segmented {
+  position: relative;
+  display: inline-flex;
+  gap: 3px;
+  margin: 0;
+  padding: 3px;
+  min-width: 0;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+}
+.segmented input { position: absolute; opacity: 0; pointer-events: none; }
+.segmented label {
+  padding: 7px 14px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-dim);
+  border-radius: 6px;
+  cursor: pointer;
+}
+.segmented input:checked + label { background: var(--accent-soft); color: var(--accent-strong); box-shadow: inset 0 0 0 1px var(--accent-border); }
+.segmented input:focus-visible + label { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* A light card so the preview looks like a real result. Widths are fixed so line
+   wrapping matches the pixel estimates; on narrow screens the card scrolls sideways. */
+.serp-scroll { overflow-x: auto; padding-bottom: 4px; }
+.serp {
+  box-sizing: border-box;
+  padding: 18px 20px;
+  background: #fff;
+  color: #202124;
+  border-radius: 10px;
+  font-family: Arial, "Liberation Sans", Helvetica, sans-serif;
+}
+.serp[data-mode="desktop"] { width: 640px; }
+/* Mobile card: 380px at most, but it shrinks on small phones instead of scrolling. */
+.serp[data-mode="mobile"] { width: 100%; max-width: 380px; padding: 14px 16px; }
+.serp-site { display: flex; align-items: center; gap: 12px; margin-bottom: 6px; }
+.serp-favicon {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #f1f3f4;
+  color: #5f6368;
+  font-size: 13px;
+  font-weight: 700;
+}
+.serp-site-text { min-width: 0; }
+.serp-name { font-size: 14px; line-height: 1.3; color: #202124; }
+.serp-url { font-size: 12px; line-height: 1.3; color: #4d5156; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.serp-title { margin: 2px 0 3px; font-size: 20px; line-height: 1.3; color: #1a0dab; white-space: nowrap; overflow: hidden; }
+.serp[data-mode="mobile"] .serp-title { white-space: normal; }
+.serp-description { font-size: 14px; line-height: 1.58; color: #4d5156; overflow-wrap: anywhere; }
+.serp [data-placeholder="true"] { color: #70757a; } /* 4.6:1 on white */
+
+@media (max-width: 1179px) {
+  /* Single column: show input, preview, checks, HTML in that order. */
+  .meta-layout { grid-template-columns: minmax(0, 1fr); }
+  .meta-layout .tool-col { display: contents; }
+  .p-input { order: 1; }
+  .p-preview { order: 2; }
+  .p-checks { order: 3; }
+  .p-html { order: 4; }
+  .field-grid { grid-template-columns: minmax(0, 1fr); }
+}

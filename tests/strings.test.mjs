@@ -25,3 +25,13 @@ test("unknown languages fall back to English", () => {
   assert.equal(getStrings("xx"), s);
   assert.equal(getStrings("en-GB"), s);
 });
+
+test("meta checker messages read correctly for every check id", () => {
+  const m = s.meta;
+  assert.match(m.checks.titleShort({ chars: 8, px: 60, minPx: 270 }), /Short: 8 characters, about 60 px/);
+  assert.match(m.checks.titleGood({ chars: 70, px: 311, limitPx: 580, limitChars: 60, overChars: true }), /Fits by width: 70 characters is more than the usual 60/);
+  assert.match(m.checks.titleGood({ chars: 55, px: 520, limitPx: 580, limitChars: 60, overChars: false }), /^Good length: 55 characters, about 520 of 580 px\.$/);
+  assert.match(m.checks.descriptionShort({ chars: 20, px: 120, minPx: 430 }), /Short: 20 characters/);
+  assert.match(m.checks.keywordInUrl({ keyword: "seo" }), /"seo" appears in the URL/);
+  assert.equal(m.count({ chars: 5, px: 40, limitChars: 60, limitPx: 580 }), "5 of about 60 characters \u00B7 about 40 of 580 px");
+});

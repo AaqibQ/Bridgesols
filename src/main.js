@@ -2,6 +2,7 @@ import "./styles/main.css";
 import "./styles/responsive.css";
 import "./styles/article.css";
 import "./styles/tools.css";
+import "./styles/tools-meta.css";
 
 import { renderHeader } from "./components/Header.js";
 import { renderFooter } from "./components/Footer.js";
@@ -61,6 +62,9 @@ if (page === "contact") {
 /* ---------------- Tool pages ---------------- */
 if (page === "tool" && body.dataset.tool === "word-counter") {
   import("./tools/word-counter.js").then((m) => m.initWordCounter());
+}
+if (page === "tool" && body.dataset.tool === "meta-length-checker") {
+  import("./tools/meta-checker.js").then((m) => m.initMetaChecker());
 }
 
 reducedMotionQuery.addEventListener("change", (e) => {

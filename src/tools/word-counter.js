@@ -3,6 +3,7 @@
 
 import { analyze, formatDuration } from "./text-stats.js";
 import { getStrings } from "./strings.js";
+import { copyText } from "./clipboard.js";
 
 const MAX_KEYWORD_CHARS = 40;
 
@@ -143,28 +144,7 @@ export function initWordCounter() {
 
   async function copyResults() {
     if (!result) run();
-    const text = summaryText();
-    try {
-      await navigator.clipboard.writeText(text);
-      showCopyStatus(s.copied);
-    } catch {
-      // Fallback for browsers or contexts without the async clipboard API.
-      const helper = document.createElement("textarea");
-      helper.value = text;
-      helper.setAttribute("readonly", "");
-      helper.style.position = "fixed";
-      helper.style.opacity = "0";
-      document.body.appendChild(helper);
-      helper.select();
-      let ok = false;
-      try {
-        ok = document.execCommand("copy");
-      } catch {
-        ok = false;
-      }
-      helper.remove();
-      showCopyStatus(ok ? s.copied : s.copyFailed);
-    }
+    showCopyStatus((await copyText(summaryText())) ? s.copied : s.copyFailed);
   }
 
   textEl.addEventListener("input", schedule);
