@@ -13,11 +13,16 @@
   align-items: start;
 }
 
+/* Grid children must be allowed to shrink, otherwise one very long unbroken
+   word (or URL) in the keyword table stretches the whole layout. */
+.tool-layout > * { min-width: 0; }
+
 .tool-panel {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
   padding: 20px;
+  min-width: 0;
 }
 .tool-panel + .tool-panel { margin-top: 24px; }
 .tool-panel h2 { font-size: 1.15rem; margin: 0 0 14px; font-family: var(--font-body); font-weight: 700; }
@@ -40,7 +45,7 @@
   border-color: var(--accent);
   box-shadow: 0 0 0 3px var(--accent-soft);
 }
-.tool-textarea::placeholder { color: var(--text-faint); }
+.tool-textarea::placeholder { color: var(--text-dim); }
 
 .tool-actions {
   display: flex;
@@ -97,7 +102,7 @@
   font-size: 0.7rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--text-faint);
+  color: var(--text-dim);
 }
 .stat dd {
   margin: 6px 0 0;
@@ -122,7 +127,9 @@
 .kw-toggle { display: flex; align-items: center; gap: 8px; font-size: 0.85rem; color: var(--text-dim); cursor: pointer; }
 .kw-toggle input { accent-color: var(--accent); width: 16px; height: 16px; }
 
-.kw-table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+.kw-table { width: 100%; table-layout: fixed; border-collapse: collapse; font-size: 0.92rem; }
+.kw-table th:first-child { width: 56%; }
+.kw-table td { overflow-wrap: anywhere; }
 .kw-table th {
   text-align: start;
   padding: 8px 10px;
@@ -130,14 +137,14 @@
   font-size: 0.7rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--text-faint);
+  color: var(--text-dim);
   border-bottom: 1px solid var(--border-strong);
 }
 .kw-table td { padding: 9px 10px; border-bottom: 1px solid var(--border); color: var(--text); }
 .kw-table th:not(:first-child), .kw-table td:not(:first-child) { text-align: end; font-variant-numeric: tabular-nums; }
 .kw-table td.kw-empty { text-align: start; color: var(--text-dim); padding: 14px 10px; }
 
-.tool-note { font-size: 0.8rem; color: var(--text-faint); margin-top: 12px; }
+.tool-note { font-size: 0.8rem; color: var(--text-dim); margin-top: 12px; }
 
 /* Tool hub */
 .tool-link { display: block; text-decoration: none; color: inherit; }

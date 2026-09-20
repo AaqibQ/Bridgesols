@@ -13,6 +13,8 @@ const en = {
   copyFailed: "Couldn't copy automatically. Please select the numbers and copy them manually.",
   keywordsEmpty: "Start typing to see your most-used words.",
   keywordsNone: "No repeated words yet. Keywords appear once a word is used at least twice.",
+  keywordsNoneIgnoring:
+    "No repeated keywords yet. Common English words are being ignored; untick the box above to include them.",
   summaryLabels: {
     words: "Words",
     characters: "Characters",

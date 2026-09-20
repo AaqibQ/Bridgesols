@@ -59,7 +59,32 @@ test("web addresses, abbreviations and file names count as one word", () => {
   assert.deepEqual(getWords("Made in the U.S.A. today"), ["Made", "in", "the", "U.S.A", "today"]);
   assert.equal(getWords("e.g. report.pdf").length, 2);
   assert.equal(getWords("wins.est").length, 1); // Chrome splits this on its own; we normalise
-  assert.equal(getWords("www.bridgesols.com/tools").length, 2); // the slash still separates
+  assert.equal(getWords("bridgesols.com/tools").length, 2); // no scheme or www: the slash still separates
+});
+
+test("emails and web addresses count as one word each", () => {
+  assert.deepEqual(getWords("mail test@example.com now").sort(), ["mail", "now", "test@example.com"]);
+  assert.equal(getWords("Visit https://bridgesols.com/tools?x=1 today").length, 3);
+  assert.equal(getWords("See www.bridgesols.com/tools, then leave.").length, 4);
+  assert.ok(getWords("Go to https://bridgesols.com/tools.").includes("https://bridgesols.com/tools")); // final full stop is not part of the link
+  assert.equal(getWords("Email (test@example.com).").length, 2);
+  assert.equal(getWords("@handle is not an email").length, 5); // a bare @mention is just a word
+  assert.equal(getWords("a@b").length, 2); // no dotted domain, so not an email
+  assert.equal(analyze("test@example.com").words, 1);
+});
+
+test("links do not create extra sentences", () => {
+  assert.equal(countSentences("Visit https://bridgesols.com/tools now. Thanks!"), 2);
+  assert.equal(countSentences("Write to test@example.com."), 1);
+  assert.equal(countSentences("https://bridgesols.com"), 1);
+});
+
+test("abbreviations do not end sentences", () => {
+  assert.equal(countSentences("Dr. Smith went to the U.S. on Jan. 5. He returned."), 2);
+  assert.equal(countSentences("Mr. and Mrs. Khan arrived. They sat."), 2);
+  assert.equal(countSentences("It was fig. 3 in the report. Then it ended."), 2);
+  assert.equal(countSentences("She said hello. He said goodbye."), 2);
+  assert.equal(countSentences("The meeting ended in Dec. It resumed later."), 2); // month not followed by a number: real boundary
 });
 
 test("ellipses and stray dots do not glue words together", () => {
@@ -150,6 +175,7 @@ test("reading and speaking time", () => {
 
 test("formatDuration", () => {
   assert.equal(formatDuration(0), "0 sec");
+  assert.equal(formatDuration(0.3), "< 1 sec"); // a real but tiny duration is never shown as 0
   assert.equal(formatDuration(42.4), "42 sec");
   assert.equal(formatDuration(60), "1 min");
   assert.equal(formatDuration(95), "1 min 35 sec");

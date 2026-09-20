@@ -4,6 +4,8 @@
 import { analyze, formatDuration } from "./text-stats.js";
 import { getStrings } from "./strings.js";
 
+const MAX_KEYWORD_CHARS = 40;
+
 export function initWordCounter() {
   const $ = (id) => document.getElementById(id);
   const textEl = $("wc-text");
@@ -55,7 +57,7 @@ export function initWordCounter() {
       const td = document.createElement("td");
       td.colSpan = 3;
       td.className = "kw-empty";
-      td.textContent = r.words ? s.keywordsNone : s.keywordsEmpty;
+      td.textContent = !r.words ? s.keywordsEmpty : ignoreEl.checked ? s.keywordsNoneIgnoring : s.keywordsNone;
       tr.appendChild(td);
       keywordBody.appendChild(tr);
       return;
@@ -64,7 +66,15 @@ export function initWordCounter() {
       const tr = document.createElement("tr");
       const word = document.createElement("td");
       word.dir = "auto";
-      word.textContent = k.word;
+      // Very long tokens (URLs, pasted junk) are shortened so one row can't take over
+      // the panel; the full text stays available on hover.
+      const chars = Array.from(k.word);
+      if (chars.length > MAX_KEYWORD_CHARS) {
+        word.textContent = chars.slice(0, MAX_KEYWORD_CHARS - 1).join("") + "…";
+        word.title = k.word;
+      } else {
+        word.textContent = k.word;
+      }
       const count = document.createElement("td");
       count.textContent = nf.format(k.count);
       const pct = document.createElement("td");
@@ -75,8 +85,10 @@ export function initWordCounter() {
   }
 
   function renderLimit() {
-    const limit = parseInt(limitEl.value, 10);
-    if (!Number.isFinite(limit) || limit < 1 || !result) {
+    // Number() (not parseInt) so "1e3" means 1000; the cap keeps absurd values from showing.
+    const raw = limitEl.value.trim();
+    const limit = raw === "" ? NaN : Math.floor(Number(raw));
+    if (!Number.isFinite(limit) || limit < 1 || limit > 1e9 || !result) {
       limitStatus.textContent = "";
       delete limitStatus.dataset.state;
       return;
