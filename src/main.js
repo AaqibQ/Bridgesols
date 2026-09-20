@@ -7,7 +7,7 @@ import { renderHeader } from "./components/Header.js";
 import { renderFooter } from "./components/Footer.js";
 import { initNewsletterForms } from "./components/Newsletter.js";
 import { articleCard } from "./components/ArticleCard.js";
-import { articles, getArticle, getRelated } from "./data/articles.js";
+import { getRelated, getLatest } from "./data/articles.js";
 import { WEB3FORMS_ACCESS_KEY, WEB3FORMS_URL } from "./config.js";
 
 import { playHeroEntrance } from "./animations/hero.js";
@@ -84,8 +84,7 @@ function initHomepage() {
 
   const latestHost = document.getElementById("latest-articles");
   if (latestHost) {
-    const sorted = [...articles].sort((a, b) => new Date(b.date) - new Date(a.date));
-    latestHost.innerHTML = sorted.map((a) => articleCard(a, "articles/")).join("");
+    latestHost.innerHTML = getLatest(6).map((a) => articleCard(a, "articles/")).join("");
   }
 
   initHorizontalTopics();

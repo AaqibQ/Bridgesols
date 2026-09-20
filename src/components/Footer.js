@@ -1,6 +1,12 @@
+import { getLatest } from "../data/articles.js";
+
 export function renderFooter(depth = 0) {
   const p = depth > 0 ? "../".repeat(depth) : "./";
   const year = new Date().getFullYear();
+  // Short label = the part of the title before the colon ("Local SEO: How to..." -> "Local SEO").
+  const guideLinks = getLatest(5)
+    .map((a) => `<li><a href="${p}articles/${a.slug}.html">${a.title.split(":")[0]}</a></li>`)
+    .join("\n          ");
 
   return `
   <div class="wrap">
@@ -21,13 +27,9 @@ export function renderFooter(depth = 0) {
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Guides</h4>
+        <h4>Latest guides</h4>
         <ul>
-          <li><a href="${p}articles/digital-marketing-strategy-small-businesses.html">Digital Marketing Strategy</a></li>
-          <li><a href="${p}articles/seo-for-beginners.html">SEO for Beginners</a></li>
-          <li><a href="${p}articles/how-to-start-online-business.html">Starting an Online Business</a></li>
-          <li><a href="${p}articles/content-marketing-guide.html">Content Marketing</a></li>
-          <li><a href="${p}articles/how-to-grow-a-website.html">Growing a Website</a></li>
+          ${guideLinks}
         </ul>
       </div>
       <div class="footer-col">

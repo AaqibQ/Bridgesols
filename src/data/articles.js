@@ -186,6 +186,15 @@ export function getRelated(slug, count = 2) {
     .map((x) => x.a);
 }
 
+/** Newest articles first; articles published the same day keep "last added = newest". */
+export function getLatest(count = articles.length) {
+  return articles
+    .map((a, i) => ({ a, i }))
+    .sort((x, y) => new Date(y.a.date) - new Date(x.a.date) || y.i - x.i)
+    .slice(0, count)
+    .map((x) => x.a);
+}
+
 export function formatDate(iso) {
   return new Date(iso + "T00:00:00").toLocaleDateString("en-US", {
     month: "long",
