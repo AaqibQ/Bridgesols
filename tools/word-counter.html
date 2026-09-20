@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Word Counter: Words, Characters &amp; Reading Time | BridgeSols</title>
+<meta name="description" content="Free word counter: count words, characters, sentences and paragraphs with reading time and keyword density. Works in any language and runs in your browser." />
+<link rel="canonical" href="https://bridgesols.com/tools/word-counter.html" />
+<link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CHM1D4R5CF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CHM1D4R5CF');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5067019264219250" crossorigin="anonymous"></script>
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="BridgeSols" />
+<meta property="og:title" content="Word Counter: Words, Characters &amp; Reading Time" />
+<meta property="og:description" content="Count words, characters, sentences and paragraphs with reading time and keyword density. Free, private, works in any language." />
+<meta property="og:url" content="https://bridgesols.com/tools/word-counter.html" />
+<meta property="og:image" content="https://bridgesols.com/images/og-cover.svg" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Word Counter",
+  "url": "https://bridgesols.com/tools/word-counter.html",
+  "description": "Free online word counter with character, sentence and paragraph counts, reading time and keyword density.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "publisher": { "@type": "Organization", "name": "BridgeSols" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://bridgesols.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Tools", "item": "https://bridgesols.com/tools/" },
+    { "@type": "ListItem", "position": 3, "name": "Word Counter", "item": "https://bridgesols.com/tools/word-counter.html" }
+  ]
+}
+</script>
+</head>
+<body data-page="tool" data-tool="word-counter" data-depth="1">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="site-header"></header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">Free tool</span>
+      <h1>Word Counter</h1>
+      <p class="lede">Count words, characters, sentences and paragraphs as you type, with reading time, speaking time and a keyword-density check. It works with English, Urdu, Arabic, Hindi, Chinese and other languages, and your text never leaves your browser.</p>
+    </div>
+  </section>
+
+  <section class="tool-section">
+    <div class="wrap">
+      <div class="tool-layout">
+        <div>
+          <div class="tool-panel">
+            <label class="visually-hidden" for="wc-text">Text to analyse</label>
+            <textarea id="wc-text" class="tool-textarea" dir="auto" spellcheck="false" placeholder="Type or paste your text here…"></textarea>
+
+            <div class="tool-actions">
+              <button type="button" class="btn btn-ghost" id="wc-clear">Clear</button>
+              <button type="button" class="btn btn-ghost" id="wc-copy">Copy results</button>
+              <label class="tool-limit" for="wc-limit">
+                <span>Character limit</span>
+                <input type="number" id="wc-limit" min="1" inputmode="numeric" placeholder="e.g. 160" list="wc-limit-presets" />
+                <datalist id="wc-limit-presets">
+                  <option value="60" label="SEO title (rough guide)"></option>
+                  <option value="160" label="Meta description / SMS"></option>
+                  <option value="280" label="X (Twitter) post"></option>
+                </datalist>
+              </label>
+            </div>
+            <p class="tool-status" id="wc-limit-status"></p>
+            <p class="tool-status" id="wc-copy-status" role="status"></p>
+            <p class="visually-hidden" id="wc-sr-summary" aria-live="polite"></p>
+          </div>
+
+          <div class="tool-panel">
+            <div class="kw-head">
+              <h2>Keyword density</h2>
+              <label class="kw-toggle" for="wc-ignore-common">
+                <input type="checkbox" id="wc-ignore-common" checked />
+                Ignore common English words
+              </label>
+            </div>
+            <table class="kw-table">
+              <thead><tr><th scope="col">Word</th><th scope="col">Count</th><th scope="col">Density</th></tr></thead>
+              <tbody id="wc-keywords-body">
+                <tr><td colspan="3" class="kw-empty">Start typing to see your most-used words.</td></tr>
+              </tbody>
+            </table>
+            <p class="tool-note">Density is each word's share of all words in your text. Only words used at least twice are shown.</p>
+          </div>
+        </div>
+
+        <div class="tool-panel">
+          <h2>Results</h2>
+          <dl class="stat-grid">
+            <div class="stat primary"><dt>Words</dt><dd id="wc-words">0</dd></div>
+            <div class="stat"><dt>Characters</dt><dd id="wc-characters">0</dd></div>
+            <div class="stat"><dt>No spaces</dt><dd id="wc-characters-no-spaces">0</dd></div>
+            <div class="stat"><dt>Sentences</dt><dd id="wc-sentences">0</dd></div>
+            <div class="stat"><dt>Paragraphs</dt><dd id="wc-paragraphs">0</dd></div>
+            <div class="stat"><dt>Reading time</dt><dd id="wc-reading">0 sec</dd></div>
+            <div class="stat"><dt>Speaking time</dt><dd id="wc-speaking">0 sec</dd></div>
+            <div class="stat"><dt>Unique words</dt><dd id="wc-unique">0</dd></div>
+            <div class="stat"><dt>Avg. word length</dt><dd id="wc-avg">0.0</dd></div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-page">
+    <div class="wrap-narrow">
+      <h2>What this word counter measures</h2>
+      <ul>
+        <li><strong>Words:</strong> the number of words in your text, using the same rules your browser uses when you double-click a word.</li>
+        <li><strong>Characters:</strong> the number of visible characters, including spaces. The "no spaces" figure leaves out spaces, tabs and line breaks.</li>
+        <li><strong>Sentences and paragraphs:</strong> sentences are found from punctuation such as full stops, question marks and their Urdu, Arabic, Hindi and Chinese equivalents. Paragraphs are blocks of text separated by a blank line.</li>
+        <li><strong>Unique words and average word length:</strong> how varied your vocabulary is and how long your words are on average. Uppercase and lowercase are treated as the same word.</li>
+        <li><strong>Keyword density:</strong> how often each word appears as a share of the whole text, which is useful for spotting overused words.</li>
+      </ul>
+
+      <h2>How words are counted</h2>
+      <p>Words are found with the Unicode text-segmentation rules built into your browser. In practice that means hyphenated compounds such as "well-known" count as one word, contractions such as "don't" count as one, and numbers count as words. Emoji and stray punctuation marks do not.</p>
+      <p>Some languages, including Chinese, Japanese and Thai, are written without spaces between words. For these the browser uses a built-in dictionary to find word boundaries, so the count can differ from tools that treat every character as a word.</p>
+      <p>Characters are counted as people see them, not as computer code units. An emoji with a skin-tone modifier, or a letter with an accent added as a separate mark, counts as a single character.</p>
+
+      <h2>Reading and speaking time</h2>
+      <p>Reading time assumes 238 words per minute, a commonly cited average for adults reading non-fiction silently. Speaking time assumes 150 words per minute, a comfortable pace for a presentation or voice-over. Both are estimates: technical or unfamiliar material takes longer to read, and pauses add to speaking time.</p>
+
+      <h2>Your text stays private</h2>
+      <p>Everything is calculated in your browser. The text you type or paste is not uploaded, stored or sent anywhere by this page.</p>
+
+      <h2>Using the character limit</h2>
+      <p>Enter a limit to see how many characters you have left. Common reference points are about 60 characters for a page title in search results, about 160 for a meta description or a single SMS, and 280 for a post on X. Platforms change their rules and count some characters differently, so treat these as rough guides and check the platform's current limits.</p>
+
+      <h2>Frequently asked questions</h2>
+      <h3>Why is my count different from Microsoft Word or Google Docs?</h3>
+      <p>Programs make slightly different choices about hyphens, slashes, numbers and symbols, so counts can differ by a few words in long documents. If a strict count matters, for example for an assignment or a submission limit, check it in the program the recipient will use.</p>
+
+      <h3>Does it work with Urdu, Arabic and other right-to-left languages?</h3>
+      <p>Yes. Text direction is detected automatically, and words are counted in Urdu, Arabic, Hindi and other scripts. Sentence counting recognises the Urdu full stop, the Arabic question mark and the Hindi danda.</p>
+
+      <h3>Is there a limit on how much text I can paste?</h3>
+      <p>There is no fixed limit. Very large documents, in the hundreds of thousands of words, can take a second or more to process on a slower device.</p>
+
+      <h3>What is a good word count for a blog post?</h3>
+      <p>There is no universal number. The right length is whatever fully answers the reader's question. Search engines do not require a minimum length. Our guides on <a href="../articles/keyword-research-for-beginners.html">keyword research</a> and <a href="../articles/content-marketing-guide.html">content marketing</a> explain how to decide what a piece needs to cover.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="site-footer"></footer>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>

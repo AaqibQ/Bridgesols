@@ -1,6 +1,7 @@
 import "./styles/main.css";
 import "./styles/responsive.css";
 import "./styles/article.css";
+import "./styles/tools.css";
 
 import { renderHeader } from "./components/Header.js";
 import { renderFooter } from "./components/Footer.js";
@@ -55,6 +56,11 @@ if (page === "article") {
 /* ---------------- Contact page ---------------- */
 if (page === "contact") {
   initContactForm();
+}
+
+/* ---------------- Tool pages ---------------- */
+if (page === "tool" && body.dataset.tool === "word-counter") {
+  import("./tools/word-counter.js").then((m) => m.initWordCounter());
 }
 
 reducedMotionQuery.addEventListener("change", (e) => {

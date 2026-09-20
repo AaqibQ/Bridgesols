@@ -27,7 +27,7 @@ export function initMobileNav() {
   toggle.addEventListener("click", () => setOpen(!open));
   panel.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => setOpen(false)));
   window.addEventListener("resize", () => {
-    if (window.innerWidth > 860 && open) setOpen(false);
+    if (window.innerWidth > 1100 && open) setOpen(false);
   });
 }
 

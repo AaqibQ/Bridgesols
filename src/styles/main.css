@@ -229,6 +229,7 @@ section.tight { padding: 56px 0; }
 
 .main-nav { display: flex; align-items: center; gap: 36px; }
 .main-nav ul { display: flex; gap: 28px; }
+.main-nav a { white-space: nowrap; }
 .main-nav a {
   position: relative;
   font-size: 0.92rem;
@@ -264,7 +265,7 @@ section.tight { padding: 56px 0; }
 
 /* Hidden by default at all widths; the mobile breakpoint (responsive.css)
    repositions it as a fixed slide-down panel and toggles it via .open.
-   Without this, the div renders in normal flow above 860px and inflates
+   Without this, the div renders in normal flow above the nav breakpoint (1100px) and inflates
    the sticky header's height. */
 .mobile-nav { display: none; }
 .nav-toggle span { width: 22px; height: 2px; background: var(--text); border-radius: 2px; transition: transform 0.3s ease, opacity 0.3s ease; }
