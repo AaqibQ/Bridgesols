@@ -165,6 +165,17 @@ export const articles = [
     readingTime: "10 min read",
     author: "BridgeSols Editorial",
     tags: ["video marketing","content marketing","social media"]
+  },
+  {
+    slug: "link-building-for-beginners",
+    title: "Link Building for Beginners: How to Earn Backlinks Without Spammy Tactics",
+    excerpt:
+      "What makes a backlink valuable, low-risk tactics that work for a new site, and the shortcuts that get sites penalized instead of ranked.",
+    category: "SEO",
+    date: "2026-09-21",
+    readingTime: "11 min read",
+    author: "BridgeSols Editorial",
+    tags: ["link building","seo","backlinks"]
   }
 ];
 

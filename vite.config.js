@@ -30,7 +30,8 @@ export default defineConfig({
         article12: resolve(root, "articles/email-marketing-for-small-businesses.html"),
         article13: resolve(root, "articles/whatsapp-business-sales-guide.html"),
         article14: resolve(root, "articles/freelancing-from-pakistan-international-clients.html"),
-        article15: resolve(root, "articles/video-marketing-for-small-businesses.html")
+        article15: resolve(root, "articles/video-marketing-for-small-businesses.html"),
+        article16: resolve(root, "articles/link-building-for-beginners.html")
       }
     }
   }
