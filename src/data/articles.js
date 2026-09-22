@@ -176,6 +176,17 @@ export const articles = [
     readingTime: "11 min read",
     author: "BridgeSols Editorial",
     tags: ["link building","seo","backlinks"]
+  },
+  {
+    slug: "google-ads-for-us-small-businesses",
+    title: "Google Ads for US Small Businesses: A Practical Guide to Search Campaigns",
+    excerpt:
+      "Campaign structure, bidding strategies, ad copy, and the mistakes that waste budget fastest — a practical Google Ads guide for US small businesses.",
+    category: "Digital Marketing",
+    date: "2026-09-22",
+    readingTime: "9 min read",
+    author: "BridgeSols Editorial",
+    tags: ["google ads","ppc","usa"]
   }
 ];
 
