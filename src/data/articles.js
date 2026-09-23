@@ -187,6 +187,17 @@ export const articles = [
     readingTime: "9 min read",
     author: "BridgeSols Editorial",
     tags: ["google ads","ppc","usa"]
+  },
+  {
+    slug: "technical-seo-audit-checklist",
+    title: "Technical SEO Audit Checklist: Fixing the Problems Content Can't Fix",
+    excerpt:
+      "Crawlability, Core Web Vitals, mobile-friendliness, canonicalization, structured data, and broken links — a practical technical SEO audit for sites with good content that still isn't ranking.",
+    category: "SEO",
+    date: "2026-09-23",
+    readingTime: "10 min read",
+    author: "BridgeSols Editorial",
+    tags: ["technical seo","core web vitals","seo"]
   }
 ];
 
