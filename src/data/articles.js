@@ -198,6 +198,17 @@ export const articles = [
     readingTime: "10 min read",
     author: "BridgeSols Editorial",
     tags: ["technical seo","core web vitals","seo"]
+  },
+  {
+    slug: "conversion-rate-optimization-guide",
+    title: "Conversion Rate Optimization: A Practical Guide for Small Business Websites",
+    excerpt:
+      "How to find where visitors drop off, form and test hypotheses, and run simple experiments that turn more of your existing traffic into leads and sales.",
+    category: "Website Growth",
+    date: "2026-09-24",
+    readingTime: "12 min read",
+    author: "BridgeSols Editorial",
+    tags: ["conversion rate optimization","cro","website growth"]
   }
 ];
 

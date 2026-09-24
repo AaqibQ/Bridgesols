@@ -33,7 +33,8 @@ export default defineConfig({
         article15: resolve(root, "articles/video-marketing-for-small-businesses.html"),
         article16: resolve(root, "articles/link-building-for-beginners.html"),
         article17: resolve(root, "articles/google-ads-for-us-small-businesses.html"),
-        article18: resolve(root, "articles/technical-seo-audit-checklist.html")
+        article18: resolve(root, "articles/technical-seo-audit-checklist.html"),
+        article19: resolve(root, "articles/conversion-rate-optimization-guide.html")
       }
     }
   }
