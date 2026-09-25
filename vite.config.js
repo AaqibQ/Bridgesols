@@ -34,7 +34,8 @@ export default defineConfig({
         article16: resolve(root, "articles/link-building-for-beginners.html"),
         article17: resolve(root, "articles/google-ads-for-us-small-businesses.html"),
         article18: resolve(root, "articles/technical-seo-audit-checklist.html"),
-        article19: resolve(root, "articles/conversion-rate-optimization-guide.html")
+        article19: resolve(root, "articles/conversion-rate-optimization-guide.html"),
+        article20: resolve(root, "articles/retargeting-ads-guide.html")
       }
     }
   }

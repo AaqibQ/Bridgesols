@@ -209,6 +209,17 @@ export const articles = [
     readingTime: "12 min read",
     author: "BridgeSols Editorial",
     tags: ["conversion rate optimization","cro","website growth"]
+  },
+  {
+    slug: "retargeting-ads-guide",
+    title: "Retargeting Ads: A Practical Guide to Winning Back Visitors Who Didn't Convert",
+    excerpt:
+      "How retargeting actually works, which platforms fit which business, audience segmentation, frequency capping, and the privacy changes that reshaped it — a practical guide for small businesses.",
+    category: "Digital Marketing",
+    date: "2026-09-25",
+    readingTime: "10 min read",
+    author: "BridgeSols Editorial",
+    tags: ["retargeting","digital advertising","remarketing"]
   }
 ];
 
