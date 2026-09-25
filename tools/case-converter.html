@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Case Converter: Title, Sentence, Upper, Lower | BridgeSols</title>
+<meta name="description" content="Free case converter: change text to title, sentence, UPPER or lower case, camelCase, snake_case and more. Handles accents. Runs in your browser." />
+<link rel="canonical" href="https://bridgesols.com/tools/case-converter.html" />
+<link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CHM1D4R5CF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CHM1D4R5CF');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5067019264219250" crossorigin="anonymous"></script>
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="BridgeSols" />
+<meta property="og:title" content="Case Converter: Title, Sentence, Upper, Lower" />
+<meta property="og:description" content="Change text to title case, sentence case, upper or lower case, camelCase, snake_case and more. Free, private and works with accents." />
+<meta property="og:url" content="https://bridgesols.com/tools/case-converter.html" />
+<meta property="og:image" content="https://bridgesols.com/images/og-cover.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://bridgesols.com/images/og-cover.png" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Case Converter",
+  "url": "https://bridgesols.com/tools/case-converter.html",
+  "description": "Free online case converter for title case, sentence case, uppercase, lowercase, camelCase, snake_case, kebab-case and more.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "publisher": { "@type": "Organization", "name": "BridgeSols" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://bridgesols.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Tools", "item": "https://bridgesols.com/tools/" },
+    { "@type": "ListItem", "position": 3, "name": "Case Converter", "item": "https://bridgesols.com/tools/case-converter.html" }
+  ]
+}
+</script>
+</head>
+<body data-page="tool" data-tool="case-converter" data-depth="1">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="site-header"></header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">Free tool</span>
+      <h1>Case Converter</h1>
+      <p class="lede">Paste text, pick a case, copy the result. Headlines, sentences, capitals and the naming styles programmers use are all here. Accented and non-Latin letters convert correctly, and nothing leaves your browser.</p>
+    </div>
+  </section>
+
+  <section class="tool-section">
+    <div class="wrap">
+      <div class="tool-panel">
+        <div class="field">
+          <label for="cc-input">Your text</label>
+          <textarea id="cc-input" class="tool-input" dir="auto" rows="6" spellcheck="false" placeholder="Type or paste your text here"></textarea>
+          <p class="hint" id="cc-stats" aria-live="off">Type or paste some text to convert it.</p>
+        </div>
+        <div class="tool-actions">
+          <button type="button" class="btn btn-ghost" id="cc-clear">Clear</button>
+        </div>
+      </div>
+
+      <div class="tool-panel">
+        <fieldset class="opt-group case-picker">
+          <legend>Choose a case</legend>
+          <div class="case-grid">
+            <input type="radio" name="cc-case" id="cc-upper" value="upper" checked /><label for="cc-upper"><strong>UPPER CASE</strong><span>all capitals</span></label>
+            <input type="radio" name="cc-case" id="cc-lower" value="lower" /><label for="cc-lower"><strong>lower case</strong><span>no capitals</span></label>
+            <input type="radio" name="cc-case" id="cc-title" value="title" /><label for="cc-title"><strong>Title Case</strong><span>for headlines</span></label>
+            <input type="radio" name="cc-case" id="cc-sentence" value="sentence" /><label for="cc-sentence"><strong>Sentence case</strong><span>first word only</span></label>
+            <input type="radio" name="cc-case" id="cc-capitalize" value="capitalize" /><label for="cc-capitalize"><strong>Capitalize Each Word</strong><span>every word</span></label>
+            <input type="radio" name="cc-case" id="cc-camel" value="camel" /><label for="cc-camel"><strong>camelCase</strong><span>code, variables</span></label>
+            <input type="radio" name="cc-case" id="cc-pascal" value="pascal" /><label for="cc-pascal"><strong>PascalCase</strong><span>code, classes</span></label>
+            <input type="radio" name="cc-case" id="cc-snake" value="snake" /><label for="cc-snake"><strong>snake_case</strong><span>code, databases</span></label>
+            <input type="radio" name="cc-case" id="cc-kebab" value="kebab" /><label for="cc-kebab"><strong>kebab-case</strong><span>URLs, CSS</span></label>
+            <input type="radio" name="cc-case" id="cc-constant" value="constant" /><label for="cc-constant"><strong>CONSTANT_CASE</strong><span>code constants</span></label>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="tool-panel">
+        <div class="result-head">
+          <h2>Result</h2>
+        </div>
+        <label class="visually-hidden" for="cc-output">Converted text</label>
+        <textarea id="cc-output" class="tool-input" dir="auto" rows="4" readonly spellcheck="false"></textarea>
+        <div class="tool-actions">
+          <button type="button" class="btn btn-primary" id="cc-copy" disabled>Copy</button>
+          <button type="button" class="btn btn-ghost" id="cc-use">Use result as input</button>
+        </div>
+        <p class="tool-status" id="cc-status" role="status"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-page">
+    <div class="wrap-narrow">
+      <h2>The cases, and when to use each</h2>
+      <table>
+        <thead><tr><th>Case</th><th>Example</th><th>Typical use</th></tr></thead>
+        <tbody>
+          <tr><td>UPPER CASE</td><td>READ THIS FIRST</td><td>Warnings, acronyms, short labels</td></tr>
+          <tr><td>lower case</td><td>read this first</td><td>Tags, email addresses, normalising text</td></tr>
+          <tr><td>Title Case</td><td>The Art of the Deal</td><td>Headlines, article and book titles</td></tr>
+          <tr><td>Sentence case</td><td>The art of the deal</td><td>Body text, buttons, modern headings</td></tr>
+          <tr><td>Capitalize Each Word</td><td>The Art Of The Deal</td><td>Names, addresses, product names</td></tr>
+          <tr><td>camelCase</td><td>readThisFirst</td><td>Variables and functions in JavaScript, Java</td></tr>
+          <tr><td>PascalCase</td><td>ReadThisFirst</td><td>Class and component names</td></tr>
+          <tr><td>snake_case</td><td>read_this_first</td><td>Python, database columns, file names</td></tr>
+          <tr><td>kebab-case</td><td>read-this-first</td><td>URLs, CSS classes, file names</td></tr>
+          <tr><td>CONSTANT_CASE</td><td>READ_THIS_FIRST</td><td>Constants and environment variables</td></tr>
+        </tbody>
+      </table>
+
+      <h2>How title case works here</h2>
+      <p>Title case capitalises the important words and leaves short connecting words in lowercase. This tool follows the common newspaper convention: small words such as <em>a, an, and, as, at, but, by, for, in, of, on, or, the, to</em> and <em>with</em> stay lowercase, unless they are the first or last word of the title or come straight after a colon. Hyphenated words are capitalised on both sides (<em>Well-Known</em>).</p>
+      <p>Style guides disagree on the details, for example whether a four-letter word like <em>with</em> should be capitalised. If your publisher or school uses a specific guide, check the result against it.</p>
+
+      <h2>Things to check after converting</h2>
+      <ul>
+        <li><strong>Acronyms and brand names.</strong> Sentence case and title case first lower every letter, so "SEO and iPhone tips" becomes "Seo and iphone tips" in sentence case and "Seo and Iphone Tips" in title case. Fix those by hand.</li>
+        <li><strong>Abbreviations with full stops.</strong> Sentence case treats a full stop as the end of a sentence, so "use e.g. this" comes out as "Use e.G. This".</li>
+        <li><strong>Names.</strong> Names such as "McDonald" or "van der Berg" have their own capitalisation that no rule can guess.</li>
+      </ul>
+
+      <h2>Programming cases</h2>
+      <p>camelCase, PascalCase, snake_case, kebab-case and CONSTANT_CASE split your text into words first, at spaces, punctuation and existing case changes, so <code>XMLHttpRequest</code> becomes <code>xml_http_request</code> in snake case. Each line is converted separately, which makes it easy to rename a whole list of variables at once. Apostrophes are dropped instead of splitting a word, so <em>don't</em> becomes <em>dont</em>.</p>
+
+      <h2>Other languages</h2>
+      <p>Accented Latin letters, Cyrillic and Greek convert as you would expect (<em>café</em> becomes <em>CAFÉ</em>, and the German <em>straße</em> becomes <em>STRASSE</em>). Scripts with no upper and lower case, including Urdu, Arabic, Hindi, Chinese, Japanese and Korean, are left exactly as they are, so it is safe to convert mixed text.</p>
+
+      <h2>Your text stays private</h2>
+      <p>The conversion happens in your browser. Nothing you type is uploaded, sent or stored by this page.</p>
+
+      <h2>Frequently asked questions</h2>
+      <h3>What is the difference between title case and sentence case?</h3>
+      <p>Title case capitalises most words: <em>How to Write a Good Headline</em>. Sentence case capitalises only the first word and proper nouns, like a normal sentence: <em>How to write a good headline</em>. Many websites and apps now prefer sentence case because it reads more naturally.</p>
+
+      <h3>Which case is best for SEO titles?</h3>
+      <p>Neither has a ranking advantage. Pick one style and use it across the whole site so your titles look consistent in search results. You can check how your title will fit with our <a href="meta-length-checker.html">Meta Length Checker</a>.</p>
+
+      <h3>Can I convert several lines at once?</h3>
+      <p>Yes. Title case, sentence case and the programming cases all handle each line separately, so you can paste a whole list.</p>
+
+      <h3>What does "Use result as input" do?</h3>
+      <p>It moves the converted text back into the input box so you can convert it again, for example lowercase everything first and then apply sentence case.</p>
+
+      <h2>More free tools</h2>
+      <ul id="more-tools">
+        <li><a href="slug-generator.html">Slug Generator</a>: turn a title into a clean URL slug</li>
+        <li><a href="word-counter.html">Word Counter</a>: count words, characters and reading time</li>
+        <li><a href="index.html">All tools</a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="site-footer"></footer>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>

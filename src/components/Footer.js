@@ -1,4 +1,5 @@
 import { getLatest } from "../data/articles.js";
+import { TOOLS, toolHref } from "../data/tools.js";
 
 export function renderFooter(depth = 0) {
   const p = depth > 0 ? "../".repeat(depth) : "./";
@@ -6,6 +7,9 @@ export function renderFooter(depth = 0) {
   // Short label = the part of the title before the colon ("Local SEO: How to..." -> "Local SEO").
   const guideLinks = getLatest(5)
     .map((a) => `<li><a href="${p}articles/${a.slug}.html">${a.title.split(":")[0]}</a></li>`)
+    .join("\n          ");
+
+  const toolLinks = TOOLS.map((t) => `<li><a href="${toolHref(t, depth)}">${t.name}</a></li>`)
     .join("\n          ");
 
   return `
@@ -30,6 +34,12 @@ export function renderFooter(depth = 0) {
         <h4>Latest guides</h4>
         <ul>
           ${guideLinks}
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Free tools</h4>
+        <ul>
+          ${toolLinks}
         </ul>
       </div>
       <div class="footer-col">

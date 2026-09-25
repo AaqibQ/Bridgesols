@@ -535,8 +535,8 @@ body[data-show-ad-placeholders] .ad-slot { display: block; }
 }
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.4fr 1fr 1fr 1fr;
-  gap: 40px;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr 1fr;
+  gap: 32px;
   padding-bottom: 40px;
 }
 .footer-brand p { color: var(--text-dim); font-size: 0.9rem; margin-top: 12px; max-width: 280px; }

@@ -15,6 +15,7 @@ import {
 } from "./meta-length.js";
 import { getStrings } from "./strings.js";
 import { copyText } from "./clipboard.js";
+import { renderChecks } from "./checks-ui.js";
 
 const EXAMPLE = {
   title: "Small Business Digital Marketing Strategy Guide | BridgeSols",
@@ -116,30 +117,12 @@ export function initMetaChecker() {
     setText($("ml-serp-description"), descCut.text, s.placeholderDescription);
   }
 
-  function renderChecks(checks) {
-    checksEl.textContent = "";
-    if (!checks.length) {
-      const li = document.createElement("li");
-      li.dataset.state = "info";
-      li.textContent = s.noChecks;
-      checksEl.appendChild(li);
-      return;
-    }
-    const labels = { pass: s.passLabel, warn: s.warnLabel, fail: s.failLabel };
-    for (const check of checks) {
-      const li = document.createElement("li");
-      li.dataset.state = check.state;
-      const icon = document.createElement("span");
-      icon.className = "check-icon";
-      icon.setAttribute("aria-hidden", "true");
-      const label = document.createElement("span");
-      label.className = "visually-hidden";
-      label.textContent = `${labels[check.state]}: `;
-      const message = document.createElement("span");
-      message.textContent = s.checks[check.id](check.params);
-      li.append(icon, label, message);
-      checksEl.appendChild(li);
-    }
+  function showChecks(checks) {
+    renderChecks(checksEl, checks, {
+      messages: s.checks,
+      labels: { pass: s.passLabel, warn: s.warnLabel, fail: s.failLabel },
+      emptyText: s.noChecks
+    });
   }
 
   function scheduleScreenReaderSummary(title, description) {
@@ -160,7 +143,7 @@ export function initMetaChecker() {
     renderMeter(meters.title, title);
     renderMeter(meters.description, description);
     renderPreview(title, description, mobile);
-    renderChecks(
+    showChecks(
       titleEl.value.trim() || descEl.value.trim()
         ? buildChecks({
             title: titleEl.value,

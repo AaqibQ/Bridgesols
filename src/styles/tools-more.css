@@ -1,0 +1,122 @@
+/* ==========================================================================
+   Shared layout and controls for the Slug Generator, Case Converter and UTM
+   Builder (extends tools.css and tools-meta.css).
+   ========================================================================== */
+
+/* Two columns on wide screens; on narrow screens the columns dissolve so the panels
+   can be re-ordered (input, result, checks, then options). */
+.split-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+.split-layout > .tool-col { min-width: 0; }
+@media (max-width: 900px) {
+  .split-layout { grid-template-columns: minmax(0, 1fr); }
+  .split-layout > .tool-col { display: contents; }
+  .split-layout .p-input { order: 1; }
+  .split-layout .p-result { order: 2; }
+  .split-layout .p-checks { order: 3; }
+  .split-layout .p-options { order: 4; }
+}
+
+.hint { margin: 0; font-size: 0.8rem; color: var(--text-dim); }
+.tool-input.result { font-family: var(--font-mono); font-size: 0.9rem; min-height: 96px; }
+
+.result-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 12px; }
+.result-head h2 { margin: 0; }
+.result-count { font-size: 0.85rem; color: var(--text-dim); }
+
+.preview-url { margin: 14px 0 0; font-size: 0.85rem; color: var(--text-dim); overflow-wrap: anywhere; }
+.preview-url code {
+  display: block;
+  margin-top: 4px;
+  padding: 8px 10px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+}
+
+/* Option groups */
+.opt-group { border: 0; margin: 0 0 18px; padding: 0; min-width: 0; }
+.opt-group legend { padding: 0; margin-bottom: 8px; font-size: 0.9rem; font-weight: 600; color: var(--text); }
+.opt-row { display: flex; align-items: flex-start; gap: 10px; margin: 0 0 8px; }
+.opt-row input { flex: none; width: 18px; height: 18px; margin-top: 2px; accent-color: var(--accent); }
+.opt-row label { font-size: 0.9rem; color: var(--text); cursor: pointer; }
+.opt-row .opt-note { display: block; margin-top: 2px; font-size: 0.8rem; color: var(--text-dim); }
+.p-options .field { margin-bottom: 14px; }
+.p-options .field:last-child { margin-bottom: 0; }
+
+.field .req { font-weight: 400; color: var(--text-dim); }
+
+/* Case picker: radios are visually hidden, the labels act as selectable cards. */
+.case-picker { margin-bottom: 0; }
+.case-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 8px;
+}
+.case-grid input { position: absolute; opacity: 0; pointer-events: none; }
+.case-grid label {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  padding: 10px 12px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  overflow-wrap: anywhere;
+}
+.case-grid label strong { font-size: 0.9rem; color: var(--text); }
+.case-grid label span { font-size: 0.78rem; color: var(--text-dim); }
+.case-grid input:checked + label {
+  background: var(--accent-soft);
+  border-color: var(--accent-border);
+  box-shadow: inset 0 0 0 1px var(--accent-border);
+}
+.case-grid input:checked + label strong { color: var(--accent-strong); }
+.case-grid input:focus-visible + label { outline: 2px solid var(--accent); outline-offset: 2px; }
+@media (max-width: 480px) {
+  .case-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* Long inline examples (like a full tracking URL) must wrap instead of widening the page. */
+.content-page code { overflow-wrap: anywhere; }
+
+/* Reference tables in the written part of a tool page. Cells wrap, so a table never
+   widens the page on a phone. */
+.content-page table {
+  width: 100%;
+  margin: 0 0 24px;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+.content-page th,
+.content-page td {
+  padding: 10px 12px;
+  text-align: start;
+  vertical-align: top;
+  border-bottom: 1px solid var(--border);
+  overflow-wrap: anywhere;
+}
+.content-page th {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  border-bottom-color: var(--border-strong);
+}
+.content-page td { color: var(--text-dim); }
+.content-page td:first-child { color: var(--text); }
+@media (max-width: 480px) {
+  .content-page th, .content-page td { padding: 8px 6px; font-size: 0.85rem; }
+}

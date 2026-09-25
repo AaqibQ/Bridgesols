@@ -84,6 +84,88 @@ const en = {
   }
 };
 
+// ---- Slug Generator ---------------------------------------------------------
+// Messages are count-aware: with one slug they say "This slug", with a list "N of M slugs".
+// verb is [singular, plural]: "This slug has", "1 of 3 slugs has", "2 of 3 slugs have".
+const slugSubject = (p, verb) =>
+  p.total === 1
+    ? `This slug ${verb[0]}`
+    : `${p.count} of ${p.total} slugs ${p.count === 1 ? verb[0] : verb[1]}`;
+
+en.slug = {
+  copied: "Slugs copied to clipboard.",
+  copyFailed: "Couldn't copy automatically. Please select the text and copy it manually.",
+  count: (n) => (n === 0 ? "No slugs yet" : n === 1 ? "1 slug" : `${n} slugs`),
+  previewLabel: (n) => (n > 1 ? `Preview (first of ${n})` : "Preview"),
+  noPreview: "Type a title to see the slug.",
+  noChecks: "Type a title to see checks.",
+  passLabel: "Pass",
+  warnLabel: "Warning",
+  failLabel: "Problem",
+  checks: {
+    slugEmpty: (p) =>
+      p.total === 1
+        ? "Nothing usable was left, so there is no slug. Try a different title, or switch to “Keep original letters” if it isn't written in Latin letters."
+        : `${p.count} of ${p.total} lines produced no slug. Check them, or switch to “Keep original letters” if they aren't written in Latin letters.`,
+    slugRemoved: (p) =>
+      `${p.removed} ${p.removed === 1 ? "character" : "characters"} couldn't be converted to Latin letters and ${p.removed === 1 ? "was" : "were"} left out. Arabic, Urdu, Hindi, Chinese, Japanese and Korean can't be converted reliably, so use “Keep original letters” or write the slug in English yourself.`,
+    slugLong: (p) =>
+      `${slugSubject(p, ["is", "are"])} longer than ${p.limit} characters. Shorter URLs are easier to read and share; consider a max length or removing stop words.`,
+    slugWordy: (p) =>
+      `${slugSubject(p, ["has", "have"])} more than ${p.limit} words. Keeping the main topic words and dropping filler usually works better.`,
+    slugUnderscore: (p) =>
+      `${slugSubject(p, ["uses", "use"])} underscores. Google's guidance is to use hyphens to separate words, since underscores may not be treated as separators.`,
+    slugNonAscii: (p) =>
+      `${slugSubject(p, ["contains", "contain"])} non-Latin letters. They work in modern browsers, but when the link is copied they are percent-encoded and become long (up to ${p.encoded} characters here).`,
+    slugTrimmed: (p) =>
+      `${slugSubject(p, ["was", "were"])} shortened at a word boundary to fit your maximum length.`,
+    slugGood: (p) =>
+      p.total === 1
+        ? "Looks good: short, readable and safe to use in a URL."
+        : `All ${p.count} slugs look good: short, readable and safe to use in a URL.`
+  }
+};
+
+// ---- Case Converter -----------------------------------------------------------
+en.caseTool = {
+  copied: "Text copied to clipboard.",
+  copyFailed: "Couldn't copy automatically. Please select the text and copy it manually.",
+  empty: "Type or paste some text to convert it.",
+  stats: (chars, words) =>
+    `${chars} ${chars === 1 ? "character" : "characters"}, ${words} ${words === 1 ? "word" : "words"}`
+};
+
+// ---- UTM Link Builder ---------------------------------------------------------
+const fieldList = (fields) => fields.map((f) => `utm_${f}`).join(", ");
+
+en.utm = {
+  copied: "Link copied to clipboard.",
+  copyFailed: "Couldn't copy automatically. Please select the link and copy it manually.",
+  placeholder: "Enter your page address and at least a source to build the link.",
+  passLabel: "Pass",
+  warnLabel: "Warning",
+  failLabel: "Problem",
+  noChecks: "Fill in the form to see checks.",
+  checks: {
+    utmInvalidUrl: () =>
+      "That doesn't look like a web address. Use a full page address such as https://example.com/page.",
+    utmNoParams: () => "Add at least a campaign source (utm_source) to build a tracked link.",
+    utmAssumedHttps: () => "No https:// was given, so it was added for you. Check that the address is right.",
+    utmMissingSource: () => "utm_source is missing. Google Analytics needs it to say where the visit came from.",
+    utmMissingRecommended: (p) =>
+      `${fieldList(p.fields)} ${p.fields.length === 1 ? "is" : "are"} empty. Source, medium and campaign together give the clearest reports.`,
+    utmUppercase: (p) =>
+      `${fieldList(p.fields)} contain${p.fields.length === 1 ? "s" : ""} capital letters. Analytics treats "Facebook" and "facebook" as different sources, so stick to one case, usually lowercase.`,
+    utmSpaces: (p) =>
+      `${fieldList(p.fields)} contain${p.fields.length === 1 ? "s" : ""} spaces, which become %20 in the link. Hyphens or underscores are easier to read.`,
+    utmReplaced: (p) =>
+      `The page address already had ${p.names.join(", ")}. ${p.names.length === 1 ? "It was" : "They were"} replaced with your values.`,
+    utmLong: (p) =>
+      `The link is ${p.length} characters long. Some systems cut links longer than ${p.limit}, so shorten the values.`,
+    utmGood: () => "Looks good: the link is ready to use."
+  }
+};
+
 const STRINGS = { en };
 
 export function getStrings(lang = document.documentElement.lang || "en") {

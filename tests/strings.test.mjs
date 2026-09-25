@@ -35,3 +35,23 @@ test("meta checker messages read correctly for every check id", () => {
   assert.match(m.checks.keywordInUrl({ keyword: "seo" }), /"seo" appears in the URL/);
   assert.equal(m.count({ chars: 5, px: 40, limitChars: 60, limitPx: 580 }), "5 of about 60 characters \u00B7 about 40 of 580 px");
 });
+
+test("slug messages exist for every check id and agree in number", () => {
+  const s = getStrings("en").slug;
+  const ids = ["slugEmpty", "slugRemoved", "slugLong", "slugWordy", "slugUnderscore", "slugNonAscii", "slugTrimmed", "slugGood"];
+  for (const id of ids) {
+    assert.equal(typeof s.checks[id], "function", id);
+    for (const p of [
+      { total: 1, count: 1, removed: 1, limit: 6, encoded: 40 },
+      { total: 4, count: 1, removed: 3, limit: 6, encoded: 40 },
+      { total: 4, count: 4, removed: 3, limit: 6, encoded: 40 }
+    ]) {
+      const msg = s.checks[id](p);
+      assert.ok(msg && !/undefined|NaN/.test(msg), `${id}: ${msg}`);
+    }
+  }
+  assert.match(s.checks.slugWordy({ total: 4, count: 4, limit: 6 }), /^4 of 4 slugs have /);
+  assert.match(s.checks.slugWordy({ total: 4, count: 1, limit: 6 }), /^1 of 4 slugs has /);
+  assert.match(s.checks.slugWordy({ total: 1, count: 1, limit: 6 }), /^This slug has /);
+  assert.match(s.checks.slugLong({ total: 3, count: 2, limit: 60 }), /^2 of 3 slugs are /);
+});

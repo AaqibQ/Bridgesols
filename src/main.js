@@ -3,12 +3,14 @@ import "./styles/responsive.css";
 import "./styles/article.css";
 import "./styles/tools.css";
 import "./styles/tools-meta.css";
+import "./styles/tools-more.css";
 
 import { renderHeader } from "./components/Header.js";
 import { renderFooter } from "./components/Footer.js";
 import { initNewsletterForms } from "./components/Newsletter.js";
 import { articleCard } from "./components/ArticleCard.js";
 import { getRelated, getLatest } from "./data/articles.js";
+import { TOOLS, toolHref, getOtherTools } from "./data/tools.js";
 import { WEB3FORMS_ACCESS_KEY, WEB3FORMS_URL } from "./config.js";
 
 import { playHeroEntrance } from "./animations/hero.js";
@@ -60,11 +62,23 @@ if (page === "contact") {
 }
 
 /* ---------------- Tool pages ---------------- */
+if (page === "tool") {
+  initMoreTools();
+}
 if (page === "tool" && body.dataset.tool === "word-counter") {
   import("./tools/word-counter.js").then((m) => m.initWordCounter());
 }
 if (page === "tool" && body.dataset.tool === "meta-length-checker") {
   import("./tools/meta-checker.js").then((m) => m.initMetaChecker());
+}
+if (page === "tool" && body.dataset.tool === "slug-generator") {
+  import("./tools/slug-generator.js").then((m) => m.initSlugGenerator());
+}
+if (page === "tool" && body.dataset.tool === "case-converter") {
+  import("./tools/case-converter.js").then((m) => m.initCaseConverter());
+}
+if (page === "tool" && body.dataset.tool === "utm-link-builder") {
+  import("./tools/utm-builder.js").then((m) => m.initUtmBuilder());
 }
 
 reducedMotionQuery.addEventListener("change", (e) => {
@@ -91,6 +105,11 @@ function initHomepage() {
     latestHost.innerHTML = getLatest(6).map((a) => articleCard(a, "articles/")).join("");
   }
 
+  const toolsHost = document.getElementById("home-tools");
+  if (toolsHost) {
+    toolsHost.innerHTML = TOOLS.map((t) => toolCard(t, depth)).join("");
+  }
+
   initHorizontalTopics();
   requestAnimationFrame(refresh);
 }
@@ -112,6 +131,35 @@ function initArticlePage() {
         .join("");
     }
   }
+
+  // "Free tools" block just above "Related", so every article links to every tool.
+  const relatedBlock = sidebarRelatedHost && sidebarRelatedHost.closest(".sidebar-block");
+  if (relatedBlock) {
+    const block = document.createElement("div");
+    block.className = "sidebar-block";
+    block.innerHTML =
+      `<h4>Free tools</h4><div class="sidebar-related">${TOOLS.map((t) => `<a href="${toolHref(t, depth)}">${t.name}</a>`).join("")}</div>`;
+    relatedBlock.before(block);
+  }
+}
+
+function toolCard(t, depth) {
+  return `<a class="topic-card tool-link" href="${toolHref(t, depth)}">
+    <div class="topic-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="${t.icon}"/></svg></div>
+    <h3>${t.name}</h3>
+    <p>${t.description}</p>
+  </a>`;
+}
+
+function initMoreTools() {
+  // Each tool page lists the other tools; built here so adding a tool needs no edits to old pages.
+  const list = document.getElementById("more-tools");
+  if (!list) return;
+  const current = body.dataset.tool;
+  list.innerHTML =
+    getOtherTools(current)
+      .map((t) => `<li><a href="${t.slug}.html">${t.name}</a>: ${t.blurb.charAt(0).toLowerCase()}${t.blurb.slice(1)}</li>`)
+      .join("") + `<li><a href="index.html">All tools</a></li>`;
 }
 
 function initContactForm() {

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Slug Generator: Clean URL Slugs from Any Title | BridgeSols</title>
+<meta name="description" content="Free slug generator: turn titles into clean, SEO-friendly URL slugs. Removes accents and symbols, handles bulk lists, and works with any language." />
+<link rel="canonical" href="https://bridgesols.com/tools/slug-generator.html" />
+<link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CHM1D4R5CF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CHM1D4R5CF');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5067019264219250" crossorigin="anonymous"></script>
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="BridgeSols" />
+<meta property="og:title" content="Slug Generator: Clean URL Slugs from Any Title" />
+<meta property="og:description" content="Turn titles into clean, SEO-friendly URL slugs. Handles accents, symbols, bulk lists and any language. Free and private." />
+<meta property="og:url" content="https://bridgesols.com/tools/slug-generator.html" />
+<meta property="og:image" content="https://bridgesols.com/images/og-cover.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://bridgesols.com/images/og-cover.png" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Slug Generator",
+  "url": "https://bridgesols.com/tools/slug-generator.html",
+  "description": "Free online slug generator that turns titles into clean URL slugs, with bulk mode, accent removal and multilingual support.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "publisher": { "@type": "Organization", "name": "BridgeSols" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://bridgesols.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Tools", "item": "https://bridgesols.com/tools/" },
+    { "@type": "ListItem", "position": 3, "name": "Slug Generator", "item": "https://bridgesols.com/tools/slug-generator.html" }
+  ]
+}
+</script>
+</head>
+<body data-page="tool" data-tool="slug-generator" data-depth="1">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="site-header"></header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">Free tool</span>
+      <h1>Slug Generator</h1>
+      <p class="lede">Turn any title into a clean URL slug. Accents and symbols are handled, you can convert a whole list at once, and it works with Latin, Cyrillic, Greek, Urdu, Arabic, Hindi and other scripts. Everything runs in your browser.</p>
+    </div>
+  </section>
+
+  <section class="tool-section">
+    <div class="wrap">
+      <div class="split-layout">
+
+        <div class="tool-col">
+          <div class="tool-panel p-input">
+            <div class="field">
+              <label for="sg-input">Title or text</label>
+              <textarea id="sg-input" class="tool-input" dir="auto" rows="5" spellcheck="false" placeholder="e.g. How to Start an Online Business in 2026"></textarea>
+              <p class="hint">Put one title on each line to make many slugs at once.</p>
+            </div>
+            <div class="tool-actions">
+              <button type="button" class="btn btn-ghost" id="sg-example">Load example</button>
+              <button type="button" class="btn btn-ghost" id="sg-clear">Clear</button>
+            </div>
+          </div>
+
+          <div class="tool-panel p-options">
+            <h2>Options</h2>
+
+            <fieldset class="opt-group">
+              <legend>Letters</legend>
+              <div class="opt-row">
+                <input type="radio" name="sg-mode" id="sg-mode-latin" value="latin" checked />
+                <label for="sg-mode-latin">Latin letters only <span class="opt-note">Removes accents (café becomes cafe). Recommended for most sites.</span></label>
+              </div>
+              <div class="opt-row">
+                <input type="radio" name="sg-mode" id="sg-mode-unicode" value="unicode" />
+                <label for="sg-mode-unicode">Keep original letters <span class="opt-note">Keeps Urdu, Arabic, Hindi, Chinese and other scripts as written.</span></label>
+              </div>
+            </fieldset>
+
+            <fieldset class="opt-group">
+              <legend>Separator</legend>
+              <div class="opt-row">
+                <input type="radio" name="sg-sep" id="sg-sep-hyphen" value="-" checked />
+                <label for="sg-sep-hyphen">Hyphen (-) <span class="opt-note">Recommended by Google.</span></label>
+              </div>
+              <div class="opt-row">
+                <input type="radio" name="sg-sep" id="sg-sep-underscore" value="_" />
+                <label for="sg-sep-underscore">Underscore (_)</label>
+              </div>
+            </fieldset>
+
+            <fieldset class="opt-group">
+              <legend>Clean-up</legend>
+              <div class="opt-row">
+                <input type="checkbox" id="sg-lowercase" checked />
+                <label for="sg-lowercase">Lowercase</label>
+              </div>
+              <div class="opt-row">
+                <input type="checkbox" id="sg-stop" />
+                <label for="sg-stop">Remove common words <span class="opt-note">Drops words like a, the, of and and to shorten the slug.</span></label>
+              </div>
+              <div class="opt-row">
+                <input type="checkbox" id="sg-unique" />
+                <label for="sg-unique">Number duplicates <span class="opt-note">In a list, repeated slugs become title, title-2, title-3.</span></label>
+              </div>
+            </fieldset>
+
+            <div class="field">
+              <label for="sg-max">Maximum length <span class="optional">(characters, optional)</span></label>
+              <input type="number" id="sg-max" class="tool-input" min="1" max="500" inputmode="numeric" placeholder="e.g. 50" />
+              <p class="hint">Slugs are cut at a whole word, never in the middle of one.</p>
+            </div>
+
+            <div class="field">
+              <label for="sg-base">Base URL <span class="optional">(optional, for the preview)</span></label>
+              <input type="text" id="sg-base" class="tool-input" inputmode="url" autocomplete="off" spellcheck="false" placeholder="https://example.com/blog" />
+            </div>
+          </div>
+        </div>
+
+        <div class="tool-col">
+          <div class="tool-panel p-result">
+            <div class="result-head">
+              <h2>Your slugs</h2>
+              <span class="result-count" id="sg-count">No slugs yet</span>
+            </div>
+            <label class="visually-hidden" for="sg-output">Generated slugs</label>
+            <textarea id="sg-output" class="tool-input result" dir="auto" rows="3" readonly spellcheck="false"></textarea>
+            <div class="tool-actions">
+              <button type="button" class="btn btn-primary" id="sg-copy" disabled>Copy</button>
+            </div>
+            <p class="tool-status" id="sg-copy-status" role="status"></p>
+            <p class="preview-url"><span id="sg-preview-label">Preview</span><code id="sg-preview">Type a title to see the slug.</code></p>
+            <p class="visually-hidden" id="sg-sr-summary" aria-live="polite"></p>
+          </div>
+
+          <div class="tool-panel p-checks">
+            <h2>Checks</h2>
+            <ul class="checks" id="sg-checks">
+              <li data-state="info">Type a title to see checks.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="content-page">
+    <div class="wrap-narrow">
+      <h2>What is a URL slug?</h2>
+      <p>A slug is the last part of a page's address that identifies it, for example <code>how-to-start-an-online-business</code> in <code>example.com/blog/how-to-start-an-online-business</code>. A good slug tells a reader and a search engine what the page is about before it even loads.</p>
+
+      <h2>What makes a good slug</h2>
+      <ul>
+        <li><strong>Short and descriptive.</strong> A handful of words that name the topic. Long slugs are harder to read and share, and get cut off in search results.</li>
+        <li><strong>Lowercase.</strong> Some servers treat <code>/About</code> and <code>/about</code> as different pages, which creates duplicates. Lowercase avoids that.</li>
+        <li><strong>Hyphens between words.</strong> Google recommends hyphens over underscores, because it reads a hyphen as a word separator.</li>
+        <li><strong>Only safe characters.</strong> Letters, numbers and hyphens. Spaces, accents, symbols and punctuation either break or get percent-encoded into ugly sequences such as <code>%20</code>.</li>
+        <li><strong>No dates or numbers you'll outgrow.</strong> A slug with "2026" in it looks stale next year, and changing it later means setting up a redirect.</li>
+      </ul>
+
+      <h2>What this tool does to your text</h2>
+      <table>
+        <thead><tr><th>You type</th><th>You get</th><th>What happened</th></tr></thead>
+        <tbody>
+          <tr><td>How to Start a Business!</td><td><code>how-to-start-a-business</code></td><td>Lowercased, punctuation removed, spaces become hyphens</td></tr>
+          <tr><td>Café Crème Brûlée</td><td><code>cafe-creme-brulee</code></td><td>Accents removed</td></tr>
+          <tr><td>Tom &amp; Jerry: 50% Off</td><td><code>tom-and-jerry-50-percent-off</code></td><td>"&amp;" and "%" keep their meaning</td></tr>
+          <tr><td>Don't Stop Believin'</td><td><code>dont-stop-believin</code></td><td>Apostrophes removed, not turned into hyphens</td></tr>
+          <tr><td>Straße und Ærø</td><td><code>strasse-und-aero</code></td><td>Special letters mapped to their usual Latin spelling</td></tr>
+          <tr><td>Привет мир</td><td><code>privet-mir</code></td><td>Basic Cyrillic and Greek transliteration</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Using it with Urdu, Arabic, Hindi and other scripts</h2>
+      <p>Turning Urdu, Arabic, Hindi, Chinese, Japanese or Korean into Latin letters can't be done reliably by a simple rule: the same word can be spelled several ways, and a wrong guess makes a confusing URL. So in "Latin letters only" mode this tool leaves those characters out and tells you how many it dropped, instead of inventing a spelling.</p>
+      <p>You have two good options. Write the slug in English yourself (many Urdu and Arabic sites do), or choose <strong>Keep original letters</strong>. Modern browsers show those URLs as written, but when someone copies the link it is percent-encoded and becomes much longer. The checks panel shows you how long.</p>
+
+      <h2>Bulk mode</h2>
+      <p>Paste a list of titles with one on each line and you get one slug per line, in the same order and with blank lines kept, so the results line up when you paste them back into a spreadsheet. Turn on "Number duplicates" if the same title appears more than once and each needs its own address.</p>
+
+      <h2>Changing an existing slug</h2>
+      <p>If a page is already live and getting visitors, changing its slug changes its address. Set up a permanent (301) redirect from the old address to the new one, or search engines and anyone with the old link will land on an error page. For a new page, choose the slug before publishing and leave it alone.</p>
+
+      <h2>Your text stays private</h2>
+      <p>Everything is calculated in your browser. Nothing you type here is uploaded, sent or stored by this page.</p>
+
+      <h2>Frequently asked questions</h2>
+      <h3>How long should a slug be?</h3>
+      <p>There is no hard rule, but under about 60 characters and about six words is a sound aim. The checks panel warns you when a slug goes past that.</p>
+
+      <h3>Should I remove words like "the" and "and"?</h3>
+      <p>It can shorten a slug without losing meaning, for example <code>the-art-of-the-deal</code> becomes <code>art-deal</code>. It is optional, because removing words can also change the sense, so look at the result before you use it.</p>
+
+      <h3>Does the slug affect rankings?</h3>
+      <p>A clear slug is a small signal at best. Its main value is that it is readable to people, which helps when the link is shared or shown in results. Focus on the page's content first. Our guides on <a href="../articles/seo-for-beginners.html">SEO for beginners</a> and <a href="../articles/keyword-research-for-beginners.html">keyword research</a> cover what matters more.</p>
+
+      <h3>Why is my slug empty?</h3>
+      <p>Either the text contained only symbols, or it was written in a script that can't be converted to Latin letters. In the second case, choose "Keep original letters".</p>
+
+      <h2>More free tools</h2>
+      <ul id="more-tools">
+        <li><a href="meta-length-checker.html">Meta Length Checker</a>: check the title and description that go with this URL</li>
+        <li><a href="word-counter.html">Word Counter</a>: count words, characters and reading time</li>
+        <li><a href="index.html">All tools</a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="site-footer"></footer>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
