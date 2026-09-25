@@ -126,3 +126,13 @@ test("the tools hub page has a title and description within the search-result li
   assert.ok(title.length > 0 && title.length <= 60, `hub title is ${title.length} chars`);
   assert.ok(desc.length > 0 && desc.length <= 155, `hub description is ${desc.length} chars`);
 });
+
+test("social profiles in config.js match the Organization sameAs on the homepage", async () => {
+  const { SOCIAL_LINKS } = await import("../src/config.js");
+  const home = read("index.html");
+  const block = [...home.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)]
+    .map((m) => JSON.parse(m[1]))
+    .find((j) => j["@type"] === "Organization");
+  assert.deepEqual([...block.sameAs].sort(), SOCIAL_LINKS.map((s) => s.url).sort());
+  for (const s of SOCIAL_LINKS) assert.match(s.url, /^https:\/\//, s.name);
+});

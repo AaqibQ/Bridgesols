@@ -1,5 +1,6 @@
 import { getLatest } from "../data/articles.js";
 import { TOOLS, toolHref } from "../data/tools.js";
+import { SOCIAL_LINKS } from "../config.js";
 
 export function renderFooter(depth = 0) {
   const p = depth > 0 ? "../".repeat(depth) : "./";
@@ -12,12 +13,18 @@ export function renderFooter(depth = 0) {
   const toolLinks = TOOLS.map((t) => `<li><a href="${toolHref(t, depth)}">${t.name}</a></li>`)
     .join("\n          ");
 
+  const socialLinks = SOCIAL_LINKS.map(
+    (s) =>
+      `<a href="${s.url}" target="_blank" rel="noopener noreferrer" aria-label="BridgeSols on ${s.name}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="${s.icon}"/></svg></a>`
+  ).join("");
+
   return `
   <div class="wrap">
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="${p}index.html" class="brand"><span class="mark"></span>BridgeSols</a>
         <p>A digital publication about digital marketing, SEO, content, and building sustainable online businesses — written to be genuinely useful, not to game search engines.</p>
+        <div class="footer-social">${socialLinks}</div>
       </div>
       <div class="footer-col">
         <h4>Explore</h4>
