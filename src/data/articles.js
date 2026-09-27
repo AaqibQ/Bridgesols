@@ -231,6 +231,17 @@ export const articles = [
     readingTime: "11 min read",
     author: "BridgeSols Editorial",
     tags: ["uae", "content marketing", "dubai"]
+  },
+  {
+    slug: "social-media-marketing-strategy-small-business",
+    title: "Social Media Marketing Strategy for Small Businesses: A Practical Guide",
+    excerpt:
+      "How to pick the right platforms, build a content calendar you can actually sustain, grow organically, and measure results that matter instead of vanity metrics.",
+    category: "Digital Marketing",
+    date: "2026-09-27",
+    readingTime: "11 min read",
+    author: "BridgeSols Editorial",
+    tags: ["social media marketing", "digital marketing", "organic growth"]
   }
 ];
 

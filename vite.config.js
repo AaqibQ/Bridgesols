@@ -39,7 +39,8 @@ export default defineConfig({
         article18: resolve(root, "articles/technical-seo-audit-checklist.html"),
         article19: resolve(root, "articles/conversion-rate-optimization-guide.html"),
         article20: resolve(root, "articles/retargeting-ads-guide.html"),
-        article21: resolve(root, "articles/content-marketing-uae-multicultural-audience.html")
+        article21: resolve(root, "articles/content-marketing-uae-multicultural-audience.html"),
+        article22: resolve(root, "articles/social-media-marketing-strategy-small-business.html")
       }
     }
   }
