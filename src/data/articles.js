@@ -242,6 +242,17 @@ export const articles = [
     readingTime: "11 min read",
     author: "BridgeSols Editorial",
     tags: ["social media marketing", "digital marketing", "organic growth"]
+  },
+  {
+    slug: "influencer-marketing-for-small-businesses",
+    title: "Influencer Marketing for Small Businesses: A Practical Guide to Partnering With Creators",
+    excerpt:
+      "Finding the right creators, negotiating fair terms, disclosure rules, payment structures, and how to measure whether a partnership actually paid off.",
+    category: "Digital Marketing",
+    date: "2026-09-28",
+    readingTime: "11 min read",
+    author: "BridgeSols Editorial",
+    tags: ["influencer marketing", "digital marketing", "creators"]
   }
 ];
 

@@ -40,7 +40,8 @@ export default defineConfig({
         article19: resolve(root, "articles/conversion-rate-optimization-guide.html"),
         article20: resolve(root, "articles/retargeting-ads-guide.html"),
         article21: resolve(root, "articles/content-marketing-uae-multicultural-audience.html"),
-        article22: resolve(root, "articles/social-media-marketing-strategy-small-business.html")
+        article22: resolve(root, "articles/social-media-marketing-strategy-small-business.html"),
+        article23: resolve(root, "articles/influencer-marketing-for-small-businesses.html")
       }
     }
   }
