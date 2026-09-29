@@ -253,6 +253,17 @@ export const articles = [
     readingTime: "11 min read",
     author: "BridgeSols Editorial",
     tags: ["influencer marketing", "digital marketing", "creators"]
+  },
+  {
+    slug: "seo-for-small-businesses-pakistan",
+    title: "SEO for Small Businesses in Pakistan: A Practical 2026 Guide",
+    excerpt:
+      "How SEO actually works for a small business in Pakistan — mobile speed on local networks, keyword research that accounts for Roman Urdu, Google Business Profile, and local link building.",
+    category: "SEO",
+    date: "2026-09-29",
+    readingTime: "11 min read",
+    author: "BridgeSols Editorial",
+    tags: ["pakistan", "seo", "local search"]
   }
 ];
 
