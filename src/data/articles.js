@@ -264,6 +264,17 @@ export const articles = [
     readingTime: "11 min read",
     author: "BridgeSols Editorial",
     tags: ["pakistan", "seo", "local search"]
+  },
+  {
+    slug: "affiliate-marketing-for-small-businesses",
+    title: "Affiliate Marketing for Small Businesses: A Practical Guide to Building a Partner Program",
+    excerpt:
+      "How to set up an affiliate program, find and vet real partners, structure commissions fairly, track sales, and avoid the fraud that sinks small programs.",
+    category: "Digital Marketing",
+    date: "2026-09-30",
+    readingTime: "12 min read",
+    author: "BridgeSols Editorial",
+    tags: ["affiliate marketing", "digital marketing", "partnerships"]
   }
 ];
 
