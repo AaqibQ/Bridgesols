@@ -43,7 +43,8 @@ export default defineConfig({
         article22: resolve(root, "articles/social-media-marketing-strategy-small-business.html"),
         article23: resolve(root, "articles/influencer-marketing-for-small-businesses.html"),
         article24: resolve(root, "articles/seo-for-small-businesses-pakistan.html"),
-        article25: resolve(root, "articles/affiliate-marketing-for-small-businesses.html")
+        article25: resolve(root, "articles/affiliate-marketing-for-small-businesses.html"),
+        article26: resolve(root, "articles/starting-online-business-usa.html")
       }
     }
   }
