@@ -286,6 +286,17 @@ export const articles = [
     readingTime: "13 min read",
     author: "BridgeSols Editorial",
     tags: ["usa", "online business", "llc"]
+  },
+  {
+    slug: "seo-for-businesses-in-the-uae",
+    title: "SEO for Businesses in the UAE: Ranking in a Bilingual, High-Cost-Per-Click Market",
+    excerpt:
+      "Bilingual keyword research across English and Arabic, hreflang and RTL setup, Google Business Profile across emirates, and local link building — a practical SEO guide for the UAE.",
+    category: "SEO",
+    date: "2026-10-02",
+    readingTime: "11 min read",
+    author: "BridgeSols Editorial",
+    tags: ["uae", "seo", "dubai"]
   }
 ];
 
