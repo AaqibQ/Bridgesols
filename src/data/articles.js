@@ -297,6 +297,17 @@ export const articles = [
     readingTime: "11 min read",
     author: "BridgeSols Editorial",
     tags: ["uae", "seo", "dubai"]
+  },
+  {
+    slug: "marketing-automation-for-small-businesses",
+    title: "Marketing Automation for Small Businesses: What to Automate First and What to Leave Alone",
+    excerpt:
+      "Which workflows to automate first, how to choose a platform without over-buying, and how to build welcome sequences, abandoned-cart flows, and lead scoring that actually work.",
+    category: "Digital Marketing",
+    date: "2026-10-03",
+    readingTime: "12 min read",
+    author: "BridgeSols Editorial",
+    tags: ["marketing automation", "digital marketing", "email marketing"]
   }
 ];
 

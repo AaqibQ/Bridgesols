@@ -45,7 +45,8 @@ export default defineConfig({
         article24: resolve(root, "articles/seo-for-small-businesses-pakistan.html"),
         article25: resolve(root, "articles/affiliate-marketing-for-small-businesses.html"),
         article26: resolve(root, "articles/starting-online-business-usa.html"),
-        article27: resolve(root, "articles/seo-for-businesses-in-the-uae.html")
+        article27: resolve(root, "articles/seo-for-businesses-in-the-uae.html"),
+        article28: resolve(root, "articles/marketing-automation-for-small-businesses.html")
       }
     }
   }
