@@ -308,6 +308,17 @@ export const articles = [
     readingTime: "12 min read",
     author: "BridgeSols Editorial",
     tags: ["marketing automation", "digital marketing", "email marketing"]
+  },
+  {
+    slug: "selling-online-in-pakistan-daraz-instagram-own-store",
+    title: "Selling Online in Pakistan: Daraz, Instagram, or Your Own Store",
+    excerpt:
+      "A practical comparison of Daraz, Instagram/Facebook shops, and your own store for selling products online in Pakistan — fees, payments, delivery, and which to pick first.",
+    category: "Online Business",
+    date: "2026-10-04",
+    readingTime: "12 min read",
+    author: "BridgeSols Editorial",
+    tags: ["pakistan", "e-commerce", "online business"]
   }
 ];
 
