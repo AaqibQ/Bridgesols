@@ -319,6 +319,17 @@ export const articles = [
     readingTime: "12 min read",
     author: "BridgeSols Editorial",
     tags: ["pakistan", "e-commerce", "online business"]
+  },
+  {
+    slug: "podcast-marketing-for-small-businesses",
+    title: "Podcast Marketing for Small Businesses: A Practical Guide to Starting and Growing a Show",
+    excerpt:
+      "What it actually takes to launch a business podcast — equipment, format, recording workflow, distribution, growing an audience, and how to tell early whether it's worth the time.",
+    category: "Content Marketing",
+    date: "2026-10-05",
+    readingTime: "12 min read",
+    author: "BridgeSols Editorial",
+    tags: ["podcast marketing", "content marketing", "audio"]
   }
 ];
 
