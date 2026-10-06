@@ -330,6 +330,17 @@ export const articles = [
     readingTime: "12 min read",
     author: "BridgeSols Editorial",
     tags: ["podcast marketing", "content marketing", "audio"]
+  },
+  {
+    slug: "selling-on-amazon-us-small-businesses",
+    title: "Selling on Amazon: A Practical Guide for US Small Businesses",
+    excerpt:
+      "FBA vs. FBM, real fee math, listing and PPC basics, and the sales tax and inventory details that catch new Amazon sellers in the US off guard.",
+    category: "Online Business",
+    date: "2026-10-06",
+    readingTime: "13 min read",
+    author: "BridgeSols Editorial",
+    tags: ["usa", "amazon", "online business"]
   }
 ];
 
