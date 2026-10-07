@@ -341,6 +341,17 @@ export const articles = [
     readingTime: "13 min read",
     author: "BridgeSols Editorial",
     tags: ["usa", "amazon", "online business"]
+  },
+  {
+    slug: "selling-online-in-uae-noon-amazon-instagram-own-store",
+    title: "Selling Online in the UAE: Noon, Amazon.ae, Instagram, or Your Own Store",
+    excerpt:
+      "A practical comparison of Noon, Amazon.ae, Instagram/Facebook shops, and your own store for selling products online in the UAE — fees, payments, licensing, and which to pick first.",
+    category: "Online Business",
+    date: "2026-10-07",
+    readingTime: "13 min read",
+    author: "BridgeSols Editorial",
+    tags: ["uae", "e-commerce", "online business"]
   }
 ];
 
