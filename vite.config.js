@@ -50,7 +50,8 @@ export default defineConfig({
         article29: resolve(root, "articles/selling-online-in-pakistan-daraz-instagram-own-store.html"),
         article30: resolve(root, "articles/podcast-marketing-for-small-businesses.html"),
         article31: resolve(root, "articles/selling-on-amazon-us-small-businesses.html"),
-        article32: resolve(root, "articles/selling-online-in-uae-noon-amazon-instagram-own-store.html")
+        article32: resolve(root, "articles/selling-online-in-uae-noon-amazon-instagram-own-store.html"),
+        article33: resolve(root, "articles/website-speed-optimization-guide.html")
       }
     }
   }

@@ -352,6 +352,17 @@ export const articles = [
     readingTime: "13 min read",
     author: "BridgeSols Editorial",
     tags: ["uae", "e-commerce", "online business"]
+  },
+  {
+    slug: "website-speed-optimization-guide",
+    title: "Website Speed Optimization: A Practical Guide to Faster Page Loads",
+    excerpt:
+      "Image optimization, caching, hosting and CDN choices, Core Web Vitals, and the mistakes that quietly slow sites down — a practical speed optimization guide.",
+    category: "Website Growth",
+    date: "2026-10-08",
+    readingTime: "12 min read",
+    author: "BridgeSols Editorial",
+    tags: ["website speed", "core web vitals", "website growth"]
   }
 ];
 
