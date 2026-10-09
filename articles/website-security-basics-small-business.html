@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Website Security Basics: Protecting a Small Business Site | BridgeSols</title>
+<meta name="description" content="SSL, backups, software updates, login security, and the mistakes that most often lead to a hacked small business website — plus what to do if it happens." />
+<link rel="canonical" href="https://bridgesols.com/articles/website-security-basics-small-business.html" />
+<link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CHM1D4R5CF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CHM1D4R5CF');
+</script>
+<meta name="google-adsense-account" content="ca-pub-5067019264219250">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5067019264219250" crossorigin="anonymous"></script>
+
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="BridgeSols" />
+<meta property="og:title" content="Website Security Basics: Protecting a Small Business Site from Hacks and Downtime" />
+<meta property="og:description" content="SSL, backups, software updates, login security, and the mistakes that most often lead to a hacked small business website — plus what to do if it happens." />
+<meta property="og:url" content="https://bridgesols.com/articles/website-security-basics-small-business.html" />
+<meta property="og:image" content="https://bridgesols.com/images/og-cover.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://bridgesols.com/images/og-cover.png" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Website Security Basics: Protecting a Small Business Site from Hacks and Downtime",
+  "description": "SSL, backups, software updates, login security, and the mistakes that most often lead to a hacked small business website — plus what to do if it happens.",
+  "author": { "@type": "Organization", "name": "BridgeSols" },
+  "publisher": { "@type": "Organization", "name": "BridgeSols", "logo": { "@type": "ImageObject", "url": "https://bridgesols.com/favicon.svg" } },
+  "datePublished": "2026-10-09",
+  "dateModified": "2026-10-09",
+  "mainEntityOfPage": "https://bridgesols.com/articles/website-security-basics-small-business.html"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://bridgesols.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://bridgesols.com/articles/" },
+    { "@type": "ListItem", "position": 3, "name": "Website Security Basics", "item": "https://bridgesols.com/articles/website-security-basics-small-business.html" }
+  ]
+}
+</script>
+</head>
+<body data-page="article" data-depth="1" data-slug="website-security-basics-small-business">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="site-header"></header>
+
+<main id="main">
+  <section class="article-hero">
+    <div class="wrap">
+      <div class="breadcrumb"><a href="../index.html">Home</a><span>/</span><a href="index.html">Guides</a><span>/</span><span>Website Security Basics</span></div>
+      <span class="eyebrow">Website Growth</span>
+      <h1>Website Security Basics: Protecting a Small Business Site from Hacks and Downtime</h1>
+      <p class="dek">SSL, backups, software updates, login security, and the mistakes that most often lead to a hacked small business website — plus a clear plan for what to do if it happens anyway.</p>
+      <div class="article-byline">
+        <span class="avatar">BE</span>
+        <span><strong>BridgeSols Editorial</strong></span>
+        <span class="sep">&middot;</span>
+        <span>Published October 9, 2026</span>
+        <span class="sep">&middot;</span>
+        <span>12 min read</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="ad-slot" aria-hidden="true">Advertisement — Article Top<span class="ad-note">No ad network connected. See ADSENSE-SETUP.md.</span></div>
+  </div>
+
+  <div class="wrap article-layout">
+    <article class="article-main">
+      <div class="article-body">
+        <p>Most small business websites aren't hacked because someone targeted them specifically. They're hacked because an automated scanner found an outdated plugin, a weak password, or a missing patch, and exploited it the same way it exploits thousands of other sites running the same software. That's actually good news: it means the handful of basics in this guide — kept current — close off the overwhelming majority of real-world attacks without requiring a security budget or a dedicated IT team.</p>
+
+        <p>This isn't a guide for securing a bank or a hospital. It's a practical baseline for the kind of small business site that runs on WordPress, Shopify, Squarespace, or a similar platform, has no in-house security staff, and just needs to not end up defaced, blacklisted by Google, or locked behind a ransom note. Every recommendation here is something an owner or a single developer can actually implement and maintain.</p>
+
+        <h2 id="why-it-matters">What a hacked site actually costs</h2>
+        <p>The damage from a compromised website rarely stays contained to "the site looked weird for a day." The costs that actually bite:</p>
+        <ul>
+          <li><strong>Search visibility.</strong> Google maintains a Safe Browsing blocklist. A site serving malware or spam gets flagged, shows a red warning screen to visitors, and can lose most of its organic traffic overnight — recovery after a review request typically takes days to weeks.</li>
+          <li><strong>Customer trust.</strong> A defaced page, injected spam links, or a browser security warning is often the first thing a returning customer sees. Trust lost this way doesn't come back just because the site is fixed.</li>
+          <li><strong>Data exposure.</strong> If the site stores customer emails, order history, or payment details, a breach can trigger disclosure obligations and, depending on the region, real legal exposure.</li>
+          <li><strong>Downtime and recovery cost.</strong> Cleaning an infected site, restoring from backup, and re-securing it is hours of work at minimum — and a genuine emergency if no clean backup exists.</li>
+        </ul>
+        <p>None of this requires a sophisticated attacker. It requires a site that skipped the basics below for long enough to get noticed by something that scans the internet automatically, 24 hours a day, for exactly that gap.</p>
+
+        <h2 id="ssl-https">1. HTTPS: the baseline, not the finish line</h2>
+        <p>Every modern browser marks a non-HTTPS site as "Not Secure," and Google has used HTTPS as a ranking signal for years. If a site isn't already running fully on HTTPS, this is step zero:</p>
+        <ul>
+          <li><strong>Get a certificate.</strong> Most hosts (and Cloudflare) now issue free SSL/TLS certificates via Let's Encrypt with auto-renewal — there's rarely a reason to pay for one on a small business site.</li>
+          <li><strong>Force HTTPS everywhere.</strong> Redirect all HTTP requests to HTTPS at the server or CDN level, so there's no way to land on an insecure version of any page.</li>
+          <li><strong>Fix mixed content.</strong> A page served over HTTPS that still loads an image, script, or stylesheet over plain HTTP triggers browser warnings and partial padlock failures. Audit old pages for hardcoded <code>http://</code> links.</li>
+          <li><strong>Watch the renewal date.</strong> Auto-renewal usually works, but a lapsed certificate is a common, entirely preventable outage — worth a calendar reminder if your host doesn't confirm renewals by email.</li>
+        </ul>
+        <p>HTTPS encrypts data in transit between the visitor and the server — it doesn't protect the server itself, the admin login, or the database. It's necessary, not sufficient, which is exactly why the rest of this guide exists.</p>
+
+        <h2 id="updates-patching">2. Software updates: where most real breaches start</h2>
+        <p>The single most common cause of a hacked small business website is outdated software — a CMS core, theme, or plugin with a known, published vulnerability that hasn't been patched yet. Security researchers disclose these publicly, which means the fix and the exploit become public knowledge at roughly the same time. Automated bots then scan the web for sites still running the vulnerable version, often within days of disclosure.</p>
+        <div class="step-list">
+          <div class="step"><span class="step-num">1</span><div><strong>Turn on automatic updates</strong> for minor CMS and plugin versions where your platform supports it, and apply major updates within a few days of release after a quick test on staging.</div></div>
+          <div class="step"><span class="step-num">2</span><div><strong>Remove what you don't use.</strong> A deactivated-but-not-deleted plugin is still an attack surface. Delete themes and plugins you're not actively running.</div></div>
+          <div class="step"><span class="step-num">3</span><div><strong>Stick to reputable sources.</strong> Only install plugins and themes from official marketplaces or verified developers — "free" premium plugins from unofficial sites are a well-documented malware vector.</div></div>
+          <div class="step"><span class="step-num">4</span><div><strong>Check your platform's security advisories</strong> periodically, or use a service that emails you when a plugin you run gets a disclosed vulnerability.</div></div>
+        </div>
+        <p>If you're on a fully hosted platform like Shopify or Squarespace, the vendor patches the core platform for you — your exposure narrows to the apps and integrations you've added on top, which still deserve the same scrutiny.</p>
+
+        <h2 id="backups">3. Backups: the thing that makes every other failure recoverable</h2>
+        <p>A backup doesn't prevent an attack, but it's what turns a disaster into an inconvenience. Without one, a hack, a bad update, or even a mistaken bulk delete can mean rebuilding from nothing.</p>
+        <table>
+          <thead><tr><th>What to back up</th><th>Frequency</th><th>Where to store it</th></tr></thead>
+          <tbody>
+            <tr><td>Full site files (code, themes, uploads)</td><td>Daily, or on every deploy for a static/code-driven site</td><td>Off-server storage — not the same host</td></tr>
+            <tr><td>Database (for CMS-driven sites)</td><td>Daily at minimum; hourly for active stores</td><td>Off-server storage, encrypted if it contains customer data</td></tr>
+            <tr><td>Full backup set, kept for 30+ days</td><td>Rolling retention</td><td>At least one copy outside the hosting provider's own backup system</td></tr>
+          </tbody>
+        </table>
+        <p>The rule that matters most: a backup stored only on the same server it's protecting isn't a real backup — if the server is compromised or the account is suspended, the backup goes with it. Most hosts offer one-click backups to external storage (Google Drive, Dropbox, S3), and most CMS platforms have a plugin that automates this. Test a restore at least once after setting it up; a backup nobody has ever restored from is a backup you don't actually know works.</p>
+
+        <h2 id="login-security">4. Login security: the door most attacks try first</h2>
+        <p>Before trying anything sophisticated, automated attacks simply try to log in — using leaked password lists, common password guesses, or default admin usernames. This is the cheapest attack to run and the cheapest to block.</p>
+        <ul>
+          <li><strong>Unique, strong passwords</strong> for every admin account, generated and stored in a password manager rather than reused across sites.</li>
+          <li><strong>Two-factor authentication (2FA)</strong> on every admin and editor account. This single step blocks the large majority of automated account-takeover attempts, even if a password leaks elsewhere.</li>
+          <li><strong>Rename or disable the default admin username</strong> ("admin" is the first guess every bot tries) and limit login attempts to slow down brute-force scripts.</li>
+          <li><strong>Remove unused accounts</strong> — a former employee's or old developer's login is a liability nobody is watching.</li>
+          <li><strong>Restrict admin access by role.</strong> Not every team member needs full administrator access; give editors and contributors the narrowest role that lets them do their job.</li>
+        </ul>
+
+        <h2 id="malware-firewall">5. Malware scanning and a web application firewall</h2>
+        <p>Updates and strong logins close the two biggest doors. A web application firewall (WAF) and malware scanning add a layer that catches what still gets through:</p>
+        <ul>
+          <li><strong>A WAF</strong> — available free or cheap through Cloudflare, Sucuri, or most CMS-specific security plugins — filters malicious traffic (SQL injection attempts, known bad bots, suspicious request patterns) before it reaches the site at all.</li>
+          <li><strong>Malware scanning</strong> checks site files and database content for injected code, hidden spam links, or known malware signatures, usually on a daily schedule with email alerts.</li>
+          <li><strong>File integrity monitoring</strong> flags when core files change unexpectedly — often the first sign of a compromise, long before anything is visibly wrong on the front end.</li>
+          <li><strong>Rate limiting</strong> on login pages and forms prevents brute-force and spam-submission floods from tying up server resources.</li>
+        </ul>
+        <p>None of this needs to be expensive. Cloudflare's free tier includes a basic WAF and DDoS protection; most major CMS platforms have a well-reviewed free security plugin that covers scanning and login hardening in one install.</p>
+
+        <h2 id="common-mistakes">Mistakes that quietly leave a site exposed</h2>
+        <ol>
+          <li><strong>Treating security as a one-time setup.</strong> A site secured at launch and never revisited drifts out of date within months as new vulnerabilities are disclosed in the software it runs.</li>
+          <li><strong>Sharing one login across a whole team.</strong> Shared credentials make it impossible to tell who did what, and a single leaked password compromises every account at once.</li>
+          <li><strong>Ignoring the staging environment.</strong> Testing updates directly on the live site means a broken update is also a public outage — a staging copy catches this before visitors do.</li>
+          <li><strong>Assuming "my site is too small to be a target."</strong> Automated scanners don't check traffic numbers before attacking — a low-traffic site on vulnerable software is exactly as easy to find as a popular one.</li>
+          <li><strong>No backup, or a backup nobody has tested.</strong> The only time a backup's reliability gets discovered is during an actual emergency — which is the worst possible time to find out it doesn't work.</li>
+        </ol>
+
+        <h2 id="if-hacked">If it happens anyway: a short recovery plan</h2>
+        <div class="step-list">
+          <div class="step"><span class="step-num">1</span><div><strong>Take the site offline or into maintenance mode</strong> immediately to stop active damage — don't leave a compromised site serving malware to visitors while you investigate.</div></div>
+          <div class="step"><span class="step-num">2</span><div><strong>Change every admin password and API key</strong> before doing anything else, assuming full compromise until proven otherwise.</div></div>
+          <div class="step"><span class="step-num">3</span><div><strong>Restore from the most recent known-clean backup</strong> rather than trying to manually remove malicious code line by line, unless you have the expertise to be certain you've found everything.</div></div>
+          <div class="step"><span class="step-num">4</span><div><strong>Update everything</strong> — CMS core, theme, and every plugin — before bringing the site back online, so the same vulnerability can't be used again immediately.</div></div>
+          <div class="step"><span class="step-num">5</span><div><strong>Request a Google Safe Browsing review</strong> through Search Console if the site was flagged, once you've confirmed it's clean — this is what lifts the browser warning.</div></div>
+          <div class="step"><span class="step-num">6</span><div><strong>Document what happened</strong> and close the specific gap that let it in, rather than just restoring and hoping it doesn't recur.</div></div>
+        </div>
+        <p>If the hack involved customer data — payment details, passwords, or personal information — check what disclosure is legally required in your jurisdiction and your customers' before deciding recovery is complete. That obligation exists independently of whether the site itself looks fixed.</p>
+
+        <div class="article-conclusion">
+          <h2 id="conclusion">Conclusion</h2>
+          <p>Website security for a small business isn't about building a fortress — it's about not being the easiest target a scanner finds today. HTTPS, current software, real off-server backups, strong logins with 2FA, and a basic firewall cover the overwhelming majority of real-world attacks, and none of it requires a security specialist to maintain. The failure mode isn't skipping these steps once; it's setting them up at launch and never checking back. Treat this list as a recurring quarterly review, not a one-time task, and a hack — if it ever happens — becomes a few hours of recovery instead of a crisis.</p>
+        </div>
+
+        <div class="article-tags">
+          <a href="index.html#website-growth">Website Growth</a>
+          <a href="index.html#seo">SEO</a>
+        </div>
+      </div>
+
+      <div class="ad-slot" aria-hidden="true">Advertisement — Article Bottom<span class="ad-note">No ad network connected. See ADSENSE-SETUP.md.</span></div>
+
+      <div class="related-articles">
+        <h2>Related guides</h2>
+        <div class="card-grid" id="related-articles"></div>
+      </div>
+    </article>
+
+    <aside class="article-sidebar">
+      <div class="sidebar-block">
+        <h4>On this page</h4>
+        <nav class="toc-list">
+          <a href="#why-it-matters">What a hack costs</a>
+          <a href="#ssl-https">1. HTTPS</a>
+          <a href="#updates-patching">2. Updates & patching</a>
+          <a href="#backups">3. Backups</a>
+          <a href="#login-security">4. Login security</a>
+          <a href="#malware-firewall">5. Malware scanning & WAF</a>
+          <a href="#common-mistakes">Common mistakes</a>
+          <a href="#if-hacked">If it happens anyway</a>
+        </nav>
+      </div>
+
+      <div class="sidebar-block sidebar-newsletter">
+        <h4>Newsletter</h4>
+        <p>Practical digital growth ideas, sent occasionally.</p>
+        <form class="newsletter-form" novalidate>
+          <label class="visually-hidden" for="sidebar-email-34">Email address</label>
+          <input id="sidebar-email-34" type="email" name="email" placeholder="you@example.com" required />
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+
+      <div class="sidebar-block">
+        <h4>Related</h4>
+        <div class="sidebar-related" id="sidebar-related"></div>
+      </div>
+
+      <div class="ad-slot" aria-hidden="true">Advertisement — Sidebar<span class="ad-note">No ad network connected.</span></div>
+    </aside>
+  </div>
+</main>
+
+<footer class="site-footer" id="site-footer"></footer>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>

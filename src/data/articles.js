@@ -363,6 +363,17 @@ export const articles = [
     readingTime: "12 min read",
     author: "BridgeSols Editorial",
     tags: ["website speed", "core web vitals", "website growth"]
+  },
+  {
+    slug: "website-security-basics-small-business",
+    title: "Website Security Basics: Protecting a Small Business Site from Hacks and Downtime",
+    excerpt:
+      "SSL, backups, software updates, login security, and the mistakes that most often lead to a hacked small business website — plus what to do if it happens.",
+    category: "Website Growth",
+    date: "2026-10-09",
+    readingTime: "12 min read",
+    author: "BridgeSols Editorial",
+    tags: ["website security", "backups", "website growth"]
   }
 ];
 
