@@ -374,6 +374,17 @@ export const articles = [
     readingTime: "12 min read",
     author: "BridgeSols Editorial",
     tags: ["website security", "backups", "website growth"]
+  },
+  {
+    slug: "sms-marketing-for-us-small-businesses",
+    title: "SMS Marketing for US Small Businesses: A Practical Guide to TCPA Compliance and 10DLC Registration",
+    excerpt:
+      "Carrier registration, consent rules under the TCPA, choosing a platform, and the message types that actually get read — a practical SMS marketing guide for US small businesses.",
+    category: "Digital Marketing",
+    date: "2026-10-10",
+    readingTime: "12 min read",
+    author: "BridgeSols Editorial",
+    tags: ["sms marketing", "usa", "digital marketing"]
   }
 ];
 
