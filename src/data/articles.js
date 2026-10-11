@@ -385,6 +385,17 @@ export const articles = [
     readingTime: "12 min read",
     author: "BridgeSols Editorial",
     tags: ["sms marketing", "usa", "digital marketing"]
+  },
+  {
+    slug: "schema-markup-seo-guide",
+    title: "Schema Markup for SEO: A Practical Guide to Structured Data and Rich Results",
+    excerpt:
+      "Which schema types actually matter for a small business site, real JSON-LD examples for Article, LocalBusiness, Product and FAQ markup, how to test it, and the mistakes that cause a manual action instead of a rich result.",
+    category: "SEO",
+    date: "2026-10-11",
+    readingTime: "12 min read",
+    author: "BridgeSols Editorial",
+    tags: ["schema markup", "structured data", "seo"]
   }
 ];
 
