@@ -396,6 +396,17 @@ export const articles = [
     readingTime: "12 min read",
     author: "BridgeSols Editorial",
     tags: ["schema markup", "structured data", "seo"]
+  },
+  {
+    slug: "website-accessibility-wcag-guide-small-business",
+    title: "Website Accessibility: A Practical WCAG Guide for Small Business Websites",
+    excerpt:
+      "What WCAG actually requires, the accessibility issues that show up on most small business sites, free testing tools, the SEO overlap, and the real legal risk of ignoring it.",
+    category: "Website Growth",
+    date: "2026-10-12",
+    readingTime: "11 min read",
+    author: "BridgeSols Editorial",
+    tags: ["accessibility", "wcag", "website growth"]
   }
 ];
 
