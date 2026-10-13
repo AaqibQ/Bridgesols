@@ -407,6 +407,17 @@ export const articles = [
     readingTime: "11 min read",
     author: "BridgeSols Editorial",
     tags: ["accessibility", "wcag", "website growth"]
+  },
+  {
+    slug: "user-generated-content-marketing-guide",
+    title: "User-Generated Content: A Practical Guide to Collecting and Using Customer Content",
+    excerpt:
+      "How to ask customers for content, get usable permission, and turn reviews, photos and videos into marketing that converts better than anything a brand can produce alone.",
+    category: "Content Marketing",
+    date: "2026-10-13",
+    readingTime: "11 min read",
+    author: "BridgeSols Editorial",
+    tags: ["user-generated content", "content marketing", "social proof"]
   }
 ];
 

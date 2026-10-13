@@ -55,7 +55,8 @@ export default defineConfig({
         article34: resolve(root, "articles/website-security-basics-small-business.html"),
         article35: resolve(root, "articles/sms-marketing-for-us-small-businesses.html"),
         article36: resolve(root, "articles/schema-markup-seo-guide.html"),
-        article37: resolve(root, "articles/website-accessibility-wcag-guide-small-business.html")
+        article37: resolve(root, "articles/website-accessibility-wcag-guide-small-business.html"),
+        article38: resolve(root, "articles/user-generated-content-marketing-guide.html")
       }
     }
   }
