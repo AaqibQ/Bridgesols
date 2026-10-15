@@ -429,6 +429,17 @@ export const articles = [
     readingTime: "12 min read",
     author: "BridgeSols Editorial",
     tags: ["pakistan", "google ads", "ppc"]
+  },
+  {
+    slug: "referral-marketing-programs-small-businesses",
+    title: "Referral Marketing Programs for Small Businesses: A Practical Guide to Turning Customers Into Recruiters",
+    excerpt:
+      "How to design a customer referral program that actually gets used — incentive structures, timing, software options, fraud prevention, and how to measure whether it's working.",
+    category: "Digital Marketing",
+    date: "2026-10-15",
+    readingTime: "11 min read",
+    author: "BridgeSols Editorial",
+    tags: ["referral marketing", "digital marketing", "word of mouth"]
   }
 ];
 
