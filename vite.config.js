@@ -58,7 +58,8 @@ export default defineConfig({
         article37: resolve(root, "articles/website-accessibility-wcag-guide-small-business.html"),
         article38: resolve(root, "articles/user-generated-content-marketing-guide.html"),
         article39: resolve(root, "articles/google-ads-for-businesses-in-pakistan.html"),
-        article40: resolve(root, "articles/referral-marketing-programs-small-businesses.html")
+        article40: resolve(root, "articles/referral-marketing-programs-small-businesses.html"),
+        article41: resolve(root, "articles/landing-page-optimization-guide.html")
       }
     }
   }

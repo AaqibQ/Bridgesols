@@ -440,6 +440,17 @@ export const articles = [
     readingTime: "11 min read",
     author: "BridgeSols Editorial",
     tags: ["referral marketing", "digital marketing", "word of mouth"]
+  },
+  {
+    slug: "landing-page-optimization-guide",
+    title: "Landing Page Optimization: A Practical Guide to Converting More Visitors Into Leads and Sales",
+    excerpt:
+      "Why a landing page isn't a homepage, the elements that actually drive conversions, message match, form friction, trust signals, and how to test changes with limited traffic.",
+    category: "Website Growth",
+    date: "2026-10-16",
+    readingTime: "12 min read",
+    author: "BridgeSols Editorial",
+    tags: ["landing pages", "conversion rate optimization", "website growth"]
   }
 ];
 
