@@ -451,6 +451,17 @@ export const articles = [
     readingTime: "12 min read",
     author: "BridgeSols Editorial",
     tags: ["landing pages", "conversion rate optimization", "website growth"]
+  },
+  {
+    slug: "ai-search-optimization-guide",
+    title: "AI Search Optimization: A Practical Guide to Getting Cited by ChatGPT, Perplexity, and Google AI Overviews",
+    excerpt:
+      "How ChatGPT, Perplexity, and Google's AI Overviews actually choose what to cite, the on-page and off-page signals that earn a mention, and how to measure visibility in answers instead of just rankings.",
+    category: "SEO",
+    date: "2026-10-17",
+    readingTime: "13 min read",
+    author: "BridgeSols Editorial",
+    tags: ["ai search", "generative engine optimization", "seo"]
   }
 ];
 
