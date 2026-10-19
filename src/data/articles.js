@@ -473,6 +473,17 @@ export const articles = [
     readingTime: "12 min read",
     author: "BridgeSols Editorial",
     tags: ["uae", "google ads", "ppc"]
+  },
+  {
+    slug: "linkedin-marketing-for-b2b-small-businesses",
+    title: "LinkedIn Marketing for B2B Small Businesses: A Practical Guide to Generating Leads",
+    excerpt:
+      "How to optimize a company page, build a posting habit that actually gets engagement, use Sales Navigator and LinkedIn Ads within a small budget, and avoid the outreach mistakes that get accounts restricted.",
+    category: "Digital Marketing",
+    date: "2026-10-19",
+    readingTime: "13 min read",
+    author: "BridgeSols Editorial",
+    tags: ["linkedin marketing", "b2b", "digital marketing"]
   }
 ];
 

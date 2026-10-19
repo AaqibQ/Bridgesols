@@ -61,7 +61,8 @@ export default defineConfig({
         article40: resolve(root, "articles/referral-marketing-programs-small-businesses.html"),
         article41: resolve(root, "articles/landing-page-optimization-guide.html"),
         article42: resolve(root, "articles/ai-search-optimization-guide.html"),
-        article43: resolve(root, "articles/google-ads-for-businesses-in-uae.html")
+        article43: resolve(root, "articles/google-ads-for-businesses-in-uae.html"),
+        article44: resolve(root, "articles/linkedin-marketing-for-b2b-small-businesses.html")
       }
     }
   }
