@@ -484,6 +484,17 @@ export const articles = [
     readingTime: "13 min read",
     author: "BridgeSols Editorial",
     tags: ["linkedin marketing", "b2b", "digital marketing"]
+  },
+  {
+    slug: "tiktok-marketing-for-small-businesses",
+    title: "TikTok Marketing for Small Businesses: A Practical Guide to Growing an Audience and Driving Sales",
+    excerpt:
+      "Setting up a business account, how the For You feed algorithm actually works, content formats that convert, TikTok Shop, ads on a small budget, and the mistakes that tank organic reach.",
+    category: "Digital Marketing",
+    date: "2026-10-20",
+    readingTime: "13 min read",
+    author: "BridgeSols Editorial",
+    tags: ["tiktok marketing", "digital marketing", "short-form video"]
   }
 ];
 
