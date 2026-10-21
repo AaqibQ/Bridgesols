@@ -495,6 +495,17 @@ export const articles = [
     readingTime: "13 min read",
     author: "BridgeSols Editorial",
     tags: ["tiktok marketing", "digital marketing", "short-form video"]
+  },
+  {
+    slug: "dropshipping-guide-small-businesses",
+    title: "Dropshipping: A Practical Guide to Starting an Online Store Without Holding Inventory",
+    excerpt:
+      "How dropshipping actually works, picking a supplier and niche that can survive on real margins, and the fulfillment and customer-service problems that sink most stores before they turn a profit.",
+    category: "Online Business",
+    date: "2026-10-21",
+    readingTime: "13 min read",
+    author: "BridgeSols Editorial",
+    tags: ["dropshipping", "online business", "e-commerce"]
   }
 ];
 
