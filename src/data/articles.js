@@ -506,6 +506,17 @@ export const articles = [
     readingTime: "13 min read",
     author: "BridgeSols Editorial",
     tags: ["dropshipping", "online business", "e-commerce"]
+  },
+  {
+    slug: "selling-digital-products-online-courses-guide",
+    title: "Selling Digital Products and Online Courses: A Practical Guide for Small Businesses",
+    excerpt:
+      "Validating demand before you build, choosing a platform and pricing model, and the launch and support realities that determine whether a digital product actually sells.",
+    category: "Online Business",
+    date: "2026-10-22",
+    readingTime: "13 min read",
+    author: "BridgeSols Editorial",
+    tags: ["online courses", "digital products", "online business"]
   }
 ];
 
