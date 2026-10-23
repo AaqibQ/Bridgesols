@@ -517,6 +517,17 @@ export const articles = [
     readingTime: "13 min read",
     author: "BridgeSols Editorial",
     tags: ["online courses", "digital products", "online business"]
+  },
+  {
+    slug: "facebook-ads-for-us-small-businesses",
+    title: "Facebook Ads for US Small Businesses: A Practical Guide to Meta Advertising",
+    excerpt:
+      "Campaign structure, audience targeting after iOS 14, creative that performs, and the mistakes that waste budget fastest — a practical Facebook and Instagram Ads guide for US small businesses.",
+    category: "Digital Marketing",
+    date: "2026-10-23",
+    readingTime: "13 min read",
+    author: "BridgeSols Editorial",
+    tags: ["facebook ads", "usa", "digital marketing"]
   }
 ];
 

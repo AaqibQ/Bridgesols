@@ -65,7 +65,8 @@ export default defineConfig({
         article44: resolve(root, "articles/linkedin-marketing-for-b2b-small-businesses.html"),
         article45: resolve(root, "articles/tiktok-marketing-for-small-businesses.html"),
         article46: resolve(root, "articles/dropshipping-guide-small-businesses.html"),
-        article47: resolve(root, "articles/selling-digital-products-online-courses-guide.html")
+        article47: resolve(root, "articles/selling-digital-products-online-courses-guide.html"),
+        article48: resolve(root, "articles/facebook-ads-for-us-small-businesses.html")
       }
     }
   }
