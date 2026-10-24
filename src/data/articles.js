@@ -528,6 +528,17 @@ export const articles = [
     readingTime: "13 min read",
     author: "BridgeSols Editorial",
     tags: ["facebook ads", "usa", "digital marketing"]
+  },
+  {
+    slug: "youtube-marketing-for-small-businesses",
+    title: "YouTube Marketing for Small Businesses: A Practical Guide to Building a Channel That Drives Sales",
+    excerpt:
+      "Channel setup, how search and suggested-video ranking actually work, content formats that build an audience, Shorts, and YouTube Ads on a small budget.",
+    category: "Digital Marketing",
+    date: "2026-10-24",
+    readingTime: "13 min read",
+    author: "BridgeSols Editorial",
+    tags: ["youtube marketing", "video marketing", "digital marketing"]
   }
 ];
 
