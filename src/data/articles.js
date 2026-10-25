@@ -539,6 +539,17 @@ export const articles = [
     readingTime: "13 min read",
     author: "BridgeSols Editorial",
     tags: ["youtube marketing", "video marketing", "digital marketing"]
+  },
+  {
+    slug: "content-marketing-for-businesses-in-pakistan",
+    title: "Content Marketing for Businesses in Pakistan: Reaching a Mobile-First, Price-Sensitive Audience",
+    excerpt:
+      "Why content built for a desktop, English-first audience underperforms in Pakistan, and how to plan content around mobile data limits, Roman Urdu, and the platforms people actually use.",
+    category: "Content Marketing",
+    date: "2026-10-25",
+    readingTime: "12 min read",
+    author: "BridgeSols Editorial",
+    tags: ["pakistan", "content marketing", "mobile-first"]
   }
 ];
 

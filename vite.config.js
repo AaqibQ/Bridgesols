@@ -67,7 +67,8 @@ export default defineConfig({
         article46: resolve(root, "articles/dropshipping-guide-small-businesses.html"),
         article47: resolve(root, "articles/selling-digital-products-online-courses-guide.html"),
         article48: resolve(root, "articles/facebook-ads-for-us-small-businesses.html"),
-        article49: resolve(root, "articles/youtube-marketing-for-small-businesses.html")
+        article49: resolve(root, "articles/youtube-marketing-for-small-businesses.html"),
+        article50: resolve(root, "articles/content-marketing-for-businesses-in-pakistan.html")
       }
     }
   }
