@@ -561,6 +561,17 @@ export const articles = [
     readingTime: "12 min read",
     author: "BridgeSols Editorial",
     tags: ["uae", "instagram marketing", "digital marketing"]
+  },
+  {
+    slug: "online-reputation-management-small-businesses",
+    title: "Online Reputation Management for Small Businesses: A Practical Guide to Monitoring Reviews and Protecting Your Brand",
+    excerpt:
+      "Where reviews and mentions actually live, how to set up monitoring without expensive tools, how to respond to negative reviews without making things worse, and how to get more real reviews ethically.",
+    category: "Digital Marketing",
+    date: "2026-10-27",
+    readingTime: "12 min read",
+    author: "BridgeSols Editorial",
+    tags: ["online reputation management", "reviews", "digital marketing"]
   }
 ];
 
