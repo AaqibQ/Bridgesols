@@ -70,7 +70,8 @@ export default defineConfig({
         article49: resolve(root, "articles/youtube-marketing-for-small-businesses.html"),
         article50: resolve(root, "articles/content-marketing-for-businesses-in-pakistan.html"),
         article51: resolve(root, "articles/instagram-marketing-for-businesses-in-uae.html"),
-        article52: resolve(root, "articles/online-reputation-management-small-businesses.html")
+        article52: resolve(root, "articles/online-reputation-management-small-businesses.html"),
+        article53: resolve(root, "articles/pinterest-marketing-for-small-businesses.html")
       }
     }
   }

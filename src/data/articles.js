@@ -572,6 +572,17 @@ export const articles = [
     readingTime: "12 min read",
     author: "BridgeSols Editorial",
     tags: ["online reputation management", "reviews", "digital marketing"]
+  },
+  {
+    slug: "pinterest-marketing-for-small-businesses",
+    title: "Pinterest Marketing for Small Businesses: A Practical Guide to Driving Traffic and Sales",
+    excerpt:
+      "Why Pinterest behaves like a search engine instead of a social feed, who it actually works for, setting up a business account correctly, Pinterest SEO, and the metrics that tell you whether it's working.",
+    category: "Digital Marketing",
+    date: "2026-10-28",
+    readingTime: "11 min read",
+    author: "BridgeSols Editorial",
+    tags: ["pinterest marketing", "digital marketing", "visual search"]
   }
 ];
 
