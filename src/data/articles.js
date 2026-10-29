@@ -583,6 +583,17 @@ export const articles = [
     readingTime: "11 min read",
     author: "BridgeSols Editorial",
     tags: ["pinterest marketing", "digital marketing", "visual search"]
+  },
+  {
+    slug: "selling-on-etsy-us-small-businesses",
+    title: "Selling on Etsy: A Practical Guide for US Small Businesses",
+    excerpt:
+      "Listing fees, transaction fees, and offsite ads explained, plus Etsy SEO, pricing, and the paperwork that catches new US sellers off guard.",
+    category: "Online Business",
+    date: "2026-10-29",
+    readingTime: "12 min read",
+    author: "BridgeSols Editorial",
+    tags: ["usa", "etsy", "online business"]
   }
 ];
 
