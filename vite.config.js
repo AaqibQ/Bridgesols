@@ -73,7 +73,8 @@ export default defineConfig({
         article52: resolve(root, "articles/online-reputation-management-small-businesses.html"),
         article53: resolve(root, "articles/pinterest-marketing-for-small-businesses.html"),
         article54: resolve(root, "articles/selling-on-etsy-us-small-businesses.html"),
-        article55: resolve(root, "articles/chatbots-live-chat-small-business-guide.html")
+        article55: resolve(root, "articles/chatbots-live-chat-small-business-guide.html"),
+        article56: resolve(root, "articles/facebook-ads-for-businesses-in-pakistan.html")
       }
     }
   }
