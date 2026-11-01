@@ -616,6 +616,17 @@ export const articles = [
     readingTime: "12 min read",
     author: "BridgeSols Editorial",
     tags: ["pakistan", "facebook ads", "digital marketing"]
+  },
+  {
+    slug: "website-migration-seo-checklist",
+    title: "Website Migration SEO Checklist: How to Change Domains or Platforms Without Losing Rankings",
+    excerpt:
+      "URL mapping, redirect mapping, staging validation, and the post-launch monitoring that keeps a domain or platform migration from collapsing your search rankings.",
+    category: "SEO",
+    date: "2026-11-01",
+    readingTime: "13 min read",
+    author: "BridgeSols Editorial",
+    tags: ["website migration", "technical seo", "seo"]
   }
 ];
 
