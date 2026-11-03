@@ -11,7 +11,7 @@ import { initNewsletterForms } from "./components/Newsletter.js";
 import { articleCard } from "./components/ArticleCard.js";
 import { getRelated, getLatest } from "./data/articles.js";
 import { TOOLS, toolHref, getOtherTools } from "./data/tools.js";
-import { WEB3FORMS_ACCESS_KEY, WEB3FORMS_URL } from "./config.js";
+import { WEB3FORMS_ACCESS_KEY, WEB3FORMS_URL, WHATSAPP_URL, CONTACT_EMAIL } from "./config.js";
 
 import { playHeroEntrance } from "./animations/hero.js";
 import {
@@ -59,6 +59,14 @@ if (page === "article") {
 /* ---------------- Contact page ---------------- */
 if (page === "contact") {
   initContactForm();
+}
+
+/* ---------------- Our Work page ---------------- */
+if (page === "work") {
+  const toolsHost = document.getElementById("work-tools");
+  if (toolsHost) {
+    toolsHost.innerHTML = TOOLS.map((t) => toolCard(t, depth)).join("");
+  }
 }
 
 /* ---------------- Tool pages ---------------- */
@@ -140,6 +148,33 @@ function initArticlePage() {
     block.innerHTML =
       `<h4>Free tools</h4><div class="sidebar-related">${TOOLS.map((t) => `<a href="${toolHref(t, depth)}">${t.name}</a>`).join("")}</div>`;
     relatedBlock.before(block);
+  }
+
+  // Sidebar CTA, placed right after the TOC so it's seen early, not buried below the fold.
+  const newsletterBlock = document.querySelector(".sidebar-newsletter");
+  if (newsletterBlock) {
+    const cta = document.createElement("div");
+    cta.className = "sidebar-block sidebar-cta";
+    cta.innerHTML = `<h4>Need this built, not just explained?</h4>
+      <p>Our team builds the sites, stores and campaigns we write about.</p>
+      <a href="${WHATSAPP_URL}" class="btn btn-primary" target="_blank" rel="noopener">Talk to us</a>`;
+    newsletterBlock.before(cta);
+  }
+
+  // End-of-article CTA: the reader just finished a full guide, so this is the best
+  // moment to offer "we'll do this for you" before they move on to related reading.
+  const articleBody = document.querySelector(".article-body");
+  if (articleBody) {
+    const cta = document.createElement("div");
+    cta.className = "article-cta";
+    cta.innerHTML = `<span class="eyebrow">Want this done, not just read about it?</span>
+      <h3>We're the team that writes these guides — and the one that builds what's in them.</h3>
+      <p>A website, a store, a marketing plan someone actually runs for you. No separate sales team and no invented case studies — just a scoped proposal from the people who'd do the work.</p>
+      <div class="hero-actions">
+        <a href="${WHATSAPP_URL}" class="btn btn-primary" target="_blank" rel="noopener">WhatsApp Us</a>
+        <a href="mailto:${CONTACT_EMAIL}" class="btn btn-ghost">${CONTACT_EMAIL}</a>
+      </div>`;
+    articleBody.insertAdjacentElement("afterend", cta);
   }
 }
 

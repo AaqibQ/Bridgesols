@@ -7,6 +7,12 @@
 export const WEB3FORMS_ACCESS_KEY = "4116dc07-51d9-496a-b1ec-d1f123379567";
 export const WEB3FORMS_URL = "https://api.web3forms.com/submit";
 
+// Contact points used by service CTAs (article sidebar/footer, "Our Work" page,
+// services.html). Keep these in sync if either channel ever changes.
+export const WHATSAPP_URL =
+  "https://wa.me/923312310916?text=Hi%2C%20I%27d%20like%20to%20talk%20about%20a%20project.";
+export const CONTACT_EMAIL = "contact@bridgesols.com";
+
 // Social profiles, shown in the footer. Keep in sync with "sameAs" in the Organization
 // JSON-LD on index.html (a test checks this).
 export const SOCIAL_LINKS = [

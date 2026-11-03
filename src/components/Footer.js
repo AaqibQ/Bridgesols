@@ -33,6 +33,7 @@ export function renderFooter(depth = 0) {
           <li><a href="${p}articles/index.html">Guides</a></li>
           <li><a href="${p}tools/index.html">Tools</a></li>
           <li><a href="${p}services.html">Services</a></li>
+          <li><a href="${p}work.html">Our Work</a></li>
           <li><a href="${p}about.html">About</a></li>
           <li><a href="${p}contact.html">Contact</a></li>
         </ul>

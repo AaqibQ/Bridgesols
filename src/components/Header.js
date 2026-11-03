@@ -6,6 +6,7 @@ const NAV_ITEMS = [
   { label: "Guides", href: "/articles/", match: "articles" },
   { label: "Tools", href: "/tools/", match: "tool" },
   { label: "Services", href: "/services.html", match: "services" },
+  { label: "Our Work", href: "/work.html", match: "work" },
   { label: "About", href: "/about.html", match: "about" }
 ];
 

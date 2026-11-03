@@ -10,6 +10,7 @@ export default defineConfig({
         main: resolve(root, "index.html"),
         about: resolve(root, "about.html"),
         services: resolve(root, "services.html"),
+        work: resolve(root, "work.html"),
         tools: resolve(root, "tools/index.html"),
         toolWordCounter: resolve(root, "tools/word-counter.html"),
         toolMetaLengthChecker: resolve(root, "tools/meta-length-checker.html"),
