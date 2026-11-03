@@ -517,6 +517,138 @@ export const articles = [
     readingTime: "13 min read",
     author: "BridgeSols Editorial",
     tags: ["online courses", "digital products", "online business"]
+  },
+  {
+    slug: "facebook-ads-for-us-small-businesses",
+    title: "Facebook Ads for US Small Businesses: A Practical Guide to Meta Advertising",
+    excerpt:
+      "Campaign structure, audience targeting after iOS 14, creative that performs, and the mistakes that waste budget fastest — a practical Facebook and Instagram Ads guide for US small businesses.",
+    category: "Digital Marketing",
+    date: "2026-10-23",
+    readingTime: "13 min read",
+    author: "BridgeSols Editorial",
+    tags: ["facebook ads", "usa", "digital marketing"]
+  },
+  {
+    slug: "youtube-marketing-for-small-businesses",
+    title: "YouTube Marketing for Small Businesses: A Practical Guide to Building a Channel That Drives Sales",
+    excerpt:
+      "Channel setup, how search and suggested-video ranking actually work, content formats that build an audience, Shorts, and YouTube Ads on a small budget.",
+    category: "Digital Marketing",
+    date: "2026-10-24",
+    readingTime: "13 min read",
+    author: "BridgeSols Editorial",
+    tags: ["youtube marketing", "video marketing", "digital marketing"]
+  },
+  {
+    slug: "content-marketing-for-businesses-in-pakistan",
+    title: "Content Marketing for Businesses in Pakistan: Reaching a Mobile-First, Price-Sensitive Audience",
+    excerpt:
+      "Why content built for a desktop, English-first audience underperforms in Pakistan, and how to plan content around mobile data limits, Roman Urdu, and the platforms people actually use.",
+    category: "Content Marketing",
+    date: "2026-10-25",
+    readingTime: "12 min read",
+    author: "BridgeSols Editorial",
+    tags: ["pakistan", "content marketing", "mobile-first"]
+  },
+  {
+    slug: "instagram-marketing-for-businesses-in-uae",
+    title: "Instagram Marketing for Businesses in the UAE: A Practical Guide to Reaching a Visual, Mobile-First Market",
+    excerpt:
+      "Account setup, content formats that actually get watched, DM-driven sales, influencer costs, Instagram Shopping, and the mistakes that waste a small budget fastest — a practical Instagram marketing guide for the UAE.",
+    category: "Digital Marketing",
+    date: "2026-10-26",
+    readingTime: "12 min read",
+    author: "BridgeSols Editorial",
+    tags: ["uae", "instagram marketing", "digital marketing"]
+  },
+  {
+    slug: "online-reputation-management-small-businesses",
+    title: "Online Reputation Management for Small Businesses: A Practical Guide to Monitoring Reviews and Protecting Your Brand",
+    excerpt:
+      "Where reviews and mentions actually live, how to set up monitoring without expensive tools, how to respond to negative reviews without making things worse, and how to get more real reviews ethically.",
+    category: "Digital Marketing",
+    date: "2026-10-27",
+    readingTime: "12 min read",
+    author: "BridgeSols Editorial",
+    tags: ["online reputation management", "reviews", "digital marketing"]
+  },
+  {
+    slug: "pinterest-marketing-for-small-businesses",
+    title: "Pinterest Marketing for Small Businesses: A Practical Guide to Driving Traffic and Sales",
+    excerpt:
+      "Why Pinterest behaves like a search engine instead of a social feed, who it actually works for, setting up a business account correctly, Pinterest SEO, and the metrics that tell you whether it's working.",
+    category: "Digital Marketing",
+    date: "2026-10-28",
+    readingTime: "11 min read",
+    author: "BridgeSols Editorial",
+    tags: ["pinterest marketing", "digital marketing", "visual search"]
+  },
+  {
+    slug: "selling-on-etsy-us-small-businesses",
+    title: "Selling on Etsy: A Practical Guide for US Small Businesses",
+    excerpt:
+      "Listing fees, transaction fees, and offsite ads explained, plus Etsy SEO, pricing, and the paperwork that catches new US sellers off guard.",
+    category: "Online Business",
+    date: "2026-10-29",
+    readingTime: "12 min read",
+    author: "BridgeSols Editorial",
+    tags: ["usa", "etsy", "online business"]
+  },
+  {
+    slug: "chatbots-live-chat-small-business-guide",
+    title: "Chatbots and Live Chat for Small Business Websites: A Practical Guide to Choosing and Setting One Up",
+    excerpt:
+      "Rule-based chatbots versus AI chatbots versus live chat, how to choose a tool without over-paying, a real setup walkthrough, and the mistakes that make a chat widget worse than no chat at all.",
+    category: "Digital Marketing",
+    date: "2026-10-30",
+    readingTime: "12 min read",
+    author: "BridgeSols Editorial",
+    tags: ["chatbots", "live chat", "digital marketing"]
+  },
+  {
+    slug: "facebook-ads-for-businesses-in-pakistan",
+    title: "Facebook Ads for Businesses in Pakistan: A Practical Guide to Meta Advertising",
+    excerpt:
+      "Billing without a local credit card, Click-to-WhatsApp ads, PKR budgets against a USD-billed platform, and COD fraud prevention — a practical Facebook and Instagram Ads guide for businesses in Pakistan.",
+    category: "Digital Marketing",
+    date: "2026-10-31",
+    readingTime: "12 min read",
+    author: "BridgeSols Editorial",
+    tags: ["pakistan", "facebook ads", "digital marketing"]
+  },
+  {
+    slug: "website-migration-seo-checklist",
+    title: "Website Migration SEO Checklist: How to Change Domains or Platforms Without Losing Rankings",
+    excerpt:
+      "URL mapping, redirect mapping, staging validation, and the post-launch monitoring that keeps a domain or platform migration from collapsing your search rankings.",
+    category: "SEO",
+    date: "2026-11-01",
+    readingTime: "13 min read",
+    author: "BridgeSols Editorial",
+    tags: ["website migration", "technical seo", "seo"]
+  },
+  {
+    slug: "snapchat-marketing-for-businesses-in-uae",
+    title: "Snapchat Marketing for Businesses in the UAE: A Practical Guide to a Gulf-Specific Platform",
+    excerpt:
+      "Why Snapchat still reaches Gulf audiences other platforms miss, setting up Snapchat Business and Snap Ads, AED ad costs, local creators, and the mistakes that waste a UAE Snapchat budget fastest.",
+    category: "Digital Marketing",
+    date: "2026-11-02",
+    readingTime: "12 min read",
+    author: "BridgeSols Editorial",
+    tags: ["uae", "snapchat marketing", "digital marketing"]
+  },
+  {
+    slug: "voice-search-seo-guide",
+    title: "Voice Search Optimization: A Practical Guide to Ranking for Spoken Queries",
+    excerpt:
+      "How Siri, Alexa, and Google Assistant actually choose an answer to read aloud, the conversational keyword research and FAQ formatting that earn that spot, and how to measure voice search's real effect on a small business site.",
+    category: "SEO",
+    date: "2026-11-03",
+    readingTime: "12 min read",
+    author: "BridgeSols Editorial",
+    tags: ["voice search", "featured snippets", "seo"]
   }
 ];
 

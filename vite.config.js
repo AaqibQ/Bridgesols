@@ -65,7 +65,19 @@ export default defineConfig({
         article44: resolve(root, "articles/linkedin-marketing-for-b2b-small-businesses.html"),
         article45: resolve(root, "articles/tiktok-marketing-for-small-businesses.html"),
         article46: resolve(root, "articles/dropshipping-guide-small-businesses.html"),
-        article47: resolve(root, "articles/selling-digital-products-online-courses-guide.html")
+        article47: resolve(root, "articles/selling-digital-products-online-courses-guide.html"),
+        article48: resolve(root, "articles/facebook-ads-for-us-small-businesses.html"),
+        article49: resolve(root, "articles/youtube-marketing-for-small-businesses.html"),
+        article50: resolve(root, "articles/content-marketing-for-businesses-in-pakistan.html"),
+        article51: resolve(root, "articles/instagram-marketing-for-businesses-in-uae.html"),
+        article52: resolve(root, "articles/online-reputation-management-small-businesses.html"),
+        article53: resolve(root, "articles/pinterest-marketing-for-small-businesses.html"),
+        article54: resolve(root, "articles/selling-on-etsy-us-small-businesses.html"),
+        article55: resolve(root, "articles/chatbots-live-chat-small-business-guide.html"),
+        article56: resolve(root, "articles/facebook-ads-for-businesses-in-pakistan.html"),
+        article57: resolve(root, "articles/website-migration-seo-checklist.html"),
+        article58: resolve(root, "articles/snapchat-marketing-for-businesses-in-uae.html"),
+        article59: resolve(root, "articles/voice-search-seo-guide.html")
       }
     }
   }
