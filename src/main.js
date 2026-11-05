@@ -94,7 +94,33 @@ reducedMotionQuery.addEventListener("change", (e) => {
   window.location.reload();
 });
 
+initRobustImages();
+
 /* ================================================================== */
+
+// Firebase Hosting's CDN occasionally serves these JPEGs with a
+// Content-Encoding: gzip header whose declared Content-Length doesn't
+// match the actual compressed stream, which makes the native <img>
+// loader fail even though the bytes are valid (fetch()+blob() decodes
+// them correctly). Retry once that way before giving up.
+function initRobustImages() {
+  document.querySelectorAll(".card-media img, .article-hero-image img").forEach((img) => {
+    img.addEventListener(
+      "error",
+      async () => {
+        try {
+          const res = await fetch(img.src);
+          if (!res.ok) throw new Error("fetch failed");
+          const blob = await res.blob();
+          img.src = URL.createObjectURL(blob);
+        } catch {
+          img.remove();
+        }
+      },
+      { once: true }
+    );
+  });
+}
 
 function initHomepage() {
   const canvasHost = document.querySelector(".hero-canvas");

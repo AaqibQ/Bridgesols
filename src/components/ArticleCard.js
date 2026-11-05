@@ -39,7 +39,7 @@ export function articleCard(article, basePath = "articles/") {
   return `
   <article class="article-card">
     <div class="card-media">
-      <img src="${imgPrefix}${article.slug}.jpg" alt="" onerror="this.remove()" />
+      <img src="${imgPrefix}${article.slug}.jpg" alt="" />
       ${cardMediaSvg(article.slug)}
     </div>
     <div class="card-body">
