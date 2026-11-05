@@ -103,22 +103,30 @@ initRobustImages();
 // match the actual compressed stream, which makes the native <img>
 // loader fail even though the bytes are valid (fetch()+blob() decodes
 // them correctly). Retry once that way before giving up.
+//
+// These images start loading the instant the HTML is parsed, well
+// before this deferred module script runs — so a failed image may
+// already be "complete" (with naturalWidth 0) by the time we get here,
+// and attaching an "error" listener alone would miss that. Check for
+// that already-failed state directly, and only listen for a future
+// error on images still in flight.
 function initRobustImages() {
   document.querySelectorAll(".card-media img, .article-hero-image img").forEach((img) => {
-    img.addEventListener(
-      "error",
-      async () => {
-        try {
-          const res = await fetch(img.src);
-          if (!res.ok) throw new Error("fetch failed");
-          const blob = await res.blob();
-          img.src = URL.createObjectURL(blob);
-        } catch {
-          img.remove();
-        }
-      },
-      { once: true }
-    );
+    const retry = async () => {
+      try {
+        const res = await fetch(img.src);
+        if (!res.ok) throw new Error("fetch failed");
+        const blob = await res.blob();
+        img.src = URL.createObjectURL(blob);
+      } catch {
+        img.remove();
+      }
+    };
+    if (img.complete) {
+      if (img.naturalWidth === 0) retry();
+    } else {
+      img.addEventListener("error", retry, { once: true });
+    }
   });
 }
 
