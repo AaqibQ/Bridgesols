@@ -60,6 +60,14 @@
 .article-main { min-width: 0; }
 
 .article-body { max-width: 720px; }
+.article-hero-image { margin: 0 0 32px; }
+.article-hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+}
 .article-body > p:first-of-type {
   font-size: 1.12rem;
   color: var(--text);
