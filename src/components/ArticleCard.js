@@ -33,9 +33,15 @@ function cardMediaSvg(slug) {
 }
 
 export function articleCard(article, basePath = "articles/") {
+  // Image path is always relative to the site root's images/ folder, regardless
+  // of where this card is rendered from (homepage vs. inside articles/).
+  const imgPrefix = basePath === "articles/" ? "images/articles/" : "../images/articles/";
   return `
   <article class="article-card">
-    <div class="card-media">${cardMediaSvg(article.slug)}</div>
+    <div class="card-media">
+      <img src="${imgPrefix}${article.slug}.jpg" alt="" loading="lazy" onerror="this.remove()" />
+      ${cardMediaSvg(article.slug)}
+    </div>
     <div class="card-body">
       <div class="card-meta">
         <span>${article.category}</span>
