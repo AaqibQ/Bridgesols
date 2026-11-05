@@ -660,6 +660,17 @@ export const articles = [
     readingTime: "13 min read",
     author: "BridgeSols Editorial",
     tags: ["pakistan", "online business", "business registration"]
+  },
+  {
+    slug: "can-spam-email-marketing-compliance-usa",
+    title: "CAN-SPAM Compliance for US Email Marketing: A Practical Guide",
+    excerpt:
+      "What the CAN-SPAM Act actually requires from a US small business sending marketing emails — subject lines, physical address, opt-out handling, penalties, and the mistakes that trigger them.",
+    category: "Digital Marketing",
+    date: "2026-11-05",
+    readingTime: "11 min read",
+    author: "BridgeSols Editorial",
+    tags: ["usa", "email marketing", "compliance"]
   }
 ];
 

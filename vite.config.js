@@ -79,7 +79,8 @@ export default defineConfig({
         article57: resolve(root, "articles/website-migration-seo-checklist.html"),
         article58: resolve(root, "articles/snapchat-marketing-for-businesses-in-uae.html"),
         article59: resolve(root, "articles/voice-search-seo-guide.html"),
-        article60: resolve(root, "articles/starting-online-business-pakistan.html")
+        article60: resolve(root, "articles/starting-online-business-pakistan.html"),
+        article61: resolve(root, "articles/can-spam-email-marketing-compliance-usa.html")
       }
     }
   }
