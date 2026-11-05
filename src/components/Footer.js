@@ -31,6 +31,7 @@ export function renderFooter(depth = 0) {
         <ul>
           <li><a href="${p}index.html">Home</a></li>
           <li><a href="${p}articles/index.html">Guides</a></li>
+          <li><a href="${p}feed.xml">RSS Feed</a></li>
           <li><a href="${p}tools/index.html">Tools</a></li>
           <li><a href="${p}services.html">Services</a></li>
           <li><a href="${p}work.html">Our Work</a></li>
