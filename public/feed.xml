@@ -6,7 +6,15 @@
   <atom:link href="https://bridgesols.com/feed.xml" rel="self" type="application/rss+xml" />
   <description>Practical guides on digital marketing, SEO, content, and building sustainable online businesses.</description>
   <language>en-us</language>
-  <lastBuildDate>Thu, 05 Nov 2026 07:30:00 GMT</lastBuildDate>
+  <lastBuildDate>Fri, 06 Nov 2026 07:30:00 GMT</lastBuildDate>
+  <item>
+    <title>E-Commerce SEO: A Practical Guide to Optimizing Product Pages for Search and Conversions</title>
+    <link>https://bridgesols.com/articles/ecommerce-seo-product-pages.html</link>
+    <guid isPermaLink="true">https://bridgesols.com/articles/ecommerce-seo-product-pages.html</guid>
+    <pubDate>Fri, 06 Nov 2026 07:30:00 GMT</pubDate>
+    <category>SEO</category>
+    <description>Why most product pages don&apos;t rank, duplicate content from variants and filters, writing descriptions that aren&apos;t manufacturer copy, Product schema, and handling out-of-stock items without losing rankings.</description>
+  </item>
   <item>
     <title>CAN-SPAM Compliance for US Email Marketing: A Practical Guide</title>
     <link>https://bridgesols.com/articles/can-spam-email-marketing-compliance-usa.html</link>
@@ -238,14 +246,6 @@
     <pubDate>Thu, 08 Oct 2026 07:30:00 GMT</pubDate>
     <category>Website Growth</category>
     <description>Image optimization, caching, hosting and CDN choices, Core Web Vitals, and the mistakes that quietly slow sites down — a practical speed optimization guide.</description>
-  </item>
-  <item>
-    <title>Selling Online in the UAE: Noon, Amazon.ae, Instagram, or Your Own Store</title>
-    <link>https://bridgesols.com/articles/selling-online-in-uae-noon-amazon-instagram-own-store.html</link>
-    <guid isPermaLink="true">https://bridgesols.com/articles/selling-online-in-uae-noon-amazon-instagram-own-store.html</guid>
-    <pubDate>Wed, 07 Oct 2026 07:30:00 GMT</pubDate>
-    <category>Online Business</category>
-    <description>A practical comparison of Noon, Amazon.ae, Instagram/Facebook shops, and your own store for selling products online in the UAE — fees, payments, licensing, and which to pick first.</description>
   </item>
 </channel>
 </rss>

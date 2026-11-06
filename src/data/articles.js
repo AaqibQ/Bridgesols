@@ -671,6 +671,17 @@ export const articles = [
     readingTime: "11 min read",
     author: "BridgeSols Editorial",
     tags: ["usa", "email marketing", "compliance"]
+  },
+  {
+    slug: "ecommerce-seo-product-pages",
+    title: "E-Commerce SEO: A Practical Guide to Optimizing Product Pages for Search and Conversions",
+    excerpt:
+      "Why most product pages don't rank, duplicate content from variants and filters, writing descriptions that aren't manufacturer copy, Product schema, and handling out-of-stock items without losing rankings.",
+    category: "SEO",
+    date: "2026-11-06",
+    readingTime: "12 min read",
+    author: "BridgeSols Editorial",
+    tags: ["ecommerce seo", "product pages", "seo"]
   }
 ];
 
