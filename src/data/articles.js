@@ -682,6 +682,17 @@ export const articles = [
     readingTime: "12 min read",
     author: "BridgeSols Editorial",
     tags: ["ecommerce seo", "product pages", "seo"]
+  },
+  {
+    slug: "internal-linking-site-architecture-seo",
+    title: "Internal Linking and Site Architecture: A Practical SEO Guide",
+    excerpt:
+      "How link equity actually flows between pages, the site architecture models that make that flow efficient, pillar pages, anchor text, click depth, and a practical internal linking audit.",
+    category: "SEO",
+    date: "2026-11-07",
+    readingTime: "12 min read",
+    author: "BridgeSols Editorial",
+    tags: ["internal linking", "site architecture", "seo"]
   }
 ];
 

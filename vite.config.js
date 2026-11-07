@@ -81,7 +81,8 @@ export default defineConfig({
         article59: resolve(root, "articles/voice-search-seo-guide.html"),
         article60: resolve(root, "articles/starting-online-business-pakistan.html"),
         article61: resolve(root, "articles/can-spam-email-marketing-compliance-usa.html"),
-        article62: resolve(root, "articles/ecommerce-seo-product-pages.html")
+        article62: resolve(root, "articles/ecommerce-seo-product-pages.html"),
+        article63: resolve(root, "articles/internal-linking-site-architecture-seo.html")
       }
     }
   }

@@ -6,7 +6,15 @@
   <atom:link href="https://bridgesols.com/feed.xml" rel="self" type="application/rss+xml" />
   <description>Practical guides on digital marketing, SEO, content, and building sustainable online businesses.</description>
   <language>en-us</language>
-  <lastBuildDate>Fri, 06 Nov 2026 07:30:00 GMT</lastBuildDate>
+  <lastBuildDate>Sat, 07 Nov 2026 07:30:00 GMT</lastBuildDate>
+  <item>
+    <title>Internal Linking and Site Architecture: A Practical SEO Guide</title>
+    <link>https://bridgesols.com/articles/internal-linking-site-architecture-seo.html</link>
+    <guid isPermaLink="true">https://bridgesols.com/articles/internal-linking-site-architecture-seo.html</guid>
+    <pubDate>Sat, 07 Nov 2026 07:30:00 GMT</pubDate>
+    <category>SEO</category>
+    <description>How link equity actually flows between pages, the site architecture models that make that flow efficient, pillar pages, anchor text, click depth, and a practical internal linking audit.</description>
+  </item>
   <item>
     <title>E-Commerce SEO: A Practical Guide to Optimizing Product Pages for Search and Conversions</title>
     <link>https://bridgesols.com/articles/ecommerce-seo-product-pages.html</link>
@@ -238,14 +246,6 @@
     <pubDate>Fri, 09 Oct 2026 07:30:00 GMT</pubDate>
     <category>Website Growth</category>
     <description>SSL, backups, software updates, login security, and the mistakes that most often lead to a hacked small business website — plus what to do if it happens.</description>
-  </item>
-  <item>
-    <title>Website Speed Optimization: A Practical Guide to Faster Page Loads</title>
-    <link>https://bridgesols.com/articles/website-speed-optimization-guide.html</link>
-    <guid isPermaLink="true">https://bridgesols.com/articles/website-speed-optimization-guide.html</guid>
-    <pubDate>Thu, 08 Oct 2026 07:30:00 GMT</pubDate>
-    <category>Website Growth</category>
-    <description>Image optimization, caching, hosting and CDN choices, Core Web Vitals, and the mistakes that quietly slow sites down — a practical speed optimization guide.</description>
   </item>
 </channel>
 </rss>
