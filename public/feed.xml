@@ -6,7 +6,15 @@
   <atom:link href="https://bridgesols.com/feed.xml" rel="self" type="application/rss+xml" />
   <description>Practical guides on digital marketing, SEO, content, and building sustainable online businesses.</description>
   <language>en-us</language>
-  <lastBuildDate>Sat, 07 Nov 2026 07:30:00 GMT</lastBuildDate>
+  <lastBuildDate>Sun, 08 Nov 2026 07:30:00 GMT</lastBuildDate>
+  <item>
+    <title>Customer Loyalty Programs for Small Businesses: A Practical Guide to Turning Repeat Customers Into Revenue</title>
+    <link>https://bridgesols.com/articles/customer-loyalty-programs-small-business-guide.html</link>
+    <guid isPermaLink="true">https://bridgesols.com/articles/customer-loyalty-programs-small-business-guide.html</guid>
+    <pubDate>Sun, 08 Nov 2026 07:30:00 GMT</pubDate>
+    <category>Digital Marketing</category>
+    <description>How to design a loyalty program that actually changes buying behavior — points vs. tiers vs. paid membership, reward sizing against margin, software options, and the metrics that prove it&apos;s working.</description>
+  </item>
   <item>
     <title>Internal Linking and Site Architecture: A Practical SEO Guide</title>
     <link>https://bridgesols.com/articles/internal-linking-site-architecture-seo.html</link>
@@ -238,14 +246,6 @@
     <pubDate>Sat, 10 Oct 2026 07:30:00 GMT</pubDate>
     <category>Digital Marketing</category>
     <description>Carrier registration, consent rules under the TCPA, choosing a platform, and the message types that actually get read — a practical SMS marketing guide for US small businesses.</description>
-  </item>
-  <item>
-    <title>Website Security Basics: Protecting a Small Business Site from Hacks and Downtime</title>
-    <link>https://bridgesols.com/articles/website-security-basics-small-business.html</link>
-    <guid isPermaLink="true">https://bridgesols.com/articles/website-security-basics-small-business.html</guid>
-    <pubDate>Fri, 09 Oct 2026 07:30:00 GMT</pubDate>
-    <category>Website Growth</category>
-    <description>SSL, backups, software updates, login security, and the mistakes that most often lead to a hacked small business website — plus what to do if it happens.</description>
   </item>
 </channel>
 </rss>

@@ -693,6 +693,17 @@ export const articles = [
     readingTime: "12 min read",
     author: "BridgeSols Editorial",
     tags: ["internal linking", "site architecture", "seo"]
+  },
+  {
+    slug: "customer-loyalty-programs-small-business-guide",
+    title: "Customer Loyalty Programs for Small Businesses: A Practical Guide to Turning Repeat Customers Into Revenue",
+    excerpt:
+      "How to design a loyalty program that actually changes buying behavior — points vs. tiers vs. paid membership, reward sizing against margin, software options, and the metrics that prove it's working.",
+    category: "Digital Marketing",
+    date: "2026-11-08",
+    readingTime: "12 min read",
+    author: "BridgeSols Editorial",
+    tags: ["loyalty programs", "customer retention", "digital marketing"]
   }
 ];
 
