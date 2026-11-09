@@ -6,7 +6,15 @@
   <atom:link href="https://bridgesols.com/feed.xml" rel="self" type="application/rss+xml" />
   <description>Practical guides on digital marketing, SEO, content, and building sustainable online businesses.</description>
   <language>en-us</language>
-  <lastBuildDate>Sun, 08 Nov 2026 07:30:00 GMT</lastBuildDate>
+  <lastBuildDate>Mon, 09 Nov 2026 07:30:00 GMT</lastBuildDate>
+  <item>
+    <title>Email Marketing Compliance in the UAE: PDPL and Cybercrime Law Rules</title>
+    <link>https://bridgesols.com/articles/uae-email-marketing-compliance-tdra-pdpl.html</link>
+    <guid isPermaLink="true">https://bridgesols.com/articles/uae-email-marketing-compliance-tdra-pdpl.html</guid>
+    <pubDate>Mon, 09 Nov 2026 07:30:00 GMT</pubDate>
+    <category>Digital Marketing</category>
+    <description>What the UAE&apos;s PDPL and Cybercrime Law actually require from a business sending marketing emails — opt-in consent, data subject rights, cross-border transfer limits, and the penalties for getting it wrong.</description>
+  </item>
   <item>
     <title>Customer Loyalty Programs for Small Businesses: A Practical Guide to Turning Repeat Customers Into Revenue</title>
     <link>https://bridgesols.com/articles/customer-loyalty-programs-small-business-guide.html</link>
@@ -238,14 +246,6 @@
     <pubDate>Sun, 11 Oct 2026 07:30:00 GMT</pubDate>
     <category>SEO</category>
     <description>Which schema types actually matter for a small business site, real JSON-LD examples for Article, LocalBusiness, Product and FAQ markup, how to test it, and the mistakes that cause a manual action instead of a rich result.</description>
-  </item>
-  <item>
-    <title>SMS Marketing for US Small Businesses: A Practical Guide to TCPA Compliance and 10DLC Registration</title>
-    <link>https://bridgesols.com/articles/sms-marketing-for-us-small-businesses.html</link>
-    <guid isPermaLink="true">https://bridgesols.com/articles/sms-marketing-for-us-small-businesses.html</guid>
-    <pubDate>Sat, 10 Oct 2026 07:30:00 GMT</pubDate>
-    <category>Digital Marketing</category>
-    <description>Carrier registration, consent rules under the TCPA, choosing a platform, and the message types that actually get read — a practical SMS marketing guide for US small businesses.</description>
   </item>
 </channel>
 </rss>

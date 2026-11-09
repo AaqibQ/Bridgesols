@@ -83,7 +83,8 @@ export default defineConfig({
         article61: resolve(root, "articles/can-spam-email-marketing-compliance-usa.html"),
         article62: resolve(root, "articles/ecommerce-seo-product-pages.html"),
         article63: resolve(root, "articles/internal-linking-site-architecture-seo.html"),
-        article64: resolve(root, "articles/customer-loyalty-programs-small-business-guide.html")
+        article64: resolve(root, "articles/customer-loyalty-programs-small-business-guide.html"),
+        article65: resolve(root, "articles/uae-email-marketing-compliance-tdra-pdpl.html")
       }
     }
   }

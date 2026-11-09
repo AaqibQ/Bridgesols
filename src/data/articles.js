@@ -704,6 +704,17 @@ export const articles = [
     readingTime: "12 min read",
     author: "BridgeSols Editorial",
     tags: ["loyalty programs", "customer retention", "digital marketing"]
+  },
+  {
+    slug: "uae-email-marketing-compliance-tdra-pdpl",
+    title: "Email Marketing Compliance in the UAE: PDPL and Cybercrime Law Rules",
+    excerpt:
+      "What the UAE's PDPL and Cybercrime Law actually require from a business sending marketing emails — opt-in consent, data subject rights, cross-border transfer limits, and the penalties for getting it wrong.",
+    category: "Digital Marketing",
+    date: "2026-11-09",
+    readingTime: "11 min read",
+    author: "BridgeSols Editorial",
+    tags: ["uae", "email marketing", "compliance"]
   }
 ];
 
