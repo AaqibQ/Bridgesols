@@ -715,6 +715,17 @@ export const articles = [
     readingTime: "11 min read",
     author: "BridgeSols Editorial",
     tags: ["uae", "email marketing", "compliance"]
+  },
+  {
+    slug: "image-seo-optimization-guide",
+    title: "Image SEO: A Practical Guide to Optimizing Images for Search Visibility and Page Speed",
+    excerpt:
+      "How to name, compress, and mark up images so they rank in Google Images, don't drag down Core Web Vitals, and actually support the page they sit on — no keyword-stuffed alt text.",
+    category: "SEO",
+    date: "2026-11-10",
+    readingTime: "11 min read",
+    author: "BridgeSols Editorial",
+    tags: ["image seo", "core web vitals", "seo"]
   }
 ];
 

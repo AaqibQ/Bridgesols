@@ -6,7 +6,15 @@
   <atom:link href="https://bridgesols.com/feed.xml" rel="self" type="application/rss+xml" />
   <description>Practical guides on digital marketing, SEO, content, and building sustainable online businesses.</description>
   <language>en-us</language>
-  <lastBuildDate>Mon, 09 Nov 2026 07:30:00 GMT</lastBuildDate>
+  <lastBuildDate>Tue, 10 Nov 2026 07:30:00 GMT</lastBuildDate>
+  <item>
+    <title>Image SEO: A Practical Guide to Optimizing Images for Search Visibility and Page Speed</title>
+    <link>https://bridgesols.com/articles/image-seo-optimization-guide.html</link>
+    <guid isPermaLink="true">https://bridgesols.com/articles/image-seo-optimization-guide.html</guid>
+    <pubDate>Tue, 10 Nov 2026 07:30:00 GMT</pubDate>
+    <category>SEO</category>
+    <description>How to name, compress, and mark up images so they rank in Google Images, don&apos;t drag down Core Web Vitals, and actually support the page they sit on — no keyword-stuffed alt text.</description>
+  </item>
   <item>
     <title>Email Marketing Compliance in the UAE: PDPL and Cybercrime Law Rules</title>
     <link>https://bridgesols.com/articles/uae-email-marketing-compliance-tdra-pdpl.html</link>
@@ -238,14 +246,6 @@
     <pubDate>Mon, 12 Oct 2026 07:30:00 GMT</pubDate>
     <category>Website Growth</category>
     <description>What WCAG actually requires, the accessibility issues that show up on most small business sites, free testing tools, the SEO overlap, and the real legal risk of ignoring it.</description>
-  </item>
-  <item>
-    <title>Schema Markup for SEO: A Practical Guide to Structured Data and Rich Results</title>
-    <link>https://bridgesols.com/articles/schema-markup-seo-guide.html</link>
-    <guid isPermaLink="true">https://bridgesols.com/articles/schema-markup-seo-guide.html</guid>
-    <pubDate>Sun, 11 Oct 2026 07:30:00 GMT</pubDate>
-    <category>SEO</category>
-    <description>Which schema types actually matter for a small business site, real JSON-LD examples for Article, LocalBusiness, Product and FAQ markup, how to test it, and the mistakes that cause a manual action instead of a rich result.</description>
   </item>
 </channel>
 </rss>
