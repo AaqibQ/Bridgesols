@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SEO Content Audits: A Practical Guide to Finding and Fixing Underperforming Pages | BridgeSols</title>
+<meta name="description" content="How to audit an existing site's content with free Search Console and GA4 data — which pages to keep, update, merge, or prune — and how to do it without losing rankings." />
+<link rel="canonical" href="https://bridgesols.com/articles/seo-content-audit-guide.html" />
+<link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CHM1D4R5CF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CHM1D4R5CF');
+</script>
+<meta name="google-adsense-account" content="ca-pub-1131519158577575">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1131519158577575" crossorigin="anonymous"></script>
+
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="BridgeSols" />
+<meta property="og:title" content="SEO Content Audits: A Practical Guide to Finding and Fixing Underperforming Pages" />
+<meta property="og:description" content="How to audit an existing site's content with free Search Console and GA4 data — which pages to keep, update, merge, or prune — and how to do it without losing rankings." />
+<meta property="og:url" content="https://bridgesols.com/articles/seo-content-audit-guide.html" />
+<meta property="og:image" content="https://bridgesols.com/images/articles/seo-content-audit-guide.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://bridgesols.com/images/articles/seo-content-audit-guide.jpg" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "SEO Content Audits: A Practical Guide to Finding and Fixing Underperforming Pages",
+  "description": "How to audit an existing site's content with free Search Console and GA4 data — which pages to keep, update, merge, or prune — and how to do it without losing rankings.",
+  "image": "https://bridgesols.com/images/articles/seo-content-audit-guide.jpg",
+  "author": { "@type": "Organization", "name": "BridgeSols" },
+  "publisher": { "@type": "Organization", "name": "BridgeSols", "logo": { "@type": "ImageObject", "url": "https://bridgesols.com/favicon.svg" } },
+  "datePublished": "2026-11-11",
+  "dateModified": "2026-11-11",
+  "mainEntityOfPage": "https://bridgesols.com/articles/seo-content-audit-guide.html"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://bridgesols.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://bridgesols.com/articles/" },
+    { "@type": "ListItem", "position": 3, "name": "SEO Content Audits", "item": "https://bridgesols.com/articles/seo-content-audit-guide.html" }
+  ]
+}
+</script>
+</head>
+<body data-page="article" data-depth="1" data-slug="seo-content-audit-guide">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="site-header"></header>
+
+<main id="main">
+  <section class="article-hero">
+    <div class="wrap">
+      <div class="breadcrumb"><a href="../index.html">Home</a><span>/</span><a href="index.html">Guides</a><span>/</span><span>SEO Content Audits</span></div>
+      <span class="eyebrow">SEO</span>
+      <h1>SEO Content Audits: A Practical Guide to Finding and Fixing Underperforming Pages</h1>
+      <p class="dek">Most sites that have been publishing for a year or two carry pages that quietly do nothing — no traffic, no rankings, sometimes competing with a better page on the same site. A content audit is how you find them and decide, page by page, whether to update, merge, or remove them. Here's how to run one without a paid tool and without accidentally deleting something that's actually working.</p>
+      <div class="article-byline">
+        <span class="avatar">BE</span>
+        <span><strong>BridgeSols Editorial</strong></span>
+        <span class="sep">&middot;</span>
+        <span>Published November 11, 2026</span>
+        <span class="sep">&middot;</span>
+        <span>12 min read</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="ad-slot" aria-hidden="true">Advertisement — Article Top<span class="ad-note">No ad network connected. See ADSENSE-SETUP.md.</span></div>
+  </div>
+
+  <div class="wrap article-layout">
+    <article class="article-main">
+      <div class="article-body">
+        <p>Every site that has published content for more than a year or two eventually runs into the same quiet problem: a growing share of its pages do nothing. They don't rank, they don't get clicked, and nobody notices because nobody's job is to notice — the team is busy publishing the next thing. Meanwhile, a few of those dead pages are often competing with a better page on the same topic, splitting the ranking signal between them instead of combining it. A content audit is the process of finding that dead weight and deciding, deliberately, what to do with each piece of it: leave it, update it, merge it into something stronger, or take it down. It's unglamorous work, and it's also one of the higher-leverage things a site with an existing content library can do, because it doesn't require writing anything new — it requires fixing what's already there.</p>
+
+        <h2 id="why-content-audits">Why underperforming content is a real cost, not just clutter</h2>
+        <p>It's tempting to treat old, low-traffic pages as harmless — they're not hurting anything, so why touch them? In practice, they cost a site in three specific ways:</p>
+        <ul>
+          <li><strong>Crawl budget.</strong> Search engines allocate a finite amount of crawling attention to a site, especially a smaller one without a strong authority signal. Every thin, outdated, or near-duplicate page a crawler has to process is attention not spent re-crawling the pages that actually matter.</li>
+          <li><strong>Diluted topical authority.</strong> When five separate pages all half-cover the same topic, none of them accumulates the backlinks, internal links, and engagement signals that would let one strong page rank well. Consolidating them into a single authoritative page is often the single fastest ranking improvement available on an older site.</li>
+          <li><strong>A worse average page quality signal.</strong> Google's own public guidance and the "helpful content" updates since 2022 have made it explicit that a site's overall content quality — not just the quality of any one page — factors into how the whole domain is evaluated. A site with hundreds of thin, outdated pages can see its genuinely good pages rank worse than they would on a leaner, more consistent site.</li>
+        </ul>
+        <p>None of this means delete aggressively. It means audit deliberately — and the rest of this guide is about how to tell the difference between a page that's underperforming because it needs work and a page that's underperforming because it should never have competed for its current query in the first place.</p>
+
+        <h2 id="when-to-audit">Signs a site is overdue for one</h2>
+        <p>A content audit doesn't need to happen on a fixed schedule from day one, but a few signals reliably mean it's time:</p>
+        <ul>
+          <li>The site has 50+ published pages or posts and has never been audited.</li>
+          <li>Organic traffic has plateaued or declined over the past 6–12 months despite continued publishing.</li>
+          <li>Google Search Console shows multiple pages ranking for very similar queries, with neither ranking particularly well (a classic sign of keyword cannibalization, covered below).</li>
+          <li>The site has gone through a rebrand, a pivot in products or services, or a redesign, leaving old content that no longer matches what the business actually offers.</li>
+          <li>A manual spot-check of posts from 18+ months ago turns up outdated statistics, dead links, or advice that's since changed (common in fast-moving categories like SEO, software, or regulation-heavy topics).</li>
+        </ul>
+
+        <h2 id="pulling-the-data">Pulling the data: what you actually need, and where it's free</h2>
+        <p>A content audit runs on data, not instinct, and all of it is available without a paid tool for a site of reasonable size:</p>
+        <table>
+          <thead><tr><th>Data point</th><th>Source</th><th>What it tells you</th></tr></thead>
+          <tbody>
+            <tr><td>Clicks, impressions, average position</td><td>Google Search Console — Performance report, filtered by page</td><td>Whether a page gets found at all, and roughly where it ranks</td></tr>
+            <tr><td>Sessions, engagement time, conversions</td><td>Google Analytics 4 — Pages and screens report</td><td>Whether the traffic a page does get actually does anything</td></tr>
+            <tr><td>Referring domains and backlinks</td><td>Google Search Console — Links report, or a free-tier check in Ahrefs/Semrush/Ubersuggest</td><td>Whether a page has external authority worth preserving if merged or redirected</td></tr>
+            <tr><td>Indexation status</td><td>Google Search Console — Pages report (Indexing)</td><td>Whether Google has already decided a page isn't worth indexing</td></tr>
+            <tr><td>Publish/update date, word count, internal links in</td><td>Your CMS export or a crawl with Screaming Frog (free up to 500 URLs)</td><td>Age and depth context for each page, and how well-connected it is internally</td></tr>
+          </tbody>
+        </table>
+        <p>For most small business sites, Search Console's Performance export and a Screaming Frog crawl cover the whole audit. Export both to a spreadsheet and join them on URL — that single sheet becomes the working document for everything that follows.</p>
+
+        <h2 id="classifying-pages">A classification framework: five buckets, not a pass/fail</h2>
+        <p>The mistake most audits make is treating every page as either "keep" or "delete." A page's actual fate is usually one of five outcomes, and most pages fall somewhere other than the two extremes:</p>
+        <table>
+          <thead><tr><th>Bucket</th><th>What it looks like</th><th>Action</th></tr></thead>
+          <tbody>
+            <tr><td>Keep as-is</td><td>Ranks well, gets consistent traffic, content is still accurate</td><td>No action — don't touch what's working</td></tr>
+            <tr><td>Update</td><td>Was ranking, has declined, or covers a topic correctly but thinly or with outdated facts</td><td>Refresh content, expand coverage, update dates and statistics, re-submit for indexing</td></tr>
+            <tr><td>Consolidate / merge</td><td>Two or more pages compete for the same query, none ranks well alone</td><td>Merge into one stronger page; 301-redirect the others into it</td></tr>
+            <tr><td>Redirect</td><td>Covers a topic the business no longer offers, but the URL has backlinks or residual traffic worth preserving</td><td>301 redirect to the closest relevant current page</td></tr>
+            <tr><td>Remove</td><td>No traffic, no backlinks, no relevance to the current business, nothing worth preserving</td><td>Remove and return a 410 (Gone), or noindex if it must stay live for users</td></tr>
+          </tbody>
+        </table>
+
+        <h2 id="decision-criteria">The decision criteria, page by page</h2>
+        <p>Run every page in the spreadsheet through the same sequence of questions. In order:</p>
+        <ol>
+          <li><strong>Does it get any organic clicks in the last 12 months?</strong> If yes, and it's trending flat or up, it's very likely a Keep or an Update — don't remove something that's earning its place, even a small amount.</li>
+          <li><strong>Does another page on the site rank for the same or a very similar primary query?</strong> If yes, this is a cannibalization case — move to the Consolidate decision below rather than judging the page in isolation.</li>
+          <li><strong>Does it have backlinks from other domains?</strong> Check the Links report. A page with real referring domains should never be deleted outright — redirect it even if the content itself is weak, so the link equity isn't wasted.</li>
+          <li><strong>Is the information still accurate?</strong> Outdated statistics, discontinued products, old pricing, or superseded best practices (common in SEO and software content) push a page toward Update even if its traffic numbers look fine today.</li>
+          <li><strong>Does it still match something the business actually does?</strong> A service page for something the business no longer offers, or a comparison of tools that no longer exist, is a Redirect or Remove candidate regardless of its historical traffic.</li>
+          <li><strong>If none of the above apply — no traffic, no backlinks, no relevance — remove it.</strong> This is a smaller bucket than most people expect going in; most underperforming pages have at least a few backlinks or a thin trickle of traffic worth redirecting rather than deleting outright.</li>
+        </ol>
+
+        <h2 id="keyword-cannibalization">Keyword cannibalization: the pattern that fixes itself fastest</h2>
+        <p>Cannibalization happens when two or more pages on the same site target the same search intent, and Google can't decide which one to rank — so it alternates between them, or ranks both weakly, instead of putting its full ranking signal behind one. It's one of the most common findings in a first-time audit, and it's also one of the most satisfying to fix because the result is usually immediate: combine the signal that was being split, and the resulting single page frequently ranks higher than either original page did on its own.</p>
+        <p>To spot it in the Search Console export, sort by query instead of page and look for the same query appearing under multiple URLs with similar, mediocre average positions — commonly somewhere in positions 8 through 20, never quite breaking onto page one. That pattern, more than any single metric, is the clearest sign two pages are fighting each other instead of fighting competitors.</p>
+
+        <h2 id="rewriting-vs-merging">Merging pages correctly: more than copy-paste</h2>
+        <p>A proper merge is not pasting one article's content underneath another's and calling it done. Done right, it looks like this:</p>
+        <ol>
+          <li>Identify which of the competing pages has the stronger foundation — more backlinks, better existing ranking, or a cleaner URL — and keep that one as the surviving page.</li>
+          <li>Pull any genuinely useful subtopics, examples, or sections from the page being retired into the surviving page, rather than duplicating its structure.</li>
+          <li>Rewrite the surviving page's introduction and headings so it reads as a complete, standalone answer to the combined intent — not as two articles stitched together.</li>
+          <li>301-redirect the retired URL to the surviving URL. This is the step that actually transfers the backlinks and historical ranking signal; skipping it and just deleting the old page forfeits that equity entirely.</li>
+          <li>Update internal links across the site that pointed to the retired page so they point directly to the surviving page, rather than relying on the redirect to carry every visitor and every crawl.</li>
+        </ol>
+
+        <h2 id="pruning-safely">Pruning without losing rankings you didn't mean to touch</h2>
+        <p>Removing content carries real risk if done carelessly, mostly because "no traffic today" and "no value at all" aren't the same thing. A few rules that keep pruning safe:</p>
+        <ul>
+          <li><strong>Check backlinks before every removal, not just the obvious candidates.</strong> A page with zero current traffic can still hold backlinks worth real ranking equity elsewhere on the site if redirected.</li>
+          <li><strong>Prune in small batches and watch Search Console afterward.</strong> Removing dozens of pages in one sitting makes it hard to isolate cause and effect if overall traffic dips; a batch of 10–20 with a two-to-four-week observation window is a safer pace for a first audit.</li>
+          <li><strong>Use a 410 (Gone) status for pages with genuinely nothing of value, not a 404.</strong> A 410 tells search engines the removal was intentional and prompts faster de-indexing than a plain 404, which search engines sometimes keep re-checking for months.</li>
+          <li><strong>Use noindex instead of removal for pages that still serve users but shouldn't rank</strong> — an old internal landing page kept live for a specific email campaign, for instance.</li>
+          <li><strong>Never bulk-delete based on a single metric.</strong> A page with low traffic but strong backlinks, or low traffic but high on-page conversion from the few visitors it does get, is not a removal candidate just because one number looks bad.</li>
+        </ul>
+
+        <h2 id="tracking-results">Measuring whether the audit actually worked</h2>
+        <p>An audit isn't complete when the spreadsheet is finished — it's complete when the results are verified. Set a recheck point four to eight weeks after the changes go live and compare:</p>
+        <ul>
+          <li><strong>Total indexed pages</strong> (Search Console Pages report) — should drop roughly in line with how many pages were removed or redirected.</li>
+          <li><strong>Click-through and average position for merged topics</strong> — the surviving page should show a ranking improvement over where either original page sat alone, usually within a few weeks of the redirect propagating.</li>
+          <li><strong>Overall site organic traffic trend</strong> — should hold steady or improve. A sudden drop right after a large pruning batch is the signal to check whether something with real value got removed by mistake, and reverse it quickly.</li>
+          <li><strong>Crawl stats</strong> (Search Console Crawl Stats report, or server logs if available) — a leaner site often sees Googlebot spend more of its attention on the pages that remain.</li>
+        </ul>
+
+        <h2 id="audit-cadence">How often to repeat the process</h2>
+        <p>A full audit doesn't need to happen often. For most small business sites, an annual pass is enough to catch outdated content and new cannibalization before it compounds. Two situations call for an off-cycle audit regardless of timing: a major rebrand or product change that leaves a batch of content suddenly irrelevant, and a noticeable, unexplained drop in overall organic traffic that isn't tied to an obvious algorithm update — in both cases, a fresh look at what's actually live often surfaces the cause faster than guessing at it.</p>
+
+        <h2 id="common-mistakes">Mistakes that undo the benefit of an audit</h2>
+        <ul>
+          <li><strong>Deleting instead of redirecting pages with backlinks.</strong> This is the single most common way an audit accidentally costs a site ranking equity instead of recovering it.</li>
+          <li><strong>Merging pages without rewriting them into one coherent piece.</strong> A page that reads as two articles taped together doesn't perform like one well-structured page, even after the redirect is in place.</li>
+          <li><strong>Judging a page by traffic alone.</strong> A low-traffic page that converts well, or that exists mainly to support internal linking to a money page, isn't a waste just because its own numbers look thin.</li>
+          <li><strong>Pruning everything in one large batch with no observation window.</strong> This makes it nearly impossible to tell which specific change caused any traffic shift that follows.</li>
+          <li><strong>Treating the audit as a one-time project instead of a repeatable process.</strong> The content that's thin or outdated today isn't the same content that will be thin or outdated in two years — the same site will need this again.</li>
+        </ul>
+
+        <div class="article-conclusion">
+          <h2 id="conclusion">Conclusion</h2>
+          <p>A content audit is one of the few SEO projects that improves a site without adding a single new page to it — it just makes better use of what's already published. The process is mechanical rather than clever: pull the Search Console and GA4 data, classify every page into keep, update, consolidate, redirect, or remove, merge and redirect carefully rather than deleting outright, and check the results a few weeks later instead of assuming the plan worked. For a site that's been publishing for a year or more without ever doing this, it's often the fastest ranking improvement available — not because it adds anything new, but because it stops old pages from quietly working against each other.</p>
+        </div>
+
+        <div class="article-tags">
+          <a href="index.html">Content Audit</a>
+          <a href="index.html">Content Pruning</a>
+          <a href="index.html">SEO</a>
+        </div>
+      </div>
+
+      <div class="ad-slot" aria-hidden="true">Advertisement — Article Bottom<span class="ad-note">No ad network connected. See ADSENSE-SETUP.md.</span></div>
+
+      <div class="related-articles">
+        <h2>Related guides</h2>
+        <div class="card-grid" id="related-articles"></div>
+      </div>
+    </article>
+
+    <aside class="article-sidebar">
+      <div class="sidebar-block">
+        <h4>On this page</h4>
+        <nav class="toc-list">
+          <a href="#why-content-audits">Why underperforming content costs you</a>
+          <a href="#when-to-audit">Signs it's overdue</a>
+          <a href="#pulling-the-data">Pulling the data</a>
+          <a href="#classifying-pages">The classification framework</a>
+          <a href="#decision-criteria">The decision criteria</a>
+          <a href="#keyword-cannibalization">Keyword cannibalization</a>
+          <a href="#rewriting-vs-merging">Merging pages correctly</a>
+          <a href="#pruning-safely">Pruning without losing rankings</a>
+          <a href="#tracking-results">Measuring results</a>
+          <a href="#audit-cadence">How often to repeat it</a>
+          <a href="#common-mistakes">Common mistakes</a>
+        </nav>
+      </div>
+
+      <div class="sidebar-block sidebar-newsletter">
+        <h4>Newsletter</h4>
+        <p>Practical digital growth ideas, sent occasionally.</p>
+        <form class="newsletter-form" novalidate>
+          <label class="visually-hidden" for="sidebar-email-contentaudit">Email address</label>
+          <input id="sidebar-email-contentaudit" type="email" name="email" placeholder="you@example.com" required />
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+
+      <div class="sidebar-block">
+        <h4>Related</h4>
+        <div class="sidebar-related" id="sidebar-related"></div>
+      </div>
+
+      <div class="ad-slot" aria-hidden="true">Advertisement — Sidebar<span class="ad-note">No ad network connected.</span></div>
+    </aside>
+  </div>
+</main>
+
+<footer class="site-footer" id="site-footer"></footer>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>

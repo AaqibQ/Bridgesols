@@ -726,6 +726,17 @@ export const articles = [
     readingTime: "11 min read",
     author: "BridgeSols Editorial",
     tags: ["image seo", "core web vitals", "seo"]
+  },
+  {
+    slug: "seo-content-audit-guide",
+    title: "SEO Content Audits: A Practical Guide to Finding and Fixing Underperforming Pages",
+    excerpt:
+      "How to audit an existing site's content with free Search Console and GA4 data — which pages to keep, update, merge, or prune — and how to do it without losing rankings.",
+    category: "SEO",
+    date: "2026-11-11",
+    readingTime: "12 min read",
+    author: "BridgeSols Editorial",
+    tags: ["content audit", "seo", "content pruning"]
   }
 ];
 

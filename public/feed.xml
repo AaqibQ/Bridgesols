@@ -6,7 +6,15 @@
   <atom:link href="https://bridgesols.com/feed.xml" rel="self" type="application/rss+xml" />
   <description>Practical guides on digital marketing, SEO, content, and building sustainable online businesses.</description>
   <language>en-us</language>
-  <lastBuildDate>Tue, 10 Nov 2026 07:30:00 GMT</lastBuildDate>
+  <lastBuildDate>Wed, 11 Nov 2026 07:30:00 GMT</lastBuildDate>
+  <item>
+    <title>SEO Content Audits: A Practical Guide to Finding and Fixing Underperforming Pages</title>
+    <link>https://bridgesols.com/articles/seo-content-audit-guide.html</link>
+    <guid isPermaLink="true">https://bridgesols.com/articles/seo-content-audit-guide.html</guid>
+    <pubDate>Wed, 11 Nov 2026 07:30:00 GMT</pubDate>
+    <category>SEO</category>
+    <description>How to audit an existing site&apos;s content with free Search Console and GA4 data — which pages to keep, update, merge, or prune — and how to do it without losing rankings.</description>
+  </item>
   <item>
     <title>Image SEO: A Practical Guide to Optimizing Images for Search Visibility and Page Speed</title>
     <link>https://bridgesols.com/articles/image-seo-optimization-guide.html</link>
@@ -238,14 +246,6 @@
     <pubDate>Tue, 13 Oct 2026 07:30:00 GMT</pubDate>
     <category>Content Marketing</category>
     <description>How to ask customers for content, get usable permission, and turn reviews, photos and videos into marketing that converts better than anything a brand can produce alone.</description>
-  </item>
-  <item>
-    <title>Website Accessibility: A Practical WCAG Guide for Small Business Websites</title>
-    <link>https://bridgesols.com/articles/website-accessibility-wcag-guide-small-business.html</link>
-    <guid isPermaLink="true">https://bridgesols.com/articles/website-accessibility-wcag-guide-small-business.html</guid>
-    <pubDate>Mon, 12 Oct 2026 07:30:00 GMT</pubDate>
-    <category>Website Growth</category>
-    <description>What WCAG actually requires, the accessibility issues that show up on most small business sites, free testing tools, the SEO overlap, and the real legal risk of ignoring it.</description>
   </item>
 </channel>
 </rss>

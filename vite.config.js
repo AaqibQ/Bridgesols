@@ -85,7 +85,8 @@ export default defineConfig({
         article63: resolve(root, "articles/internal-linking-site-architecture-seo.html"),
         article64: resolve(root, "articles/customer-loyalty-programs-small-business-guide.html"),
         article65: resolve(root, "articles/uae-email-marketing-compliance-tdra-pdpl.html"),
-        article66: resolve(root, "articles/image-seo-optimization-guide.html")
+        article66: resolve(root, "articles/image-seo-optimization-guide.html"),
+        article67: resolve(root, "articles/seo-content-audit-guide.html")
       }
     }
   }
