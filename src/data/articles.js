@@ -737,6 +737,17 @@ export const articles = [
     readingTime: "12 min read",
     author: "BridgeSols Editorial",
     tags: ["content audit", "seo", "content pruning"]
+  },
+  {
+    slug: "web-hosting-guide-small-business",
+    title: "Web Hosting for Small Businesses: Shared, VPS, and Cloud Hosting Compared",
+    excerpt:
+      "A practical guide to choosing web hosting for a small business site — shared, VPS, cloud, and managed WordPress hosting compared, what actually affects speed and uptime, and how to migrate without downtime.",
+    category: "Website Growth",
+    date: "2026-11-12",
+    readingTime: "12 min read",
+    author: "BridgeSols Editorial",
+    tags: ["web hosting", "website growth", "site speed"]
   }
 ];
 
