@@ -6,7 +6,15 @@
   <atom:link href="https://bridgesols.com/feed.xml" rel="self" type="application/rss+xml" />
   <description>Practical guides on digital marketing, SEO, content, and building sustainable online businesses.</description>
   <language>en-us</language>
-  <lastBuildDate>Thu, 12 Nov 2026 07:30:00 GMT</lastBuildDate>
+  <lastBuildDate>Fri, 13 Nov 2026 07:30:00 GMT</lastBuildDate>
+  <item>
+    <title>Local SEO for Businesses in Pakistan: Ranking in Google&apos;s Map Pack</title>
+    <link>https://bridgesols.com/articles/local-seo-for-businesses-in-pakistan.html</link>
+    <guid isPermaLink="true">https://bridgesols.com/articles/local-seo-for-businesses-in-pakistan.html</guid>
+    <pubDate>Fri, 13 Nov 2026 07:30:00 GMT</pubDate>
+    <category>SEO</category>
+    <description>Google Business Profile verification, NAP consistency, and review generation all behave differently in Karachi, Lahore, and Islamabad than US-centric playbooks assume — a practical local SEO guide for Pakistan.</description>
+  </item>
   <item>
     <title>Web Hosting for Small Businesses: Shared, VPS, and Cloud Hosting Compared</title>
     <link>https://bridgesols.com/articles/web-hosting-guide-small-business.html</link>
@@ -238,14 +246,6 @@
     <pubDate>Thu, 15 Oct 2026 07:30:00 GMT</pubDate>
     <category>Digital Marketing</category>
     <description>How to design a customer referral program that actually gets used — incentive structures, timing, software options, fraud prevention, and how to measure whether it&apos;s working.</description>
-  </item>
-  <item>
-    <title>Google Ads for Businesses in Pakistan: A Practical Guide to PPC in a Price-Sensitive Market</title>
-    <link>https://bridgesols.com/articles/google-ads-for-businesses-in-pakistan.html</link>
-    <guid isPermaLink="true">https://bridgesols.com/articles/google-ads-for-businesses-in-pakistan.html</guid>
-    <pubDate>Wed, 14 Oct 2026 07:30:00 GMT</pubDate>
-    <category>Digital Marketing</category>
-    <description>PKR budgets, payment setup without a local credit card, bilingual keyword research, and the mistakes that waste spend fastest — a practical Google Ads guide for Pakistan.</description>
   </item>
 </channel>
 </rss>

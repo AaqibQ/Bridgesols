@@ -748,6 +748,17 @@ export const articles = [
     readingTime: "12 min read",
     author: "BridgeSols Editorial",
     tags: ["web hosting", "website growth", "site speed"]
+  },
+  {
+    slug: "local-seo-for-businesses-in-pakistan",
+    title: "Local SEO for Businesses in Pakistan: Ranking in Google's Map Pack",
+    excerpt:
+      "Google Business Profile verification, NAP consistency, and review generation all behave differently in Karachi, Lahore, and Islamabad than US-centric playbooks assume — a practical local SEO guide for Pakistan.",
+    category: "SEO",
+    date: "2026-11-13",
+    readingTime: "12 min read",
+    author: "BridgeSols Editorial",
+    tags: ["pakistan", "local seo", "google business profile"]
   }
 ];
 
