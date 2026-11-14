@@ -6,7 +6,15 @@
   <atom:link href="https://bridgesols.com/feed.xml" rel="self" type="application/rss+xml" />
   <description>Practical guides on digital marketing, SEO, content, and building sustainable online businesses.</description>
   <language>en-us</language>
-  <lastBuildDate>Fri, 13 Nov 2026 07:30:00 GMT</lastBuildDate>
+  <lastBuildDate>Sat, 14 Nov 2026 07:30:00 GMT</lastBuildDate>
+  <item>
+    <title>Facebook Ads for Businesses in the UAE: A Practical Guide to Meta Advertising</title>
+    <link>https://bridgesols.com/articles/facebook-ads-for-businesses-in-uae.html</link>
+    <guid isPermaLink="true">https://bridgesols.com/articles/facebook-ads-for-businesses-in-uae.html</guid>
+    <pubDate>Sat, 14 Nov 2026 07:30:00 GMT</pubDate>
+    <category>Digital Marketing</category>
+    <description>VAT on ad spend, free-zone vs. mainland billing, bilingual creative, and budgeting against some of the Gulf&apos;s highest CPMs — a practical Facebook and Instagram Ads guide for businesses in the UAE.</description>
+  </item>
   <item>
     <title>Local SEO for Businesses in Pakistan: Ranking in Google&apos;s Map Pack</title>
     <link>https://bridgesols.com/articles/local-seo-for-businesses-in-pakistan.html</link>
@@ -238,14 +246,6 @@
     <pubDate>Fri, 16 Oct 2026 07:30:00 GMT</pubDate>
     <category>Website Growth</category>
     <description>Why a landing page isn&apos;t a homepage, the elements that actually drive conversions, message match, form friction, trust signals, and how to test changes with limited traffic.</description>
-  </item>
-  <item>
-    <title>Referral Marketing Programs for Small Businesses: A Practical Guide to Turning Customers Into Recruiters</title>
-    <link>https://bridgesols.com/articles/referral-marketing-programs-small-businesses.html</link>
-    <guid isPermaLink="true">https://bridgesols.com/articles/referral-marketing-programs-small-businesses.html</guid>
-    <pubDate>Thu, 15 Oct 2026 07:30:00 GMT</pubDate>
-    <category>Digital Marketing</category>
-    <description>How to design a customer referral program that actually gets used — incentive structures, timing, software options, fraud prevention, and how to measure whether it&apos;s working.</description>
   </item>
 </channel>
 </rss>

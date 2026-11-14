@@ -759,6 +759,17 @@ export const articles = [
     readingTime: "12 min read",
     author: "BridgeSols Editorial",
     tags: ["pakistan", "local seo", "google business profile"]
+  },
+  {
+    slug: "facebook-ads-for-businesses-in-uae",
+    title: "Facebook Ads for Businesses in the UAE: A Practical Guide to Meta Advertising",
+    excerpt:
+      "VAT on ad spend, free-zone vs. mainland billing, bilingual creative, and budgeting against some of the Gulf's highest CPMs — a practical Facebook and Instagram Ads guide for businesses in the UAE.",
+    category: "Digital Marketing",
+    date: "2026-11-14",
+    readingTime: "12 min read",
+    author: "BridgeSols Editorial",
+    tags: ["uae", "facebook ads", "digital marketing"]
   }
 ];
 
