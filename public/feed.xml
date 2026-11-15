@@ -6,7 +6,15 @@
   <atom:link href="https://bridgesols.com/feed.xml" rel="self" type="application/rss+xml" />
   <description>Practical guides on digital marketing, SEO, content, and building sustainable online businesses.</description>
   <language>en-us</language>
-  <lastBuildDate>Sat, 14 Nov 2026 07:30:00 GMT</lastBuildDate>
+  <lastBuildDate>Sun, 15 Nov 2026 07:30:00 GMT</lastBuildDate>
+  <item>
+    <title>Shopify vs. WooCommerce for US Small Businesses: Choosing the Right E-Commerce Platform in 2026</title>
+    <link>https://bridgesols.com/articles/shopify-vs-woocommerce-us-small-business.html</link>
+    <guid isPermaLink="true">https://bridgesols.com/articles/shopify-vs-woocommerce-us-small-business.html</guid>
+    <pubDate>Sun, 15 Nov 2026 07:30:00 GMT</pubDate>
+    <category>Online Business</category>
+    <description>Real costs once apps and plugins are counted, US sales tax and payment processing, design flexibility, SEO, and scalability — a practical comparison for US small businesses choosing an e-commerce platform.</description>
+  </item>
   <item>
     <title>Facebook Ads for Businesses in the UAE: A Practical Guide to Meta Advertising</title>
     <link>https://bridgesols.com/articles/facebook-ads-for-businesses-in-uae.html</link>
@@ -238,14 +246,6 @@
     <pubDate>Sat, 17 Oct 2026 07:30:00 GMT</pubDate>
     <category>SEO</category>
     <description>How ChatGPT, Perplexity, and Google&apos;s AI Overviews actually choose what to cite, the on-page and off-page signals that earn a mention, and how to measure visibility in answers instead of just rankings.</description>
-  </item>
-  <item>
-    <title>Landing Page Optimization: A Practical Guide to Converting More Visitors Into Leads and Sales</title>
-    <link>https://bridgesols.com/articles/landing-page-optimization-guide.html</link>
-    <guid isPermaLink="true">https://bridgesols.com/articles/landing-page-optimization-guide.html</guid>
-    <pubDate>Fri, 16 Oct 2026 07:30:00 GMT</pubDate>
-    <category>Website Growth</category>
-    <description>Why a landing page isn&apos;t a homepage, the elements that actually drive conversions, message match, form friction, trust signals, and how to test changes with limited traffic.</description>
   </item>
 </channel>
 </rss>

@@ -89,7 +89,8 @@ export default defineConfig({
         article67: resolve(root, "articles/seo-content-audit-guide.html"),
         article68: resolve(root, "articles/web-hosting-guide-small-business.html"),
         article69: resolve(root, "articles/local-seo-for-businesses-in-pakistan.html"),
-        article70: resolve(root, "articles/facebook-ads-for-businesses-in-uae.html")
+        article70: resolve(root, "articles/facebook-ads-for-businesses-in-uae.html"),
+        article71: resolve(root, "articles/shopify-vs-woocommerce-us-small-business.html")
       }
     }
   }
