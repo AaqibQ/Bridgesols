@@ -781,6 +781,17 @@ export const articles = [
     readingTime: "13 min read",
     author: "BridgeSols Editorial",
     tags: ["usa", "e-commerce", "online business"]
+  },
+  {
+    slug: "webinar-marketing-for-small-businesses",
+    title: "Webinar Marketing for Small Businesses: A Practical Guide to Hosting Live Events That Generate Leads",
+    excerpt:
+      "Choosing a format, picking software without over-paying, a realistic promotion timeline, running the session, and the follow-up sequence that's usually where most of the conversion actually happens.",
+    category: "Content Marketing",
+    date: "2026-11-18",
+    readingTime: "12 min read",
+    author: "BridgeSols Editorial",
+    tags: ["webinar marketing", "content marketing", "lead generation"]
   }
 ];
 

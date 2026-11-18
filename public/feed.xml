@@ -6,7 +6,15 @@
   <atom:link href="https://bridgesols.com/feed.xml" rel="self" type="application/rss+xml" />
   <description>Practical guides on digital marketing, SEO, content, and building sustainable online businesses.</description>
   <language>en-us</language>
-  <lastBuildDate>Sun, 15 Nov 2026 07:30:00 GMT</lastBuildDate>
+  <lastBuildDate>Wed, 18 Nov 2026 07:30:00 GMT</lastBuildDate>
+  <item>
+    <title>Webinar Marketing for Small Businesses: A Practical Guide to Hosting Live Events That Generate Leads</title>
+    <link>https://bridgesols.com/articles/webinar-marketing-for-small-businesses.html</link>
+    <guid isPermaLink="true">https://bridgesols.com/articles/webinar-marketing-for-small-businesses.html</guid>
+    <pubDate>Wed, 18 Nov 2026 07:30:00 GMT</pubDate>
+    <category>Content Marketing</category>
+    <description>Choosing a format, picking software without over-paying, a realistic promotion timeline, running the session, and the follow-up sequence that&apos;s usually where most of the conversion actually happens.</description>
+  </item>
   <item>
     <title>Shopify vs. WooCommerce for US Small Businesses: Choosing the Right E-Commerce Platform in 2026</title>
     <link>https://bridgesols.com/articles/shopify-vs-woocommerce-us-small-business.html</link>
@@ -238,14 +246,6 @@
     <pubDate>Sun, 18 Oct 2026 07:30:00 GMT</pubDate>
     <category>Digital Marketing</category>
     <description>AED budgets against some of the world&apos;s highest CPCs, bilingual campaign structure, billing setup for free-zone and mainland companies, and the mistakes that waste spend fastest — a practical Google Ads guide for the UAE.</description>
-  </item>
-  <item>
-    <title>AI Search Optimization: A Practical Guide to Getting Cited by ChatGPT, Perplexity, and Google AI Overviews</title>
-    <link>https://bridgesols.com/articles/ai-search-optimization-guide.html</link>
-    <guid isPermaLink="true">https://bridgesols.com/articles/ai-search-optimization-guide.html</guid>
-    <pubDate>Sat, 17 Oct 2026 07:30:00 GMT</pubDate>
-    <category>SEO</category>
-    <description>How ChatGPT, Perplexity, and Google&apos;s AI Overviews actually choose what to cite, the on-page and off-page signals that earn a mention, and how to measure visibility in answers instead of just rankings.</description>
   </item>
 </channel>
 </rss>
