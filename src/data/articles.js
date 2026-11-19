@@ -792,6 +792,17 @@ export const articles = [
     readingTime: "12 min read",
     author: "BridgeSols Editorial",
     tags: ["webinar marketing", "content marketing", "lead generation"]
+  },
+  {
+    slug: "payment-gateways-for-ecommerce-pakistan",
+    title: "Payment Gateways for E-Commerce in Pakistan: JazzCash, Easypaisa, and Bank Integration Compared",
+    excerpt:
+      "A practical guide to accepting online payments in Pakistan — comparing JazzCash, Easypaisa, and bank-based gateways, integration steps, real fees, settlement times, and how to combine them with cash on delivery.",
+    category: "Online Business",
+    date: "2026-11-19",
+    readingTime: "12 min read",
+    author: "BridgeSols Editorial",
+    tags: ["pakistan", "payment gateways", "e-commerce"]
   }
 ];
 

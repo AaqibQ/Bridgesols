@@ -91,7 +91,8 @@ export default defineConfig({
         article69: resolve(root, "articles/local-seo-for-businesses-in-pakistan.html"),
         article70: resolve(root, "articles/facebook-ads-for-businesses-in-uae.html"),
         article71: resolve(root, "articles/shopify-vs-woocommerce-us-small-business.html"),
-        article72: resolve(root, "articles/webinar-marketing-for-small-businesses.html")
+        article72: resolve(root, "articles/webinar-marketing-for-small-businesses.html"),
+        article73: resolve(root, "articles/payment-gateways-for-ecommerce-pakistan.html")
       }
     }
   }
