@@ -6,7 +6,15 @@
   <atom:link href="https://bridgesols.com/feed.xml" rel="self" type="application/rss+xml" />
   <description>Practical guides on digital marketing, SEO, content, and building sustainable online businesses.</description>
   <language>en-us</language>
-  <lastBuildDate>Thu, 19 Nov 2026 07:30:00 GMT</lastBuildDate>
+  <lastBuildDate>Fri, 20 Nov 2026 07:30:00 GMT</lastBuildDate>
+  <item>
+    <title>Google Search Console for Beginners: A Practical Guide to Monitoring and Fixing Search Performance</title>
+    <link>https://bridgesols.com/articles/google-search-console-guide.html</link>
+    <guid isPermaLink="true">https://bridgesols.com/articles/google-search-console-guide.html</guid>
+    <pubDate>Fri, 20 Nov 2026 07:30:00 GMT</pubDate>
+    <category>SEO</category>
+    <description>Setting up a property, reading the Performance and Indexing reports, submitting sitemaps, fixing indexing issues, and a realistic weekly routine for checking search performance.</description>
+  </item>
   <item>
     <title>Payment Gateways for E-Commerce in Pakistan: JazzCash, Easypaisa, and Bank Integration Compared</title>
     <link>https://bridgesols.com/articles/payment-gateways-for-ecommerce-pakistan.html</link>
@@ -238,14 +246,6 @@
     <pubDate>Tue, 20 Oct 2026 07:30:00 GMT</pubDate>
     <category>Digital Marketing</category>
     <description>Setting up a business account, how the For You feed algorithm actually works, content formats that convert, TikTok Shop, ads on a small budget, and the mistakes that tank organic reach.</description>
-  </item>
-  <item>
-    <title>LinkedIn Marketing for B2B Small Businesses: A Practical Guide to Generating Leads</title>
-    <link>https://bridgesols.com/articles/linkedin-marketing-for-b2b-small-businesses.html</link>
-    <guid isPermaLink="true">https://bridgesols.com/articles/linkedin-marketing-for-b2b-small-businesses.html</guid>
-    <pubDate>Mon, 19 Oct 2026 07:30:00 GMT</pubDate>
-    <category>Digital Marketing</category>
-    <description>How to optimize a company page, build a posting habit that actually gets engagement, use Sales Navigator and LinkedIn Ads within a small budget, and avoid the outreach mistakes that get accounts restricted.</description>
   </item>
 </channel>
 </rss>

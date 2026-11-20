@@ -803,6 +803,17 @@ export const articles = [
     readingTime: "12 min read",
     author: "BridgeSols Editorial",
     tags: ["pakistan", "payment gateways", "e-commerce"]
+  },
+  {
+    slug: "google-search-console-guide",
+    title: "Google Search Console for Beginners: A Practical Guide to Monitoring and Fixing Search Performance",
+    excerpt:
+      "Setting up a property, reading the Performance and Indexing reports, submitting sitemaps, fixing indexing issues, and a realistic weekly routine for checking search performance.",
+    category: "SEO",
+    date: "2026-11-20",
+    readingTime: "11 min read",
+    author: "BridgeSols Editorial",
+    tags: ["google search console", "seo", "indexing"]
   }
 ];
 
