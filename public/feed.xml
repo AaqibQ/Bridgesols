@@ -6,7 +6,15 @@
   <atom:link href="https://bridgesols.com/feed.xml" rel="self" type="application/rss+xml" />
   <description>Practical guides on digital marketing, SEO, content, and building sustainable online businesses.</description>
   <language>en-us</language>
-  <lastBuildDate>Fri, 20 Nov 2026 07:30:00 GMT</lastBuildDate>
+  <lastBuildDate>Sat, 21 Nov 2026 07:30:00 GMT</lastBuildDate>
+  <item>
+    <title>TikTok Marketing for Businesses in the UAE: A Practical Guide to a Bilingual, Video-First Market</title>
+    <link>https://bridgesols.com/articles/tiktok-marketing-for-businesses-in-uae.html</link>
+    <guid isPermaLink="true">https://bridgesols.com/articles/tiktok-marketing-for-businesses-in-uae.html</guid>
+    <pubDate>Sat, 21 Nov 2026 07:30:00 GMT</pubDate>
+    <category>Digital Marketing</category>
+    <description>Setting up TikTok for Business in the UAE, bilingual content that performs with an expat-majority audience, TikTok Shop UAE, AED ad costs, and the Gulf creator economy.</description>
+  </item>
   <item>
     <title>Google Search Console for Beginners: A Practical Guide to Monitoring and Fixing Search Performance</title>
     <link>https://bridgesols.com/articles/google-search-console-guide.html</link>
@@ -238,14 +246,6 @@
     <pubDate>Wed, 21 Oct 2026 07:30:00 GMT</pubDate>
     <category>Online Business</category>
     <description>How dropshipping actually works, picking a supplier and niche that can survive on real margins, and the fulfillment and customer-service problems that sink most stores before they turn a profit.</description>
-  </item>
-  <item>
-    <title>TikTok Marketing for Small Businesses: A Practical Guide to Growing an Audience and Driving Sales</title>
-    <link>https://bridgesols.com/articles/tiktok-marketing-for-small-businesses.html</link>
-    <guid isPermaLink="true">https://bridgesols.com/articles/tiktok-marketing-for-small-businesses.html</guid>
-    <pubDate>Tue, 20 Oct 2026 07:30:00 GMT</pubDate>
-    <category>Digital Marketing</category>
-    <description>Setting up a business account, how the For You feed algorithm actually works, content formats that convert, TikTok Shop, ads on a small budget, and the mistakes that tank organic reach.</description>
   </item>
 </channel>
 </rss>

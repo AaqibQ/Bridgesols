@@ -814,6 +814,17 @@ export const articles = [
     readingTime: "11 min read",
     author: "BridgeSols Editorial",
     tags: ["google search console", "seo", "indexing"]
+  },
+  {
+    slug: "tiktok-marketing-for-businesses-in-uae",
+    title: "TikTok Marketing for Businesses in the UAE: A Practical Guide to a Bilingual, Video-First Market",
+    excerpt:
+      "Setting up TikTok for Business in the UAE, bilingual content that performs with an expat-majority audience, TikTok Shop UAE, AED ad costs, and the Gulf creator economy.",
+    category: "Digital Marketing",
+    date: "2026-11-21",
+    readingTime: "13 min read",
+    author: "BridgeSols Editorial",
+    tags: ["uae", "tiktok marketing", "digital marketing"]
   }
 ];
 
