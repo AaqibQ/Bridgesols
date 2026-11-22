@@ -6,7 +6,15 @@
   <atom:link href="https://bridgesols.com/feed.xml" rel="self" type="application/rss+xml" />
   <description>Practical guides on digital marketing, SEO, content, and building sustainable online businesses.</description>
   <language>en-us</language>
-  <lastBuildDate>Sat, 21 Nov 2026 07:30:00 GMT</lastBuildDate>
+  <lastBuildDate>Sun, 22 Nov 2026 07:30:00 GMT</lastBuildDate>
+  <item>
+    <title>X (Twitter) Marketing for Small Businesses: A Practical Guide to Building an Audience and Driving Traffic</title>
+    <link>https://bridgesols.com/articles/x-twitter-marketing-for-small-businesses.html</link>
+    <guid isPermaLink="true">https://bridgesols.com/articles/x-twitter-marketing-for-small-businesses.html</guid>
+    <pubDate>Sun, 22 Nov 2026 07:30:00 GMT</pubDate>
+    <category>Digital Marketing</category>
+    <description>Setting up a business account on X, the content formats that still get real reach, how the For You algorithm ranks posts, realistic ad costs, Communities and Spaces, and the mistakes that waste a small business&apos;s time on the platform.</description>
+  </item>
   <item>
     <title>TikTok Marketing for Businesses in the UAE: A Practical Guide to a Bilingual, Video-First Market</title>
     <link>https://bridgesols.com/articles/tiktok-marketing-for-businesses-in-uae.html</link>
@@ -238,14 +246,6 @@
     <pubDate>Thu, 22 Oct 2026 07:30:00 GMT</pubDate>
     <category>Online Business</category>
     <description>Validating demand before you build, choosing a platform and pricing model, and the launch and support realities that determine whether a digital product actually sells.</description>
-  </item>
-  <item>
-    <title>Dropshipping: A Practical Guide to Starting an Online Store Without Holding Inventory</title>
-    <link>https://bridgesols.com/articles/dropshipping-guide-small-businesses.html</link>
-    <guid isPermaLink="true">https://bridgesols.com/articles/dropshipping-guide-small-businesses.html</guid>
-    <pubDate>Wed, 21 Oct 2026 07:30:00 GMT</pubDate>
-    <category>Online Business</category>
-    <description>How dropshipping actually works, picking a supplier and niche that can survive on real margins, and the fulfillment and customer-service problems that sink most stores before they turn a profit.</description>
   </item>
 </channel>
 </rss>

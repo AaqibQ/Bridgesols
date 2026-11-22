@@ -825,6 +825,17 @@ export const articles = [
     readingTime: "13 min read",
     author: "BridgeSols Editorial",
     tags: ["uae", "tiktok marketing", "digital marketing"]
+  },
+  {
+    slug: "x-twitter-marketing-for-small-businesses",
+    title: "X (Twitter) Marketing for Small Businesses: A Practical Guide to Building an Audience and Driving Traffic",
+    excerpt:
+      "Setting up a business account on X, the content formats that still get real reach, how the For You algorithm ranks posts, realistic ad costs, Communities and Spaces, and the mistakes that waste a small business's time on the platform.",
+    category: "Digital Marketing",
+    date: "2026-11-22",
+    readingTime: "12 min read",
+    author: "BridgeSols Editorial",
+    tags: ["x marketing", "social media", "digital marketing"]
   }
 ];
 
