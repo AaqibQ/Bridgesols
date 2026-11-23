@@ -6,7 +6,15 @@
   <atom:link href="https://bridgesols.com/feed.xml" rel="self" type="application/rss+xml" />
   <description>Practical guides on digital marketing, SEO, content, and building sustainable online businesses.</description>
   <language>en-us</language>
-  <lastBuildDate>Sun, 22 Nov 2026 07:30:00 GMT</lastBuildDate>
+  <lastBuildDate>Mon, 23 Nov 2026 07:30:00 GMT</lastBuildDate>
+  <item>
+    <title>Yelp for US Small Businesses: A Practical Guide to Reviews, Ads, and Reputation</title>
+    <link>https://bridgesols.com/articles/yelp-marketing-for-us-small-businesses.html</link>
+    <guid isPermaLink="true">https://bridgesols.com/articles/yelp-marketing-for-us-small-businesses.html</guid>
+    <pubDate>Mon, 23 Nov 2026 07:30:00 GMT</pubDate>
+    <category>Digital Marketing</category>
+    <description>Claiming and optimizing a Yelp profile, how Yelp&apos;s review filter actually works, responding to reviews, realistic Yelp Ads costs, and the mistakes that cost US small businesses leads on the platform.</description>
+  </item>
   <item>
     <title>X (Twitter) Marketing for Small Businesses: A Practical Guide to Building an Audience and Driving Traffic</title>
     <link>https://bridgesols.com/articles/x-twitter-marketing-for-small-businesses.html</link>
@@ -238,14 +246,6 @@
     <pubDate>Fri, 23 Oct 2026 07:30:00 GMT</pubDate>
     <category>Digital Marketing</category>
     <description>Campaign structure, audience targeting after iOS 14, creative that performs, and the mistakes that waste budget fastest — a practical Facebook and Instagram Ads guide for US small businesses.</description>
-  </item>
-  <item>
-    <title>Selling Digital Products and Online Courses: A Practical Guide for Small Businesses</title>
-    <link>https://bridgesols.com/articles/selling-digital-products-online-courses-guide.html</link>
-    <guid isPermaLink="true">https://bridgesols.com/articles/selling-digital-products-online-courses-guide.html</guid>
-    <pubDate>Thu, 22 Oct 2026 07:30:00 GMT</pubDate>
-    <category>Online Business</category>
-    <description>Validating demand before you build, choosing a platform and pricing model, and the launch and support realities that determine whether a digital product actually sells.</description>
   </item>
 </channel>
 </rss>

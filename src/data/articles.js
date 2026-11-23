@@ -836,6 +836,17 @@ export const articles = [
     readingTime: "12 min read",
     author: "BridgeSols Editorial",
     tags: ["x marketing", "social media", "digital marketing"]
+  },
+  {
+    slug: "yelp-marketing-for-us-small-businesses",
+    title: "Yelp for US Small Businesses: A Practical Guide to Reviews, Ads, and Reputation",
+    excerpt:
+      "Claiming and optimizing a Yelp profile, how Yelp's review filter actually works, responding to reviews, realistic Yelp Ads costs, and the mistakes that cost US small businesses leads on the platform.",
+    category: "Digital Marketing",
+    date: "2026-11-23",
+    readingTime: "12 min read",
+    author: "BridgeSols Editorial",
+    tags: ["usa", "yelp", "digital marketing"]
   }
 ];
 

@@ -95,7 +95,8 @@ export default defineConfig({
         article73: resolve(root, "articles/payment-gateways-for-ecommerce-pakistan.html"),
         article74: resolve(root, "articles/google-search-console-guide.html"),
         article75: resolve(root, "articles/tiktok-marketing-for-businesses-in-uae.html"),
-        article76: resolve(root, "articles/x-twitter-marketing-for-small-businesses.html")
+        article76: resolve(root, "articles/x-twitter-marketing-for-small-businesses.html"),
+        article77: resolve(root, "articles/yelp-marketing-for-us-small-businesses.html")
       }
     }
   }
