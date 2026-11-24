@@ -847,6 +847,17 @@ export const articles = [
     readingTime: "12 min read",
     author: "BridgeSols Editorial",
     tags: ["usa", "yelp", "digital marketing"]
+  },
+  {
+    slug: "instagram-marketing-for-businesses-in-pakistan",
+    title: "Instagram Marketing for Businesses in Pakistan: A Practical Guide to a Mobile-First, Visual Market",
+    excerpt:
+      "Account setup on limited data budgets, Roman Urdu content that performs, DM-driven sales and cash on delivery, and realistic PKR influencer and ad costs — a practical Instagram marketing guide for Pakistan.",
+    category: "Digital Marketing",
+    date: "2026-11-24",
+    readingTime: "12 min read",
+    author: "BridgeSols Editorial",
+    tags: ["pakistan", "instagram marketing", "digital marketing"]
   }
 ];
 

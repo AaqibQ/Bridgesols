@@ -96,7 +96,8 @@ export default defineConfig({
         article74: resolve(root, "articles/google-search-console-guide.html"),
         article75: resolve(root, "articles/tiktok-marketing-for-businesses-in-uae.html"),
         article76: resolve(root, "articles/x-twitter-marketing-for-small-businesses.html"),
-        article77: resolve(root, "articles/yelp-marketing-for-us-small-businesses.html")
+        article77: resolve(root, "articles/yelp-marketing-for-us-small-businesses.html"),
+        article78: resolve(root, "articles/instagram-marketing-for-businesses-in-pakistan.html")
       }
     }
   }
