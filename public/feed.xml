@@ -6,7 +6,15 @@
   <atom:link href="https://bridgesols.com/feed.xml" rel="self" type="application/rss+xml" />
   <description>Practical guides on digital marketing, SEO, content, and building sustainable online businesses.</description>
   <language>en-us</language>
-  <lastBuildDate>Tue, 24 Nov 2026 07:30:00 GMT</lastBuildDate>
+  <lastBuildDate>Wed, 25 Nov 2026 07:30:00 GMT</lastBuildDate>
+  <item>
+    <title>Instagram Marketing for US Small Businesses: A Practical Guide to Reels, Shopping, and Creator Partnerships</title>
+    <link>https://bridgesols.com/articles/instagram-marketing-for-us-small-businesses.html</link>
+    <guid isPermaLink="true">https://bridgesols.com/articles/instagram-marketing-for-us-small-businesses.html</guid>
+    <pubDate>Wed, 25 Nov 2026 07:30:00 GMT</pubDate>
+    <category>Digital Marketing</category>
+    <description>Account setup, the Reels-first algorithm, Instagram Shopping, FTC-compliant influencer partnerships, and realistic USD ad and creator costs — a practical Instagram marketing guide for US small businesses.</description>
+  </item>
   <item>
     <title>Instagram Marketing for Businesses in Pakistan: A Practical Guide to a Mobile-First, Visual Market</title>
     <link>https://bridgesols.com/articles/instagram-marketing-for-businesses-in-pakistan.html</link>
@@ -238,14 +246,6 @@
     <pubDate>Sun, 25 Oct 2026 07:30:00 GMT</pubDate>
     <category>Content Marketing</category>
     <description>Why content built for a desktop, English-first audience underperforms in Pakistan, and how to plan content around mobile data limits, Roman Urdu, and the platforms people actually use.</description>
-  </item>
-  <item>
-    <title>YouTube Marketing for Small Businesses: A Practical Guide to Building a Channel That Drives Sales</title>
-    <link>https://bridgesols.com/articles/youtube-marketing-for-small-businesses.html</link>
-    <guid isPermaLink="true">https://bridgesols.com/articles/youtube-marketing-for-small-businesses.html</guid>
-    <pubDate>Sat, 24 Oct 2026 07:30:00 GMT</pubDate>
-    <category>Digital Marketing</category>
-    <description>Channel setup, how search and suggested-video ranking actually work, content formats that build an audience, Shorts, and YouTube Ads on a small budget.</description>
   </item>
 </channel>
 </rss>

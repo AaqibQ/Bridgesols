@@ -858,6 +858,17 @@ export const articles = [
     readingTime: "12 min read",
     author: "BridgeSols Editorial",
     tags: ["pakistan", "instagram marketing", "digital marketing"]
+  },
+  {
+    slug: "instagram-marketing-for-us-small-businesses",
+    title: "Instagram Marketing for US Small Businesses: A Practical Guide to Reels, Shopping, and Creator Partnerships",
+    excerpt:
+      "Account setup, the Reels-first algorithm, Instagram Shopping, FTC-compliant influencer partnerships, and realistic USD ad and creator costs — a practical Instagram marketing guide for US small businesses.",
+    category: "Digital Marketing",
+    date: "2026-11-25",
+    readingTime: "12 min read",
+    author: "BridgeSols Editorial",
+    tags: ["usa", "instagram marketing", "digital marketing"]
   }
 ];
 
