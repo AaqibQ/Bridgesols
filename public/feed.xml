@@ -6,7 +6,15 @@
   <atom:link href="https://bridgesols.com/feed.xml" rel="self" type="application/rss+xml" />
   <description>Practical guides on digital marketing, SEO, content, and building sustainable online businesses.</description>
   <language>en-us</language>
-  <lastBuildDate>Wed, 25 Nov 2026 07:30:00 GMT</lastBuildDate>
+  <lastBuildDate>Thu, 26 Nov 2026 07:30:00 GMT</lastBuildDate>
+  <item>
+    <title>Account-Based Marketing (ABM) for B2B Small Businesses: A Practical Guide to Targeting the Accounts That Actually Matter</title>
+    <link>https://bridgesols.com/articles/account-based-marketing-for-b2b-small-businesses.html</link>
+    <guid isPermaLink="true">https://bridgesols.com/articles/account-based-marketing-for-b2b-small-businesses.html</guid>
+    <pubDate>Thu, 26 Nov 2026 07:30:00 GMT</pubDate>
+    <category>Digital Marketing</category>
+    <description>Building a target account list without a data team, tiering outreach by account value, aligning sales and marketing, and measuring account engagement instead of raw lead counts — a practical ABM guide for small B2B teams.</description>
+  </item>
   <item>
     <title>Instagram Marketing for US Small Businesses: A Practical Guide to Reels, Shopping, and Creator Partnerships</title>
     <link>https://bridgesols.com/articles/instagram-marketing-for-us-small-businesses.html</link>
@@ -238,14 +246,6 @@
     <pubDate>Mon, 26 Oct 2026 07:30:00 GMT</pubDate>
     <category>Digital Marketing</category>
     <description>Account setup, content formats that actually get watched, DM-driven sales, influencer costs, Instagram Shopping, and the mistakes that waste a small budget fastest — a practical Instagram marketing guide for the UAE.</description>
-  </item>
-  <item>
-    <title>Content Marketing for Businesses in Pakistan: Reaching a Mobile-First, Price-Sensitive Audience</title>
-    <link>https://bridgesols.com/articles/content-marketing-for-businesses-in-pakistan.html</link>
-    <guid isPermaLink="true">https://bridgesols.com/articles/content-marketing-for-businesses-in-pakistan.html</guid>
-    <pubDate>Sun, 25 Oct 2026 07:30:00 GMT</pubDate>
-    <category>Content Marketing</category>
-    <description>Why content built for a desktop, English-first audience underperforms in Pakistan, and how to plan content around mobile data limits, Roman Urdu, and the platforms people actually use.</description>
   </item>
 </channel>
 </rss>

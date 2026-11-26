@@ -98,7 +98,8 @@ export default defineConfig({
         article76: resolve(root, "articles/x-twitter-marketing-for-small-businesses.html"),
         article77: resolve(root, "articles/yelp-marketing-for-us-small-businesses.html"),
         article78: resolve(root, "articles/instagram-marketing-for-businesses-in-pakistan.html"),
-        article79: resolve(root, "articles/instagram-marketing-for-us-small-businesses.html")
+        article79: resolve(root, "articles/instagram-marketing-for-us-small-businesses.html"),
+        article80: resolve(root, "articles/account-based-marketing-for-b2b-small-businesses.html")
       }
     }
   }

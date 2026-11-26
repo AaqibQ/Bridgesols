@@ -869,6 +869,17 @@ export const articles = [
     readingTime: "12 min read",
     author: "BridgeSols Editorial",
     tags: ["usa", "instagram marketing", "digital marketing"]
+  },
+  {
+    slug: "account-based-marketing-for-b2b-small-businesses",
+    title: "Account-Based Marketing (ABM) for B2B Small Businesses: A Practical Guide to Targeting the Accounts That Actually Matter",
+    excerpt:
+      "Building a target account list without a data team, tiering outreach by account value, aligning sales and marketing, and measuring account engagement instead of raw lead counts — a practical ABM guide for small B2B teams.",
+    category: "Digital Marketing",
+    date: "2026-11-26",
+    readingTime: "12 min read",
+    author: "BridgeSols Editorial",
+    tags: ["account-based marketing", "b2b", "digital marketing"]
   }
 ];
 
