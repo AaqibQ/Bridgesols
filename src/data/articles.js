@@ -880,6 +880,17 @@ export const articles = [
     readingTime: "12 min read",
     author: "BridgeSols Editorial",
     tags: ["account-based marketing", "b2b", "digital marketing"]
+  },
+  {
+    slug: "sms-marketing-for-businesses-in-uae",
+    title: "SMS Marketing for Businesses in the UAE: A Practical Guide to TDRA Compliance and Bulk SMS Registration",
+    excerpt:
+      "Why a business in the UAE can't just buy an SMS platform and start sending — TDRA licensing, alphanumeric Sender ID registration, consent rules, and the realistic bulk SMS process.",
+    category: "Digital Marketing",
+    date: "2026-11-27",
+    readingTime: "12 min read",
+    author: "BridgeSols Editorial",
+    tags: ["uae", "sms marketing", "digital marketing"]
   }
 ];
 
