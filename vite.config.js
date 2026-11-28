@@ -100,7 +100,8 @@ export default defineConfig({
         article78: resolve(root, "articles/instagram-marketing-for-businesses-in-pakistan.html"),
         article79: resolve(root, "articles/instagram-marketing-for-us-small-businesses.html"),
         article80: resolve(root, "articles/account-based-marketing-for-b2b-small-businesses.html"),
-        article81: resolve(root, "articles/sms-marketing-for-businesses-in-uae.html")
+        article81: resolve(root, "articles/sms-marketing-for-businesses-in-uae.html"),
+        article82: resolve(root, "articles/google-shopping-ads-guide.html")
       }
     }
   }

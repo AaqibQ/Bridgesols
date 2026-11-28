@@ -891,6 +891,17 @@ export const articles = [
     readingTime: "12 min read",
     author: "BridgeSols Editorial",
     tags: ["uae", "sms marketing", "digital marketing"]
+  },
+  {
+    slug: "google-shopping-ads-guide",
+    title: "Google Shopping Ads: A Practical Guide to Performance Max and Product Feeds",
+    excerpt:
+      "How Google Shopping ads and Performance Max actually work, what a product feed needs to get approved, bidding strategies, and the mistakes that waste e-commerce ad budget fastest.",
+    category: "Digital Marketing",
+    date: "2026-11-28",
+    readingTime: "12 min read",
+    author: "BridgeSols Editorial",
+    tags: ["google shopping", "performance max", "digital marketing"]
   }
 ];
 

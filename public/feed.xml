@@ -6,7 +6,15 @@
   <atom:link href="https://bridgesols.com/feed.xml" rel="self" type="application/rss+xml" />
   <description>Practical guides on digital marketing, SEO, content, and building sustainable online businesses.</description>
   <language>en-us</language>
-  <lastBuildDate>Fri, 27 Nov 2026 07:30:00 GMT</lastBuildDate>
+  <lastBuildDate>Sat, 28 Nov 2026 07:30:00 GMT</lastBuildDate>
+  <item>
+    <title>Google Shopping Ads: A Practical Guide to Performance Max and Product Feeds</title>
+    <link>https://bridgesols.com/articles/google-shopping-ads-guide.html</link>
+    <guid isPermaLink="true">https://bridgesols.com/articles/google-shopping-ads-guide.html</guid>
+    <pubDate>Sat, 28 Nov 2026 07:30:00 GMT</pubDate>
+    <category>Digital Marketing</category>
+    <description>How Google Shopping ads and Performance Max actually work, what a product feed needs to get approved, bidding strategies, and the mistakes that waste e-commerce ad budget fastest.</description>
+  </item>
   <item>
     <title>SMS Marketing for Businesses in the UAE: A Practical Guide to TDRA Compliance and Bulk SMS Registration</title>
     <link>https://bridgesols.com/articles/sms-marketing-for-businesses-in-uae.html</link>
@@ -238,14 +246,6 @@
     <pubDate>Wed, 28 Oct 2026 07:30:00 GMT</pubDate>
     <category>Digital Marketing</category>
     <description>Why Pinterest behaves like a search engine instead of a social feed, who it actually works for, setting up a business account correctly, Pinterest SEO, and the metrics that tell you whether it&apos;s working.</description>
-  </item>
-  <item>
-    <title>Online Reputation Management for Small Businesses: A Practical Guide to Monitoring Reviews and Protecting Your Brand</title>
-    <link>https://bridgesols.com/articles/online-reputation-management-small-businesses.html</link>
-    <guid isPermaLink="true">https://bridgesols.com/articles/online-reputation-management-small-businesses.html</guid>
-    <pubDate>Tue, 27 Oct 2026 07:30:00 GMT</pubDate>
-    <category>Digital Marketing</category>
-    <description>Where reviews and mentions actually live, how to set up monitoring without expensive tools, how to respond to negative reviews without making things worse, and how to get more real reviews ethically.</description>
   </item>
 </channel>
 </rss>
